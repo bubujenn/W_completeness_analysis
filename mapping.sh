@@ -7,7 +7,7 @@
 trap 'clean_scratch' TERM EXIT
 
 DATADIR="/storage/plzen1/home/jendrb00/data"
-RESULTDIR="/storage/plzen1/home/jendrb00/results"
+OUTPUT_DIR="/storage/plzen1/home/jendrb00/results"
 SCRATCHDIR=${SCRATCHDIR:-"/scratch"}
 
 cp $DATADIR/reference.fasta $SCRATCHDIR || exit 1
@@ -24,4 +24,4 @@ samtools sort -o filtered.bam filtered.sam || exit 6
 samtools index filtered.bam || exit 7
 samtools view filtered.bam | awk '{print $3, $1}' | sort | uniq > scaffold_to_chr.tsv || exit 8
 
-cp -r $SCRATCHDIR/* $RESULTDIR || export CLEAN_SCRATCH=false 
+cp -r $SCRATCHDIR/* $OUTPUT_DIR || export CLEAN_SCRATCH=false 
