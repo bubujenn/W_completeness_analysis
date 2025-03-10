@@ -26,4 +26,4 @@ cat W_FINAL_completeness.txt  || exit 5
 mkdir -p $RESULTDIR
 cp W_FINAL_completeness.txt $RESULTDIR/ || export CLEAN_SCRATCH=false  || exit 6
 
-echo "Výsledky kompletnosti chromozomu W jsou uloženy v: $RESULTDIR/W_FINAL_completeness.txt"  || exit 7
+echo "Výsledky kompletnosti chromozomu W jsou uloženy v: $RESULTDIR/W_FINAL_completeness.txt" 
