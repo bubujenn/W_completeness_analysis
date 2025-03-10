@@ -7,7 +7,7 @@
 trap 'clean_scratch' TERM EXIT
 
 DATADIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets"
-RESULTDIR="/storage/brno2/home/jendrb00/results/meryl_difference_print_results"
+OUTPUT_DIR="/storage/brno2/home/jendrb00/results/meryl_difference_print_results"
 export PATH=/storage/plzen1/home/jendrb00/meryl-1.4.1/bin:$PATH
 
 PACBIO_MERYL="without_errors.meryl"
@@ -35,7 +35,7 @@ meryl print meryl_results/expected_W_size.meryl | awk '{sum += $2} END {print su
 echo "Počítám sumy chybějících unikátních k-merů W v sestaveném genomu..."
 meryl print meryl_results/W_missing_in_assembly.meryl | awk '{sum += $2} END {print sum}' > meryl_results/W_missing_in_assembly_sum.txt || exit 8
 
-mkdir -p $RESULTDIR
-cp -r meryl_results/* $RESULTDIR || export CLEAN_SCRATCH=false || exit 9
+mkdir -p $OUTPUT_DIR
+cp -r meryl_results/* $OUTPUT_DIR || export CLEAN_SCRATCH=false || exit 9
 
-echo "První část dokončena. Výsledky jsou v: $RESULTDIR"
+echo "První část dokončena. Výsledky jsou v: $OUTPUT_DIR"
