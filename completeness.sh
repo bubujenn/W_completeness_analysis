@@ -7,7 +7,7 @@
 trap 'clean_scratch' TERM EXIT
 
 DATADIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets"
-RESULTDIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets"
+OUTPUT_DIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets"
 
 cp $DATADIR/W_missing_in_assembly_sum.txt $SCRATCHDIR/ || exit 1
 cp $DATADIR/expected_W_size_sum.txt $SCRATCHDIR/ || exit 2
@@ -23,7 +23,7 @@ echo "$completeness" > W_FINAL_completeness.txt
 echo "Procento kompletnosti chromozomu W:"
 cat W_FINAL_completeness.txt  || exit 5
 
-mkdir -p $RESULTDIR
-cp W_FINAL_completeness.txt $RESULTDIR/ || export CLEAN_SCRATCH=false  || exit 6
+mkdir -p $OUTPUT_DIR
+cp W_FINAL_completeness.txt $OUTPUT_DIR/ || export CLEAN_SCRATCH=false  || exit 6
 
-echo "Výsledky kompletnosti chromozomu W jsou uloženy v: $RESULTDIR/W_FINAL_completeness.txt" 
+echo "Výsledky kompletnosti chromozomu W jsou uloženy v: $OUTPUT_DIR/W_FINAL_completeness.txt" 
