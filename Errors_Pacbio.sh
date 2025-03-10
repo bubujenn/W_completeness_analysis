@@ -7,7 +7,7 @@
 trap 'clean_scratch' TERM EXIT
 
 DATADIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets"
-RESULTDIR="/storage/brno2/home/jendrb00/results/meryl_filtered"
+OUTPUT_DIR="/storage/brno2/home/jendrb00/results/meryl_filtered"
 SCRATCHDIR=${SCRATCHDIR:-"/scratch"}
 
 cp -r $DATADIR/ERR11867203.fastq.gz.meryl $SCRATCHDIR/ || exit 1
@@ -22,8 +22,8 @@ CUTOFF=10  #  (cut-off) z GenomeScope2.0
 meryl greater-than $CUTOFF $KMER_DB output $FILTERED_DB || exit 3
 
 OUTPUT_NAME="meryl_filtered_errors_$(date +"%Y%m%d")"
-mkdir -p $RESULTDIR/$OUTPUT_NAME
+mkdir -p $OUTPUT_DIR/$OUTPUT_NAME
 
-cp -r $FILTERED_DB $RESULTDIR/$OUTPUT_NAME/ || exit 4
+cp -r $FILTERED_DB $OUTPUT_DIR/$OUTPUT_NAME/ || exit 4
 
-echo "Filtrace chyb dokončena. Výsledky jsou v: $RESULTDIR/$OUTPUT_NAME"
+echo "Filtrace chyb dokončena. Výsledky jsou v: $OUTPUT_DIR/$OUTPUT_NAME"
