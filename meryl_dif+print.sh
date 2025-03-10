@@ -38,4 +38,4 @@ meryl print meryl_results/W_missing_in_assembly.meryl | awk '{sum += $2} END {pr
 mkdir -p $RESULTDIR
 cp -r meryl_results/* $RESULTDIR || export CLEAN_SCRATCH=false || exit 9
 
-echo "První část dokončena. Výsledky jsou v: $RESULTDIR" || exit 10
+echo "První část dokončena. Výsledky jsou v: $RESULTDIR"
