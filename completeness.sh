@@ -17,13 +17,13 @@ expected=$(cat expected_W_size_sum.txt)
 missing=$(cat W_missing_in_assembly_sum.txt)
 
 # Výpočet procenta kompletnosti chromozomu W
-completeness=$(awk -v missing="$missing" -v expected="$expected" 'BEGIN { printf "%.5f\n", (1 - (missing / expected)) * 100 }')
+completeness=$(awk -v missing="$missing" -v expected="$expected" 'BEGIN { printf "%.5f\n", (1 - (missing / expected)) * 100 }')  || exit 4
 echo "$completeness" > W_FINAL_completeness.txt
 
 echo "Procento kompletnosti chromozomu W:"
-cat W_FINAL_completeness.txt
+cat W_FINAL_completeness.txt  || exit 5
 
 mkdir -p $RESULTDIR
-cp W_FINAL_completeness.txt $RESULTDIR/ || export CLEAN_SCRATCH=false
+cp W_FINAL_completeness.txt $RESULTDIR/ || export CLEAN_SCRATCH=false  || exit 6
 
-echo "Výsledky kompletnosti chromozomu W jsou uloženy v: $RESULTDIR/W_FINAL_completeness.txt"
+echo "Výsledky kompletnosti chromozomu W jsou uloženy v: $RESULTDIR/W_FINAL_completeness.txt"  || exit 7
