@@ -24,4 +24,4 @@ samtools sort -o filtered.bam filtered.sam || exit 6
 samtools index filtered.bam || exit 7
 samtools view filtered.bam | awk '{print $3, $1}' | sort | uniq > scaffold_to_chr.tsv || exit 8
 
-cp -r $SCRATCHDIR/* $RESULTDIR || export CLEAN_SCRATCH=false || exit 9
+cp -r $SCRATCHDIR/* $RESULTDIR || export CLEAN_SCRATCH=false 
