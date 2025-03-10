@@ -1,0 +1,5 @@
+http://genomescope.org/?
+
+$ jellyfish count -C -m 21 -s 1000000000 -t 10 *.fastq -o reads.jf
+$ jellyfish histo -t 10 reads.jf > reads.histo
+
