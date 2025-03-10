@@ -17,7 +17,7 @@ export PATH=/storage/plzen1/home/jendrb00/meryl-1.4.1/bin:$PATH
 
 KMER_DB="ERR11867203.fastq.gz.meryl"
 FILTERED_DB="without_errors.meryl"
-CUTOFF=10  # Zmen (cut-off) 
+CUTOFF=10  #  (cut-off) z GenomeScope2.0
 
 meryl greater-than $CUTOFF $KMER_DB output $FILTERED_DB || exit 3
 
