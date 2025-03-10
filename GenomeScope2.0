@@ -3,3 +3,6 @@ http://genomescope.org/?
 $ jellyfish count -C -m 21 -s 1000000000 -t 10 *.fastq -o reads.jf
 $ jellyfish histo -t 10 reads.jf > reads.histo
 
+
+Best.k - The best k-mer size (best.k) was always selected based on the characteristics of the given genome.
+Read length - The average read length was calculated by dividing the total number of bases by the total number of reads, as provided in the SRA metadata.
