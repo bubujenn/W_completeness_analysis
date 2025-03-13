@@ -1,0 +1,231 @@
+>CBCPEF010000001.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_1, whole genome shotgun sequence
+>CBCPEF010000002.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_2, whole genome shotgun sequence
+>CBCPEF010000003.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_3, whole genome shotgun sequence
+>CBCPEF010000004.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_4, whole genome shotgun sequence
+>CBCPEF010000005.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_5, whole genome shotgun sequence
+>CBCPEF010000006.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_6, whole genome shotgun sequence
+>CBCPEF010000007.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_7, whole genome shotgun sequence
+>CBCPEF010000008.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_8, whole genome shotgun sequence
+>CBCPEF010000009.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_9, whole genome shotgun sequence
+>CBCPEF010000010.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_10, whole genome shotgun sequence
+>CBCPEF010000011.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_11, whole genome shotgun sequence
+>CBCPEF010000012.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_12, whole genome shotgun sequence
+>CBCPEF010000013.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_13, whole genome shotgun sequence
+>CBCPEF010000014.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_14, whole genome shotgun sequence
+>CBCPEF010000015.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_15, whole genome shotgun sequence
+>CBCPEF010000016.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_16, whole genome shotgun sequence
+>CBCPEF010000017.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_17, whole genome shotgun sequence
+>CBCPEF010000018.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_18, whole genome shotgun sequence
+>CBCPEF010000019.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_19, whole genome shotgun sequence
+>CBCPEF010000020.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_20, whole genome shotgun sequence
+>CBCPEF010000021.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_21, whole genome shotgun sequence
+>CBCPEF010000022.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_22, whole genome shotgun sequence
+>CBCPEF010000023.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_23, whole genome shotgun sequence
+>CBCPEF010000024.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_24, whole genome shotgun sequence
+>CBCPEF010000025.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_25, whole genome shotgun sequence
+>CBCPEF010000026.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_26, whole genome shotgun sequence
+>CBCPEF010000027.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_27, whole genome shotgun sequence
+>CBCPEF010000028.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_28, whole genome shotgun sequence
+>CBCPEF010000029.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_29, whole genome shotgun sequence
+>CBCPEF010000030.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_38, whole genome shotgun sequence
+>CBCPEF010000031.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_41, whole genome shotgun sequence
+>CBCPEF010000032.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_45, whole genome shotgun sequence
+>CBCPEF010000033.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_48, whole genome shotgun sequence
+>CBCPEF010000034.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_55, whole genome shotgun sequence
+>CBCPEF010000035.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_58, whole genome shotgun sequence
+>CBCPEF010000036.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_59, whole genome shotgun sequence
+>CBCPEF010000037.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_61, whole genome shotgun sequence
+>CBCPEF010000038.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_62, whole genome shotgun sequence
+>CBCPEF010000039.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_63, whole genome shotgun sequence
+>CBCPEF010000040.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_79, whole genome shotgun sequence
+>CBCPEF010000041.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_84, whole genome shotgun sequence
+>CBCPEF010000042.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_85, whole genome shotgun sequence
+>CBCPEF010000043.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_86, whole genome shotgun sequence
+>CBCPEF010000044.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_88, whole genome shotgun sequence
+>CBCPEF010000045.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_89, whole genome shotgun sequence
+>CBCPEF010000046.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_90, whole genome shotgun sequence
+>CBCPEF010000047.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_92, whole genome shotgun sequence
+>CBCPEF010000048.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_95, whole genome shotgun sequence
+>CBCPEF010000049.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_96, whole genome shotgun sequence
+>CBCPEF010000050.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_100, whole genome shotgun sequence
+>CBCPEF010000051.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_101, whole genome shotgun sequence
+>CBCPEF010000052.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_102, whole genome shotgun sequence
+>CBCPEF010000053.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_104, whole genome shotgun sequence
+>CBCPEF010000054.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_106, whole genome shotgun sequence
+>CBCPEF010000055.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_116, whole genome shotgun sequence
+>CBCPEF010000056.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_117, whole genome shotgun sequence
+>CBCPEF010000057.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_123, whole genome shotgun sequence
+>CBCPEF010000058.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_125, whole genome shotgun sequence
+>CBCPEF010000059.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_126, whole genome shotgun sequence
+>CBCPEF010000060.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_127, whole genome shotgun sequence
+>CBCPEF010000061.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_130, whole genome shotgun sequence
+>CBCPEF010000062.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_131, whole genome shotgun sequence
+>CBCPEF010000063.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_132, whole genome shotgun sequence
+>CBCPEF010000064.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_135, whole genome shotgun sequence
+>CBCPEF010000065.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_136, whole genome shotgun sequence
+>CBCPEF010000066.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_137, whole genome shotgun sequence
+>CBCPEF010000067.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_144, whole genome shotgun sequence
+>CBCPEF010000068.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_145, whole genome shotgun sequence
+>CBCPEF010000069.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_146, whole genome shotgun sequence
+>CBCPEF010000071.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_148, whole genome shotgun sequence
+>CBCPEF010000072.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_149, whole genome shotgun sequence
+>CBCPEF010000075.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_152, whole genome shotgun sequence
+>CBCPEF010000076.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_153, whole genome shotgun sequence
+>CBCPEF010000077.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_154, whole genome shotgun sequence
+>CBCPEF010000078.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_155, whole genome shotgun sequence
+>CBCPEF010000079.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_156, whole genome shotgun sequence
+>CBCPEF010000081.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_158, whole genome shotgun sequence
+>CBCPEF010000084.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_161, whole genome shotgun sequence
+>CBCPEF010000086.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_164, whole genome shotgun sequence
+>CBCPEF010000087.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_165, whole genome shotgun sequence
+>CBCPEF010000089.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_167, whole genome shotgun sequence
+>CBCPEF010000091.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_169, whole genome shotgun sequence
+>CBCPEF010000093.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_172, whole genome shotgun sequence
+>CBCPEF010000094.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_173, whole genome shotgun sequence
+>CBCPEF010000096.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_176, whole genome shotgun sequence
+>CBCPEF010000097.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_178, whole genome shotgun sequence
+>CBCPEF010000098.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_179, whole genome shotgun sequence
+>CBCPEF010000099.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_180, whole genome shotgun sequence
+>CBCPEF010000100.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_182, whole genome shotgun sequence
+>CBCPEF010000102.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_184, whole genome shotgun sequence
+>CBCPEF010000103.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_185, whole genome shotgun sequence
+>CBCPEF010000104.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_187, whole genome shotgun sequence
+>CBCPEF010000105.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_188, whole genome shotgun sequence
+>CBCPEF010000106.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_189, whole genome shotgun sequence
+>CBCPEF010000107.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_190, whole genome shotgun sequence
+>CBCPEF010000109.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_192, whole genome shotgun sequence
+>CBCPEF010000110.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_193, whole genome shotgun sequence
+>CBCPEF010000111.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_194, whole genome shotgun sequence
+>CBCPEF010000112.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_197, whole genome shotgun sequence
+>CBCPEF010000113.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_198, whole genome shotgun sequence
+>CBCPEF010000114.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_200, whole genome shotgun sequence
+>CBCPEF010000115.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_202, whole genome shotgun sequence
+>CBCPEF010000116.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_203, whole genome shotgun sequence
+>CBCPEF010000117.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_204, whole genome shotgun sequence
+>CBCPEF010000118.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_206, whole genome shotgun sequence
+>CBCPEF010000119.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_207, whole genome shotgun sequence
+>CBCPEF010000120.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_208, whole genome shotgun sequence
+>CBCPEF010000121.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_209, whole genome shotgun sequence
+>CBCPEF010000122.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_210, whole genome shotgun sequence
+>CBCPEF010000124.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_213, whole genome shotgun sequence
+>CBCPEF010000125.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_214, whole genome shotgun sequence
+>CBCPEF010000126.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_217, whole genome shotgun sequence
+>CBCPEF010000127.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_218, whole genome shotgun sequence
+>CBCPEF010000128.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_219, whole genome shotgun sequence
+>CBCPEF010000130.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_223, whole genome shotgun sequence
+>CBCPEF010000131.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_224, whole genome shotgun sequence
+>CBCPEF010000132.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_225, whole genome shotgun sequence
+>CBCPEF010000133.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_226, whole genome shotgun sequence
+>CBCPEF010000135.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_228, whole genome shotgun sequence
+>CBCPEF010000137.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_230, whole genome shotgun sequence
+>CBCPEF010000138.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_231, whole genome shotgun sequence
+>CBCPEF010000139.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_232, whole genome shotgun sequence
+>CBCPEF010000140.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_233, whole genome shotgun sequence
+>CBCPEF010000141.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_235, whole genome shotgun sequence
+>CBCPEF010000143.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_237, whole genome shotgun sequence
+>CBCPEF010000144.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_238, whole genome shotgun sequence
+>CBCPEF010000145.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_239, whole genome shotgun sequence
+>CBCPEF010000146.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_240, whole genome shotgun sequence
+>CBCPEF010000148.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_242, whole genome shotgun sequence
+>CBCPEF010000149.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_248, whole genome shotgun sequence
+>CBCPEF010000150.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_251, whole genome shotgun sequence
+>CBCPEF010000151.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_252, whole genome shotgun sequence
+>CBCPEF010000152.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_253, whole genome shotgun sequence
+>CBCPEF010000154.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_255, whole genome shotgun sequence
+>CBCPEF010000155.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_259, whole genome shotgun sequence
+>CBCPEF010000156.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_260, whole genome shotgun sequence
+>CBCPEF010000157.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_262, whole genome shotgun sequence
+>CBCPEF010000158.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_264, whole genome shotgun sequence
+>CBCPEF010000160.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_268, whole genome shotgun sequence
+>CBCPEF010000161.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_269, whole genome shotgun sequence
+>CBCPEF010000162.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_270, whole genome shotgun sequence
+>CBCPEF010000163.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_281, whole genome shotgun sequence
+>CBCPEF010000164.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_282, whole genome shotgun sequence
+>CBCPEF010000165.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_283, whole genome shotgun sequence
+>CBCPEF010000166.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_284, whole genome shotgun sequence
+>CBCPEF010000167.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_285, whole genome shotgun sequence
+>CBCPEF010000168.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_286, whole genome shotgun sequence
+>CBCPEF010000169.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_292, whole genome shotgun sequence
+>CBCPEF010000170.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_296, whole genome shotgun sequence
+>CBCPEF010000172.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_320, whole genome shotgun sequence
+>CBCPEF010000173.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_322, whole genome shotgun sequence
+>CBCPEF010000174.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_323, whole genome shotgun sequence
+>CBCPEF010000175.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_324, whole genome shotgun sequence
+>CBCPEF010000178.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_329, whole genome shotgun sequence
+>CBCPEF010000180.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_331, whole genome shotgun sequence
+>CBCPEF010000181.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_332, whole genome shotgun sequence
+>CBCPEF010000183.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_334, whole genome shotgun sequence
+>CBCPEF010000184.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_335, whole genome shotgun sequence
+>CBCPEF010000185.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_336, whole genome shotgun sequence
+>CBCPEF010000186.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_337, whole genome shotgun sequence
+>CBCPEF010000187.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_338, whole genome shotgun sequence
+>CBCPEF010000189.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_340, whole genome shotgun sequence
+>CBCPEF010000190.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_341, whole genome shotgun sequence
+>CBCPEF010000191.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_342, whole genome shotgun sequence
+>CBCPEF010000192.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_343, whole genome shotgun sequence
+>CBCPEF010000193.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_344, whole genome shotgun sequence
+>CBCPEF010000194.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_345, whole genome shotgun sequence
+>CBCPEF010000195.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_346, whole genome shotgun sequence
+>CBCPEF010000196.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_347, whole genome shotgun sequence
+>CBCPEF010000198.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_351, whole genome shotgun sequence
+>CBCPEF010000200.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_353, whole genome shotgun sequence
+>CBCPEF010000201.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_354, whole genome shotgun sequence
+>CBCPEF010000202.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_355, whole genome shotgun sequence
+>CBCPEF010000203.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_357, whole genome shotgun sequence
+>CBCPEF010000204.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_358, whole genome shotgun sequence
+>CBCPEF010000205.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_359, whole genome shotgun sequence
+>CBCPEF010000206.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_360, whole genome shotgun sequence
+>CBCPEF010000207.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_361, whole genome shotgun sequence
+>CBCPEF010000208.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_362, whole genome shotgun sequence
+>CBCPEF010000209.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_363, whole genome shotgun sequence
+>CBCPEF010000211.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_365, whole genome shotgun sequence
+>CBCPEF010000212.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_366, whole genome shotgun sequence
+>CBCPEF010000213.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_367, whole genome shotgun sequence
+>CBCPEF010000214.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_368, whole genome shotgun sequence
+>CBCPEF010000216.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_370, whole genome shotgun sequence
+>CBCPEF010000217.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_371, whole genome shotgun sequence
+>CBCPEF010000218.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_372, whole genome shotgun sequence
+>CBCPEF010000219.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_373, whole genome shotgun sequence
+>CBCPEF010000220.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_374, whole genome shotgun sequence
+>CBCPEF010000221.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_375, whole genome shotgun sequence
+>CBCPEF010000223.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_378, whole genome shotgun sequence
+>CBCPEF010000224.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_379, whole genome shotgun sequence
+>CBCPEF010000225.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_380, whole genome shotgun sequence
+>CBCPEF010000226.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_381, whole genome shotgun sequence
+>CBCPEF010000227.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_382, whole genome shotgun sequence
+>CBCPEF010000228.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_383, whole genome shotgun sequence
+>CBCPEF010000229.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_384, whole genome shotgun sequence
+>CBCPEF010000230.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_385, whole genome shotgun sequence
+>CBCPEF010000231.1 Orgyia recens genome assembly, contig: HAP2_SCAFFOLD_386, whole genome shotgun sequence
+>ENA|OZ220555|OZ220555.1 Orgyia recens genome assembly, chromosome: 1
+>ENA|OZ220556|OZ220556.1 Orgyia recens genome assembly, chromosome: 2
+>ENA|OZ220557|OZ220557.1 Orgyia recens genome assembly, chromosome: 3
+>ENA|OZ220559|OZ220559.1 Orgyia recens genome assembly, chromosome: 4
+>ENA|OZ220560|OZ220560.1 Orgyia recens genome assembly, chromosome: 5
+>ENA|OZ220561|OZ220561.1 Orgyia recens genome assembly, chromosome: 6
+>ENA|OZ220562|OZ220562.1 Orgyia recens genome assembly, chromosome: 7
+>ENA|OZ220563|OZ220563.1 Orgyia recens genome assembly, chromosome: 8
+>ENA|OZ220564|OZ220564.1 Orgyia recens genome assembly, chromosome: 9
+>ENA|OZ220565|OZ220565.1 Orgyia recens genome assembly, chromosome: 10
+>ENA|OZ220566|OZ220566.1 Orgyia recens genome assembly, chromosome: 11
+>ENA|OZ220567|OZ220567.1 Orgyia recens genome assembly, chromosome: 12
+>ENA|OZ220568|OZ220568.1 Orgyia recens genome assembly, chromosome: 13
+>ENA|OZ220569|OZ220569.1 Orgyia recens genome assembly, chromosome: 14
+>ENA|OZ220570|OZ220570.1 Orgyia recens genome assembly, chromosome: 15
+>ENA|OZ220571|OZ220571.1 Orgyia recens genome assembly, chromosome: 16
+>ENA|OZ220572|OZ220572.1 Orgyia recens genome assembly, chromosome: 17
+>ENA|OZ220573|OZ220573.1 Orgyia recens genome assembly, chromosome: 18
+>ENA|OZ220574|OZ220574.1 Orgyia recens genome assembly, chromosome: 19
+>ENA|OZ220575|OZ220575.1 Orgyia recens genome assembly, chromosome: 20
+>ENA|OZ220576|OZ220576.1 Orgyia recens genome assembly, chromosome: 21
+>ENA|OZ220577|OZ220577.1 Orgyia recens genome assembly, chromosome: 22
+>ENA|OZ220578|OZ220578.1 Orgyia recens genome assembly, chromosome: 23
+>ENA|OZ220579|OZ220579.1 Orgyia recens genome assembly, chromosome: 24
+>ENA|OZ220580|OZ220580.1 Orgyia recens genome assembly, chromosome: 25
+>ENA|OZ220581|OZ220581.1 Orgyia recens genome assembly, chromosome: 26
+>ENA|OZ220582|OZ220582.1 Orgyia recens genome assembly, chromosome: 27
+>ENA|OZ220583|OZ220583.1 Orgyia recens genome assembly, chromosome: 28
+>ENA|OZ220584|OZ220584.1 Orgyia recens genome assembly, chromosome: 29
+>ENA|OZ220585|OZ220585.1 Orgyia recens genome assembly, organelle: mitochondrion
+>ENA|OZ220554|OZ220554.1 Orgyia recens genome assembly, chromosome: W
+>ENA|OZ220558|OZ220558.1 Orgyia recens genome assembly, chromosome: Z
