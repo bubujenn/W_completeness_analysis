@@ -23,16 +23,15 @@ export PATH=/storage/plzen1/home/jendrb00/meryl-1.4.1/bin:$PATH
 
 mkdir -p meryl_results
 
-echo "Porovnání PacBio dat s AA_Zchr..."
+
 meryl difference $PACBIO_MERYL $AA_Z_MERYL output meryl_results/expected_W_size.meryl || exit 5
 
-echo "Porovnání PacBio dat s AA_Z_W..."
+
 meryl difference $PACBIO_MERYL $AA_Z_W_MERYL output meryl_results/W_missing_in_assembly.meryl || exit 6
 
-echo "Počítám sumy unikátních k-merů pro očekávanou velikost W chromozomu..."
+
 meryl print meryl_results/expected_W_size.meryl | awk '{sum += $2} END {print sum}' > meryl_results/expected_W_size_sum.txt || exit 7
 
-echo "Počítám sumy chybějících unikátních k-merů W v sestaveném genomu..."
 meryl print meryl_results/W_missing_in_assembly.meryl | awk '{sum += $2} END {print sum}' > meryl_results/W_missing_in_assembly_sum.txt || exit 8
 
 mkdir -p $OUTPUT_DIR
