@@ -1,0 +1,81 @@
+ENA|OZ076591|OZ076591.1 Abraxas sylvata genome assembly, chromosome: 1
+ENA|OZ076593|OZ076593.1 Abraxas sylvata genome assembly, chromosome: 2
+ENA|OZ076595|OZ076595.1 Abraxas sylvata genome assembly, chromosome: 3
+ENA|OZ076596|OZ076596.1 Abraxas sylvata genome assembly, chromosome: 4
+ENA|OZ076597|OZ076597.1 Abraxas sylvata genome assembly, chromosome: 5
+ENA|OZ076598|OZ076598.1 Abraxas sylvata genome assembly, chromosome: 6
+ENA|OZ076599|OZ076599.1 Abraxas sylvata genome assembly, chromosome: 7
+ENA|OZ076600|OZ076600.1 Abraxas sylvata genome assembly, chromosome: 8
+ENA|OZ076601|OZ076601.1 Abraxas sylvata genome assembly, chromosome: 9
+ENA|OZ076602|OZ076602.1 Abraxas sylvata genome assembly, chromosome: 10
+ENA|OZ076603|OZ076603.1 Abraxas sylvata genome assembly, chromosome: 11
+ENA|OZ076604|OZ076604.1 Abraxas sylvata genome assembly, chromosome: 12
+ENA|OZ076605|OZ076605.1 Abraxas sylvata genome assembly, chromosome: 13
+ENA|OZ076606|OZ076606.1 Abraxas sylvata genome assembly, chromosome: 14
+ENA|OZ076607|OZ076607.1 Abraxas sylvata genome assembly, chromosome: 15
+ENA|OZ076608|OZ076608.1 Abraxas sylvata genome assembly, chromosome: 16
+ENA|OZ076609|OZ076609.1 Abraxas sylvata genome assembly, chromosome: 17
+ENA|OZ076610|OZ076610.1 Abraxas sylvata genome assembly, chromosome: 18
+ENA|OZ076611|OZ076611.1 Abraxas sylvata genome assembly, chromosome: 19
+ENA|OZ076612|OZ076612.1 Abraxas sylvata genome assembly, chromosome: 20
+ENA|OZ076613|OZ076613.1 Abraxas sylvata genome assembly, chromosome: 21
+ENA|OZ076614|OZ076614.1 Abraxas sylvata genome assembly, chromosome: 22
+ENA|OZ076615|OZ076615.1 Abraxas sylvata genome assembly, chromosome: 23
+ENA|OZ076616|OZ076616.1 Abraxas sylvata genome assembly, chromosome: 24
+ENA|OZ076617|OZ076617.1 Abraxas sylvata genome assembly, chromosome: 25
+ENA|OZ076618|OZ076618.1 Abraxas sylvata genome assembly, chromosome: 26
+ENA|OZ076619|OZ076619.1 Abraxas sylvata genome assembly, chromosome: 27
+ENA|OZ076620|OZ076620.1 Abraxas sylvata genome assembly, chromosome: 28
+ENA|OZ076621|OZ076621.1 Abraxas sylvata genome assembly, organelle: mitochondrion
+ENA|OZ076592|OZ076592.1 Abraxas sylvata genome assembly, chromosome: Z
+CAXLOJ010000001.1 Abraxas sylvata genome assembly, contig: RL_2, whole genome shotgun sequence
+CAXLOJ010000002.1 Abraxas sylvata genome assembly, contig: RL_4, whole genome shotgun sequence
+CAXLOJ010000003.1 Abraxas sylvata genome assembly, contig: RL_7, whole genome shotgun sequence
+CAXLOJ010000004.1 Abraxas sylvata genome assembly, contig: RL_9, whole genome shotgun sequence
+CAXLOJ010000005.1 Abraxas sylvata genome assembly, contig: RL_11, whole genome shotgun sequence
+CAXLOJ010000006.1 Abraxas sylvata genome assembly, contig: RL_13, whole genome shotgun sequence
+CAXLOJ010000007.1 Abraxas sylvata genome assembly, contig: RL_15, whole genome shotgun sequence
+CAXLOJ010000008.1 Abraxas sylvata genome assembly, contig: RL_17, whole genome shotgun sequence
+CAXLOJ010000009.1 Abraxas sylvata genome assembly, contig: RL_19, whole genome shotgun sequence
+CAXLOJ010000010.1 Abraxas sylvata genome assembly, contig: RL_21, whole genome shotgun sequence
+CAXLOJ010000011.1 Abraxas sylvata genome assembly, contig: RL_29, whole genome shotgun sequence
+CAXLOJ010000012.1 Abraxas sylvata genome assembly, contig: RL_23, whole genome shotgun sequence
+CAXLOJ010000013.1 Abraxas sylvata genome assembly, contig: RL_25, whole genome shotgun sequence
+CAXLOJ010000014.1 Abraxas sylvata genome assembly, contig: RL_27, whole genome shotgun sequence
+CAXLOJ010000015.1 Abraxas sylvata genome assembly, contig: RL_31, whole genome shotgun sequence
+CAXLOJ010000016.1 Abraxas sylvata genome assembly, contig: RL_33, whole genome shotgun sequence
+CAXLOJ010000017.1 Abraxas sylvata genome assembly, contig: RL_35, whole genome shotgun sequence
+CAXLOJ010000018.1 Abraxas sylvata genome assembly, contig: RL_37, whole genome shotgun sequence
+CAXLOJ010000019.1 Abraxas sylvata genome assembly, contig: RL_39, whole genome shotgun sequence
+CAXLOJ010000020.1 Abraxas sylvata genome assembly, contig: RL_41, whole genome shotgun sequence
+CAXLOJ010000021.1 Abraxas sylvata genome assembly, contig: RL_43, whole genome shotgun sequence
+CAXLOJ010000022.1 Abraxas sylvata genome assembly, contig: RL_45, whole genome shotgun sequence
+CAXLOJ010000023.1 Abraxas sylvata genome assembly, contig: RL_47, whole genome shotgun sequence
+CAXLOJ010000024.1 Abraxas sylvata genome assembly, contig: RL_49, whole genome shotgun sequence
+CAXLOJ010000025.1 Abraxas sylvata genome assembly, contig: RL_51, whole genome shotgun sequence
+CAXLOJ010000026.1 Abraxas sylvata genome assembly, contig: RL_53, whole genome shotgun sequence
+CAXLOJ010000027.1 Abraxas sylvata genome assembly, contig: RL_55, whole genome shotgun sequence
+CAXLOJ010000028.1 Abraxas sylvata genome assembly, contig: RL_57, whole genome shotgun sequence
+CAXLOJ010000030.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_77, whole genome shotgun sequence
+CAXLOJ010000031.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_81, whole genome shotgun sequence
+CAXLOJ010000033.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_84, whole genome shotgun sequence
+CAXLOJ010000036.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_89, whole genome shotgun sequence
+CAXLOJ010000039.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_92, whole genome shotgun sequence
+CAXLOJ010000040.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_93, whole genome shotgun sequence
+CAXLOJ010000043.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_97, whole genome shotgun sequence
+CAXLOJ010000045.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_99, whole genome shotgun sequence
+CAXLOJ010000049.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_104, whole genome shotgun sequence
+CAXLOJ010000050.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_106, whole genome shotgun sequence
+CAXLOJ010000051.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_112, whole genome shotgun sequence
+CAXLOJ010000053.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_114, whole genome shotgun sequence
+CAXLOJ010000054.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_117, whole genome shotgun sequence
+CAXLOJ010000056.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_119, whole genome shotgun sequence
+CAXLOJ010000058.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_121, whole genome shotgun sequence
+CAXLOJ010000062.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_126, whole genome shotgun sequence
+CAXLOJ010000063.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_127, whole genome shotgun sequence
+CAXLOJ010000064.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_128, whole genome shotgun sequence
+CAXLOJ010000065.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_129, whole genome shotgun sequence
+CAXLOJ010000070.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_135, whole genome shotgun sequence
+CAXLOJ010000071.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_136, whole genome shotgun sequence
+CAXLOJ010000074.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_142, whole genome shotgun sequence
+CAXLOJ010000075.1 Abraxas sylvata genome assembly, contig: HAP2_SCAFFOLD_145, whole genome shotgun sequence
