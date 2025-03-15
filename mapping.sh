@@ -27,8 +27,8 @@ cp "$Path/$REFERENCE" "$SCRATCHDIR/" || exit 1
 cp "$Path/$QUERY" "$SCRATCHDIR/" || exit 2
 cd "$SCRATCHDIR" || exit 3
 
-# Load required tools
-module purge (just in case)
+# Load required tools + module purge (just in case)
+module purge 
 module load minimap2
 module load samtools
 
