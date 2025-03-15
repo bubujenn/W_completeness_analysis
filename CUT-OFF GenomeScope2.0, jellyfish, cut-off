@@ -13,27 +13,27 @@ Read length - The average read length was calculated by dividing the total numbe
 #PBS -l walltime=12:00:00
 #PBS -j oe
 
-# clean scratch space on exit
+# Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
 
-# set paths and variables
+# Set paths and variables
 Path=${PWD}  
 Base="jellyfish_cutoff"  
 TimeStamp=$(date +"%Y%m%d.%H%M")  
 Outdir="${Path}/${Base}_${TimeStamp}"  
 SCRATCHDIR=${SCRATCHDIR:-"/scratch"}  
 
-# create output directory
+# Create output directory
 mkdir -p "$Outdir"
 
-# input histogram file (always reads.histo)
+# Input 
 HISTO_FILE="${1:-reads.histo}"
 
-# copy input file to scratch
+# Copy input file to scratch
 cp "$Path/$HISTO_FILE" "$SCRATCHDIR/" || exit 1
 cd "$SCRATCHDIR" || exit 2
 
-# identify cutoff value 
+# Identify cutoff value 
 CUTOFF=$(awk '
 NR == 1 {prev_count = $2; prev_freq = $1; next}
 {
@@ -45,20 +45,20 @@ NR == 1 {prev_count = $2; prev_freq = $1; next}
     prev_freq = $1;
 }' "$HISTO_FILE")
 
-# output the determined cutoff value
+# Output the determined cutoff value
 echo "Determined cutoff value: $CUTOFF"
 
-# check if the cutoff value was found
+# Check if the cutoff value was found
 if [[ -z "$CUTOFF" ]]; then
     echo "Error: No cutoff value found!"
     exit 3
 fi
 
-# save the cutoff value to a text file
+# Save the cutoff value to a text file
 echo "$CUTOFF" > "cutoff_value.txt"
 
-# move results back to output directory
+# Move results back to output directory
 cp "cutoff_value.txt" "$Outdir/" || exit 4
 
-# final message
+# Final message
 echo "Done! The determined cutoff value has been saved in: $Outdir/cutoff_value.txt"
