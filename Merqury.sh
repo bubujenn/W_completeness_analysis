@@ -40,5 +40,5 @@ merqury.sh "$MERYL_FILE" "$ASSEMBLY_FILE" merqury_output || exit 7
 mkdir -p "$Outdir/merqury_output"
 cp -r merqury_output/* "$Outdir/merqury_output/" || exit 8
 
-# Final message with result path
+# Final message
 echo "Analysis completed. Results are saved in: $Outdir/merqury_output"
