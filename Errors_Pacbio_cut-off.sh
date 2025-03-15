@@ -35,5 +35,5 @@ meryl greater-than $CUTOFF "$KMER_DB" output "$FILTERED_DB" || exit 3
 # Move results back to output folder
 cp -r "$FILTERED_DB" "$Outdir/" || exit 4
 
-# Final message with result path
+# Final message 
 echo "Done! Filtered Meryl database saved in: $Outdir"
