@@ -25,7 +25,7 @@ KMER_SIZE="${4:-19}"  # (Default k-mer size is 19 unless specified)
 
 # Copy input data to scratch
 mkdir -p "$SCRATCHDIR/meryls"
-cp "$Path/$CHR_FASTA" "$Path/$W_FASTA" "$Path/$FASTQ" "$SCRATCHDIR/meryls/" || exit 1
+cp -r "$Path/$CHR_FASTA" "$Path/$W_FASTA" "$Path/$FASTQ" "$SCRATCHDIR/meryls/" || exit 1
 cd "$SCRATCHDIR/meryls" || exit 2
 
 # Load Meryl
