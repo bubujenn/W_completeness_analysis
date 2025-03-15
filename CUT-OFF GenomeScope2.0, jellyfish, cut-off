@@ -4,10 +4,6 @@ $ jellyfish histo -t 10 reads.jf > reads.histo
 Best.k - The best k-mer size (best.k) was always selected based on the characteristics of the given genome.
 Read length - The average read length was calculated by dividing the total number of bases by the total number of reads, as provided in the SRA metadata.
 
-
-
-
-
 #!/bin/bash
 #PBS -N jellyfish_cutoff
 #PBS -l select=1:ncpus=8:mem=64gb:scratch_local=300gb
