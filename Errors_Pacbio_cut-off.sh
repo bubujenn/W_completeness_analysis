@@ -18,7 +18,7 @@ SCRATCHDIR=${SCRATCHDIR:-"/scratch"}
 mkdir -p "$Outdir"
 
 # Input file 
-KMER_DB="${1:-ERR11867203.fastq.gz.meryl}"
+KMER_DB="${1:-fastq.gz.meryl}"
 FILTERED_DB="without_errors.meryl"
 CUTOFF=10  # Cut-off value from GenomeScope2.0
 
