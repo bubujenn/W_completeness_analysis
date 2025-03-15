@@ -38,5 +38,5 @@ merqury.sh "$MERYL_FILE" "$MERYL_FILE" "$OUTPUT_NAME" || exit 6
 # Move results back to output folder
 cp -r "$SCRATCHDIR"/* "$Outdir" || { export CLEAN_SCRATCH=false; exit 7; }
 
-# Final message with result path
+# Final message
 echo "Analysis completed. Results are saved in: $Outdir"
