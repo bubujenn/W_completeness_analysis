@@ -4,25 +4,39 @@
 #PBS -l walltime=24:00:00
 #PBS -j oe
 
+# Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
 
-DATADIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets/ERR11867203.fastq.gz.meryl"
-OUTPUT_DIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets/merqury_errors_look"
-SCRATCHDIR=${SCRATCHDIR:-"/scratch"}
+# Set paths and variables
+Path=${PWD}  
+Base="merqury_errors_check" 
+TimeStamp=$(date +"%Y%m%d.%H%M") 
+Outdir=${Path}/${Base}_${TimeStamp}  
+SCRATCHDIR=${SCRATCHDIR:-"/scratch"}  
 
-cp -r "$DATADIR" "$SCRATCHDIR" || exit 1
-cd "$SCRATCHDIR" || exit 2
+# Input file
+MERYL_FILE="${1:-ERR11867203.fastq.gz.meryl}"
 
-module add mambaforge
-mamba activate /storage/plzen1/home/jendrb00/merqury-1.3/env_merqury
+# Create output directory
+mkdir -p "$Outdir"
+cd "$SCRATCHDIR" || exit 1
 
-module add r
+# Copy input data to scratch
+cp -r "$Path/$MERYL_FILE" "$SCRATCHDIR/" || exit 2
+
+# Load required tools
+module add mambaforge || exit 3
+mamba activate /storage/plzen1/home/jendrb00/merqury-1.3/env_merqury || exit 4
+module add r || exit 5
 export R_LIBS_USER="/storage/brno2/home/jendrb00/Rpackages"
-
 export PATH=/storage/plzen1/home/jendrb00/meryl-1.4.1/bin:$PATH
 
-OUTPUT_NAME="merqury_ERRORS_PacBio_$(date +"%Y%m%d")"
+# Run Merqury error check
+OUTPUT_NAME="merqury_ERRORS_PacBio_${TimeStamp}"
+merqury.sh "$MERYL_FILE" "$MERYL_FILE" "$OUTPUT_NAME" || exit 6
 
-merqury.sh "$(basename "$DATADIR")" "$(basename "$DATADIR")" "$OUTPUT_NAME" || exit 3
+# Move results back to output folder
+cp -r "$SCRATCHDIR"/* "$Outdir" || { export CLEAN_SCRATCH=false; exit 7; }
 
-cp -r "$SCRATCHDIR"/* "$OUTPUT_DIR" || { export CLEAN_SCRATCH=false; exit 4; }
+# Final message with result path
+echo "Analysis completed. Results are saved in: $Outdir"
