@@ -4,24 +4,48 @@
 #PBS -N Minimap2_Samtools
 #PBS -j oe
 
+# Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
 
-DATADIR="/storage/plzen1/home/jendrb00/data"
-OUTPUT_DIR="/storage/plzen1/home/jendrb00/results"
-SCRATCHDIR=${SCRATCHDIR:-"/scratch"}
+# Set base path and output structure
+Path=${PWD} 
+Base="Minimap2_Samtools"  
+TimeStamp=$(date +"%Y%m%d.%H%M")  
+Outdir=${Path}/${Base}_${TimeStamp}  
+Outfile=${Outdir}/${Base}_job.pbs  
+SCRATCHDIR=${SCRATCHDIR:-"/scratch"} 
 
-cp $DATADIR/reference.fasta $SCRATCHDIR || exit 1
-cp $DATADIR/query.fasta $SCRATCHDIR || exit 2
-cd $SCRATCHDIR || exit 3
+# Create output directory
+mkdir -p "$Outdir"
 
+# Input files 
+REFERENCE="${1:-reference.fasta}"
+QUERY="${2:-query.fasta}"
+
+# Copy input data to scratch
+cp "$Path/$REFERENCE" "$SCRATCHDIR/" || exit 1
+cp "$Path/$QUERY" "$SCRATCHDIR/" || exit 2
+cd "$SCRATCHDIR" || exit 3
+
+# Load required tools
 module load minimap2
 module load samtools
 
-minimap2 -ax asm5 --secondary=no reference.fasta query.fasta > alignment.sam || exit 4
+# Run Minimap2 alignment
+minimap2 -ax asm5 --secondary=no "$REFERENCE" "$QUERY" > alignment.sam || exit 4
 
+# Process alignment file
 samtools view -F 2048 -h alignment.sam > filtered.sam || exit 5
 samtools sort -o filtered.bam filtered.sam || exit 6
 samtools index filtered.bam || exit 7
+
+# Extract scaffold-to-chromosome mapping
 samtools view filtered.bam | awk '{print $3, $1}' | sort | uniq > scaffold_to_chr.tsv || exit 8
 
-cp -r $SCRATCHDIR/* $OUTPUT_DIR || export CLEAN_SCRATCH=false 
+# Move results back to output folder
+cp -r "$SCRATCHDIR"/* "$Outdir/" || { export CLEAN_SCRATCH=false; exit 9; }
+
+# Final message with result path
+echo "Done! Results saved in: $Outdir"
+
+
