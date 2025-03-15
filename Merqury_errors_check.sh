@@ -15,7 +15,7 @@ Outdir=${Path}/${Base}_${TimeStamp}
 SCRATCHDIR=${SCRATCHDIR:-"/scratch"}  
 
 # Input file
-MERYL_FILE="${1:-ERR11867203.fastq.gz.meryl}"
+MERYL_FILE="${1:-fastq.gz.meryl}"
 
 # Create output directory
 mkdir -p "$Outdir"
