@@ -1,4 +1,3 @@
-ENA|OX371268|OX371268.1 Yponomeuta cagnagella genome assembly, chromosome: Z
 ENA|OX371267|OX371267.1 Yponomeuta cagnagella genome assembly, chromosome: 1
 ENA|OX371269|OX371269.1 Yponomeuta cagnagella genome assembly, chromosome: 2
 ENA|OX371270|OX371270.1 Yponomeuta cagnagella genome assembly, chromosome: 3
@@ -25,399 +24,400 @@ ENA|OX371290|OX371290.1 Yponomeuta cagnagella genome assembly, chromosome: 23
 ENA|OX371291|OX371291.1 Yponomeuta cagnagella genome assembly, chromosome: 24
 ENA|OX371292|OX371292.1 Yponomeuta cagnagella genome assembly, chromosome: 25
 ENA|OX371293|OX371293.1 Yponomeuta cagnagella genome assembly, chromosome: 26
-ENA|OX371294|OX371294.1 Yponomeuta cagnagella genome assembly, chromosome: 27
+ENA|OX371294|OX371294.1 Yponomeuta cagnagella genome assembly, chromosome: 27Z
 ENA|OX371295|OX371295.1 Yponomeuta cagnagella genome assembly, chromosome: 28
 ENA|OX371296|OX371296.1 Yponomeuta cagnagella genome assembly, chromosome: 29
 ENA|OX371297|OX371297.1 Yponomeuta cagnagella genome assembly, chromosome: 30
 ENA|OX371299|OX371299.1 Yponomeuta cagnagella genome assembly, organelle: mitochondrion
-CAMZJL010000001.1 Yponomeuta cagnagella genome assembly, contig: atg000001l_1, whole genome shotgun sequence
-CAMZJL010000002.1 Yponomeuta cagnagella genome assembly, contig: atg000002l_1, whole genome shotgun sequence
-CAMZJL010000003.1 Yponomeuta cagnagella genome assembly, contig: atg000003l_1, whole genome shotgun sequence
-CAMZJL010000004.1 Yponomeuta cagnagella genome assembly, contig: atg000004l_1, whole genome shotgun sequence
-CAMZJL010000005.1 Yponomeuta cagnagella genome assembly, contig: atg000005l_1, whole genome shotgun sequence
-CAMZJL010000006.1 Yponomeuta cagnagella genome assembly, contig: atg000006l_1, whole genome shotgun sequence
-CAMZJL010000007.1 Yponomeuta cagnagella genome assembly, contig: atg000007l_1, whole genome shotgun sequence
-CAMZJL010000008.1 Yponomeuta cagnagella genome assembly, contig: atg000008l_1, whole genome shotgun sequence
-CAMZJL010000009.1 Yponomeuta cagnagella genome assembly, contig: atg000009l_1, whole genome shotgun sequence
-CAMZJL010000010.1 Yponomeuta cagnagella genome assembly, contig: atg000010l_1, whole genome shotgun sequence
-CAMZJL010000011.1 Yponomeuta cagnagella genome assembly, contig: atg000011l_1, whole genome shotgun sequence
-CAMZJL010000012.1 Yponomeuta cagnagella genome assembly, contig: atg000012l_1, whole genome shotgun sequence
-CAMZJL010000013.1 Yponomeuta cagnagella genome assembly, contig: atg000013l_1, whole genome shotgun sequence
-CAMZJL010000014.1 Yponomeuta cagnagella genome assembly, contig: atg000014l_1, whole genome shotgun sequence
-CAMZJL010000015.1 Yponomeuta cagnagella genome assembly, contig: atg000015l_1, whole genome shotgun sequence
-CAMZJL010000016.1 Yponomeuta cagnagella genome assembly, contig: atg000016l_1, whole genome shotgun sequence
-CAMZJL010000017.1 Yponomeuta cagnagella genome assembly, contig: atg000017l_1, whole genome shotgun sequence
-CAMZJL010000018.1 Yponomeuta cagnagella genome assembly, contig: atg000018l_1, whole genome shotgun sequence
-CAMZJL010000019.1 Yponomeuta cagnagella genome assembly, contig: atg000019l_1, whole genome shotgun sequence
-CAMZJL010000020.1 Yponomeuta cagnagella genome assembly, contig: atg000020l_1, whole genome shotgun sequence
-CAMZJL010000021.1 Yponomeuta cagnagella genome assembly, contig: atg000021l_1, whole genome shotgun sequence
-CAMZJL010000022.1 Yponomeuta cagnagella genome assembly, contig: atg000022l_1, whole genome shotgun sequence
-CAMZJL010000023.1 Yponomeuta cagnagella genome assembly, contig: atg000023l_1, whole genome shotgun sequence
-CAMZJL010000024.1 Yponomeuta cagnagella genome assembly, contig: atg000024l_1, whole genome shotgun sequence
-CAMZJL010000025.1 Yponomeuta cagnagella genome assembly, contig: atg000025l_1, whole genome shotgun sequence
-CAMZJL010000026.1 Yponomeuta cagnagella genome assembly, contig: atg000026l_1, whole genome shotgun sequence
-CAMZJL010000027.1 Yponomeuta cagnagella genome assembly, contig: atg000027l_1, whole genome shotgun sequence
-CAMZJL010000028.1 Yponomeuta cagnagella genome assembly, contig: atg000028l_1, whole genome shotgun sequence
-CAMZJL010000029.1 Yponomeuta cagnagella genome assembly, contig: atg000029l_1, whole genome shotgun sequence
-CAMZJL010000030.1 Yponomeuta cagnagella genome assembly, contig: atg000030l_1, whole genome shotgun sequence
-CAMZJL010000031.1 Yponomeuta cagnagella genome assembly, contig: atg000031l_1, whole genome shotgun sequence
-CAMZJL010000032.1 Yponomeuta cagnagella genome assembly, contig: atg000032l_1, whole genome shotgun sequence
-CAMZJL010000033.1 Yponomeuta cagnagella genome assembly, contig: atg000033l_1, whole genome shotgun sequence
-CAMZJL010000034.1 Yponomeuta cagnagella genome assembly, contig: atg000034l_1, whole genome shotgun sequence
-CAMZJL010000035.1 Yponomeuta cagnagella genome assembly, contig: atg000035l_1, whole genome shotgun sequence
-CAMZJL010000036.1 Yponomeuta cagnagella genome assembly, contig: atg000036l_1, whole genome shotgun sequence
-CAMZJL010000037.1 Yponomeuta cagnagella genome assembly, contig: atg000037l_1, whole genome shotgun sequence
-CAMZJL010000038.1 Yponomeuta cagnagella genome assembly, contig: atg000038l_1, whole genome shotgun sequence
-CAMZJL010000039.1 Yponomeuta cagnagella genome assembly, contig: atg000039l_1, whole genome shotgun sequence
-CAMZJL010000040.1 Yponomeuta cagnagella genome assembly, contig: atg000040l_1, whole genome shotgun sequence
-CAMZJL010000041.1 Yponomeuta cagnagella genome assembly, contig: atg000041l_1, whole genome shotgun sequence
-CAMZJL010000042.1 Yponomeuta cagnagella genome assembly, contig: atg000042l_1, whole genome shotgun sequence
-CAMZJL010000043.1 Yponomeuta cagnagella genome assembly, contig: atg000043l_1, whole genome shotgun sequence
-CAMZJL010000044.1 Yponomeuta cagnagella genome assembly, contig: atg000044l_1, whole genome shotgun sequence
-CAMZJL010000045.1 Yponomeuta cagnagella genome assembly, contig: atg000045l_1, whole genome shotgun sequence
-CAMZJL010000046.1 Yponomeuta cagnagella genome assembly, contig: atg000046l_1, whole genome shotgun sequence
-CAMZJL010000047.1 Yponomeuta cagnagella genome assembly, contig: atg000047l_1, whole genome shotgun sequence
-CAMZJL010000048.1 Yponomeuta cagnagella genome assembly, contig: atg000048l_1, whole genome shotgun sequence
-CAMZJL010000049.1 Yponomeuta cagnagella genome assembly, contig: atg000049l_1, whole genome shotgun sequence
-CAMZJL010000050.1 Yponomeuta cagnagella genome assembly, contig: atg000050l_1, whole genome shotgun sequence
-CAMZJL010000051.1 Yponomeuta cagnagella genome assembly, contig: atg000051l_1, whole genome shotgun sequence
-CAMZJL010000052.1 Yponomeuta cagnagella genome assembly, contig: atg000052l_1, whole genome shotgun sequence
-CAMZJL010000053.1 Yponomeuta cagnagella genome assembly, contig: atg000053l_1, whole genome shotgun sequence
-CAMZJL010000054.1 Yponomeuta cagnagella genome assembly, contig: atg000054l_1, whole genome shotgun sequence
-CAMZJL010000055.1 Yponomeuta cagnagella genome assembly, contig: atg000055l_1, whole genome shotgun sequence
-CAMZJL010000056.1 Yponomeuta cagnagella genome assembly, contig: atg000056l_1, whole genome shotgun sequence
-CAMZJL010000057.1 Yponomeuta cagnagella genome assembly, contig: atg000057l_1, whole genome shotgun sequence
-CAMZJL010000058.1 Yponomeuta cagnagella genome assembly, contig: atg000058l_1, whole genome shotgun sequence
-CAMZJL010000059.1 Yponomeuta cagnagella genome assembly, contig: atg000059l_1, whole genome shotgun sequence
-CAMZJL010000060.1 Yponomeuta cagnagella genome assembly, contig: atg000060l_1, whole genome shotgun sequence
-CAMZJL010000061.1 Yponomeuta cagnagella genome assembly, contig: atg000061l_1, whole genome shotgun sequence
-CAMZJL010000062.1 Yponomeuta cagnagella genome assembly, contig: atg000062l_1, whole genome shotgun sequence
-CAMZJL010000063.1 Yponomeuta cagnagella genome assembly, contig: atg000063l_1, whole genome shotgun sequence
-CAMZJL010000064.1 Yponomeuta cagnagella genome assembly, contig: atg000064l_1, whole genome shotgun sequence
-CAMZJL010000065.1 Yponomeuta cagnagella genome assembly, contig: atg000065l_1, whole genome shotgun sequence
-CAMZJL010000066.1 Yponomeuta cagnagella genome assembly, contig: atg000066l_1, whole genome shotgun sequence
-CAMZJL010000067.1 Yponomeuta cagnagella genome assembly, contig: atg000067l_1, whole genome shotgun sequence
-CAMZJL010000068.1 Yponomeuta cagnagella genome assembly, contig: atg000068l_1, whole genome shotgun sequence
-CAMZJL010000069.1 Yponomeuta cagnagella genome assembly, contig: atg000069l_1, whole genome shotgun sequence
-CAMZJL010000070.1 Yponomeuta cagnagella genome assembly, contig: atg000070l_1, whole genome shotgun sequence
-CAMZJL010000071.1 Yponomeuta cagnagella genome assembly, contig: atg000071l_1, whole genome shotgun sequence
-CAMZJL010000072.1 Yponomeuta cagnagella genome assembly, contig: atg000072l_1, whole genome shotgun sequence
-CAMZJL010000073.1 Yponomeuta cagnagella genome assembly, contig: atg000073l_1, whole genome shotgun sequence
-CAMZJL010000074.1 Yponomeuta cagnagella genome assembly, contig: atg000074l_1, whole genome shotgun sequence
-CAMZJL010000075.1 Yponomeuta cagnagella genome assembly, contig: atg000075l_1, whole genome shotgun sequence
-CAMZJL010000076.1 Yponomeuta cagnagella genome assembly, contig: atg000076l_1, whole genome shotgun sequence
-CAMZJL010000077.1 Yponomeuta cagnagella genome assembly, contig: atg000077l_1, whole genome shotgun sequence
-CAMZJL010000078.1 Yponomeuta cagnagella genome assembly, contig: atg000078l_1, whole genome shotgun sequence
-CAMZJL010000079.1 Yponomeuta cagnagella genome assembly, contig: atg000079l_1, whole genome shotgun sequence
-CAMZJL010000080.1 Yponomeuta cagnagella genome assembly, contig: atg000080l_1, whole genome shotgun sequence
-CAMZJL010000081.1 Yponomeuta cagnagella genome assembly, contig: atg000081l_1, whole genome shotgun sequence
-CAMZJL010000082.1 Yponomeuta cagnagella genome assembly, contig: atg000082l_1, whole genome shotgun sequence
-CAMZJL010000083.1 Yponomeuta cagnagella genome assembly, contig: atg000083l_1, whole genome shotgun sequence
-CAMZJL010000084.1 Yponomeuta cagnagella genome assembly, contig: atg000084l_1, whole genome shotgun sequence
-CAMZJL010000085.1 Yponomeuta cagnagella genome assembly, contig: atg000085l_1, whole genome shotgun sequence
-CAMZJL010000086.1 Yponomeuta cagnagella genome assembly, contig: atg000086l_1, whole genome shotgun sequence
-CAMZJL010000087.1 Yponomeuta cagnagella genome assembly, contig: atg000087l_1, whole genome shotgun sequence
-CAMZJL010000088.1 Yponomeuta cagnagella genome assembly, contig: atg000088l_1, whole genome shotgun sequence
-CAMZJL010000089.1 Yponomeuta cagnagella genome assembly, contig: atg000089l_1, whole genome shotgun sequence
-CAMZJL010000090.1 Yponomeuta cagnagella genome assembly, contig: atg000090l_1, whole genome shotgun sequence
-CAMZJL010000091.1 Yponomeuta cagnagella genome assembly, contig: atg000091l_1, whole genome shotgun sequence
-CAMZJL010000092.1 Yponomeuta cagnagella genome assembly, contig: atg000092l_1, whole genome shotgun sequence
-CAMZJL010000093.1 Yponomeuta cagnagella genome assembly, contig: atg000093l_1, whole genome shotgun sequence
-CAMZJL010000094.1 Yponomeuta cagnagella genome assembly, contig: atg000094l_1, whole genome shotgun sequence
-CAMZJL010000095.1 Yponomeuta cagnagella genome assembly, contig: atg000095l_1, whole genome shotgun sequence
-CAMZJL010000097.1 Yponomeuta cagnagella genome assembly, contig: atg000097l_1, whole genome shotgun sequence
-CAMZJL010000098.1 Yponomeuta cagnagella genome assembly, contig: atg000098l_1, whole genome shotgun sequence
-CAMZJL010000099.1 Yponomeuta cagnagella genome assembly, contig: atg000100l_1, whole genome shotgun sequence
-CAMZJL010000100.1 Yponomeuta cagnagella genome assembly, contig: atg000102l_1, whole genome shotgun sequence
-CAMZJL010000101.1 Yponomeuta cagnagella genome assembly, contig: atg000103l_1, whole genome shotgun sequence
-CAMZJL010000102.1 Yponomeuta cagnagella genome assembly, contig: atg000104l_1, whole genome shotgun sequence
-CAMZJL010000103.1 Yponomeuta cagnagella genome assembly, contig: atg000105l_1, whole genome shotgun sequence
-CAMZJL010000104.1 Yponomeuta cagnagella genome assembly, contig: atg000106l_1, whole genome shotgun sequence
-CAMZJL010000105.1 Yponomeuta cagnagella genome assembly, contig: atg000107l_1, whole genome shotgun sequence
-CAMZJL010000106.1 Yponomeuta cagnagella genome assembly, contig: atg000108l_1, whole genome shotgun sequence
-CAMZJL010000107.1 Yponomeuta cagnagella genome assembly, contig: atg000109l_1, whole genome shotgun sequence
-CAMZJL010000108.1 Yponomeuta cagnagella genome assembly, contig: atg000110l_1, whole genome shotgun sequence
-CAMZJL010000109.1 Yponomeuta cagnagella genome assembly, contig: atg000111l_1, whole genome shotgun sequence
-CAMZJL010000110.1 Yponomeuta cagnagella genome assembly, contig: atg000112l_1, whole genome shotgun sequence
-CAMZJL010000111.1 Yponomeuta cagnagella genome assembly, contig: atg000113l_1, whole genome shotgun sequence
-CAMZJL010000112.1 Yponomeuta cagnagella genome assembly, contig: atg000114l_1, whole genome shotgun sequence
-CAMZJL010000113.1 Yponomeuta cagnagella genome assembly, contig: atg000115l_1, whole genome shotgun sequence
-CAMZJL010000114.1 Yponomeuta cagnagella genome assembly, contig: atg000116l_1, whole genome shotgun sequence
-CAMZJL010000115.1 Yponomeuta cagnagella genome assembly, contig: atg000117l_1, whole genome shotgun sequence
-CAMZJL010000116.1 Yponomeuta cagnagella genome assembly, contig: atg000118l_1, whole genome shotgun sequence
-CAMZJL010000117.1 Yponomeuta cagnagella genome assembly, contig: atg000119l_1, whole genome shotgun sequence
-CAMZJL010000118.1 Yponomeuta cagnagella genome assembly, contig: atg000120l_1, whole genome shotgun sequence
-CAMZJL010000119.1 Yponomeuta cagnagella genome assembly, contig: atg000121l_1, whole genome shotgun sequence
-CAMZJL010000120.1 Yponomeuta cagnagella genome assembly, contig: atg000122l_1, whole genome shotgun sequence
-CAMZJL010000121.1 Yponomeuta cagnagella genome assembly, contig: atg000123l_1, whole genome shotgun sequence
-CAMZJL010000122.1 Yponomeuta cagnagella genome assembly, contig: atg000124l_1, whole genome shotgun sequence
-CAMZJL010000123.1 Yponomeuta cagnagella genome assembly, contig: atg000125l_1, whole genome shotgun sequence
-CAMZJL010000124.1 Yponomeuta cagnagella genome assembly, contig: atg000126l_1, whole genome shotgun sequence
-CAMZJL010000125.1 Yponomeuta cagnagella genome assembly, contig: atg000127l_1, whole genome shotgun sequence
-CAMZJL010000126.1 Yponomeuta cagnagella genome assembly, contig: atg000128l_1, whole genome shotgun sequence
-CAMZJL010000127.1 Yponomeuta cagnagella genome assembly, contig: atg000129l_1, whole genome shotgun sequence
-CAMZJL010000128.1 Yponomeuta cagnagella genome assembly, contig: atg000130l_1, whole genome shotgun sequence
-CAMZJL010000129.1 Yponomeuta cagnagella genome assembly, contig: atg000131l_1, whole genome shotgun sequence
-CAMZJL010000130.1 Yponomeuta cagnagella genome assembly, contig: atg000132l_1, whole genome shotgun sequence
-CAMZJL010000131.1 Yponomeuta cagnagella genome assembly, contig: atg000133l_1, whole genome shotgun sequence
-CAMZJL010000132.1 Yponomeuta cagnagella genome assembly, contig: atg000134l_1, whole genome shotgun sequence
-CAMZJL010000133.1 Yponomeuta cagnagella genome assembly, contig: atg000135l_1, whole genome shotgun sequence
-CAMZJL010000134.1 Yponomeuta cagnagella genome assembly, contig: atg000136l_1, whole genome shotgun sequence
-CAMZJL010000135.1 Yponomeuta cagnagella genome assembly, contig: atg000137l_1, whole genome shotgun sequence
-CAMZJL010000136.1 Yponomeuta cagnagella genome assembly, contig: atg000138l_1, whole genome shotgun sequence
-CAMZJL010000137.1 Yponomeuta cagnagella genome assembly, contig: atg000139l_1, whole genome shotgun sequence
-CAMZJL010000138.1 Yponomeuta cagnagella genome assembly, contig: atg000140l_1, whole genome shotgun sequence
-CAMZJL010000139.1 Yponomeuta cagnagella genome assembly, contig: atg000141l_1, whole genome shotgun sequence
-CAMZJL010000140.1 Yponomeuta cagnagella genome assembly, contig: atg000142l_1, whole genome shotgun sequence
-CAMZJL010000141.1 Yponomeuta cagnagella genome assembly, contig: atg000143l_1, whole genome shotgun sequence
-CAMZJL010000142.1 Yponomeuta cagnagella genome assembly, contig: atg000144l_1, whole genome shotgun sequence
-CAMZJL010000143.1 Yponomeuta cagnagella genome assembly, contig: atg000145l_1, whole genome shotgun sequence
-CAMZJL010000144.1 Yponomeuta cagnagella genome assembly, contig: atg000146l_1, whole genome shotgun sequence
-CAMZJL010000145.1 Yponomeuta cagnagella genome assembly, contig: atg000147l_1, whole genome shotgun sequence
-CAMZJL010000146.1 Yponomeuta cagnagella genome assembly, contig: atg000148l_1, whole genome shotgun sequence
-CAMZJL010000147.1 Yponomeuta cagnagella genome assembly, contig: atg000149l_1, whole genome shotgun sequence
-CAMZJL010000148.1 Yponomeuta cagnagella genome assembly, contig: atg000150l_1, whole genome shotgun sequence
-CAMZJL010000149.1 Yponomeuta cagnagella genome assembly, contig: atg000151l_1, whole genome shotgun sequence
-CAMZJL010000150.1 Yponomeuta cagnagella genome assembly, contig: atg000152l_1, whole genome shotgun sequence
-CAMZJL010000151.1 Yponomeuta cagnagella genome assembly, contig: atg000153l_1, whole genome shotgun sequence
-CAMZJL010000152.1 Yponomeuta cagnagella genome assembly, contig: atg000154l_1, whole genome shotgun sequence
-CAMZJL010000153.1 Yponomeuta cagnagella genome assembly, contig: atg000155l_1, whole genome shotgun sequence
-CAMZJL010000154.1 Yponomeuta cagnagella genome assembly, contig: atg000156l_1, whole genome shotgun sequence
-CAMZJL010000155.1 Yponomeuta cagnagella genome assembly, contig: atg000157l_1, whole genome shotgun sequence
-CAMZJL010000156.1 Yponomeuta cagnagella genome assembly, contig: atg000158l_1, whole genome shotgun sequence
-CAMZJL010000157.1 Yponomeuta cagnagella genome assembly, contig: atg000159l_1, whole genome shotgun sequence
-CAMZJL010000158.1 Yponomeuta cagnagella genome assembly, contig: atg000160l_1, whole genome shotgun sequence
-CAMZJL010000159.1 Yponomeuta cagnagella genome assembly, contig: atg000161l_1, whole genome shotgun sequence
-CAMZJL010000160.1 Yponomeuta cagnagella genome assembly, contig: atg000162l_1, whole genome shotgun sequence
-CAMZJL010000161.1 Yponomeuta cagnagella genome assembly, contig: atg000164l_1, whole genome shotgun sequence
-CAMZJL010000162.1 Yponomeuta cagnagella genome assembly, contig: atg000165l_1, whole genome shotgun sequence
-CAMZJL010000163.1 Yponomeuta cagnagella genome assembly, contig: atg000166l_1, whole genome shotgun sequence
-CAMZJL010000164.1 Yponomeuta cagnagella genome assembly, contig: atg000167l_1, whole genome shotgun sequence
-CAMZJL010000165.1 Yponomeuta cagnagella genome assembly, contig: atg000168l_1, whole genome shotgun sequence
-CAMZJL010000166.1 Yponomeuta cagnagella genome assembly, contig: atg000169l_1, whole genome shotgun sequence
-CAMZJL010000167.1 Yponomeuta cagnagella genome assembly, contig: atg000170l_1, whole genome shotgun sequence
-CAMZJL010000168.1 Yponomeuta cagnagella genome assembly, contig: atg000171l_1, whole genome shotgun sequence
-CAMZJL010000169.1 Yponomeuta cagnagella genome assembly, contig: atg000172l_1, whole genome shotgun sequence
-CAMZJL010000170.1 Yponomeuta cagnagella genome assembly, contig: atg000173l_1, whole genome shotgun sequence
-CAMZJL010000171.1 Yponomeuta cagnagella genome assembly, contig: atg000175l_1, whole genome shotgun sequence
-CAMZJL010000172.1 Yponomeuta cagnagella genome assembly, contig: atg000176l_1, whole genome shotgun sequence
-CAMZJL010000174.1 Yponomeuta cagnagella genome assembly, contig: atg000178l_1, whole genome shotgun sequence
-CAMZJL010000175.1 Yponomeuta cagnagella genome assembly, contig: atg000179l_1, whole genome shotgun sequence
-CAMZJL010000176.1 Yponomeuta cagnagella genome assembly, contig: atg000180l_1, whole genome shotgun sequence
-CAMZJL010000177.1 Yponomeuta cagnagella genome assembly, contig: atg000181l_1, whole genome shotgun sequence
-CAMZJL010000178.1 Yponomeuta cagnagella genome assembly, contig: atg000182l_1, whole genome shotgun sequence
-CAMZJL010000179.1 Yponomeuta cagnagella genome assembly, contig: atg000184l_1, whole genome shotgun sequence
-CAMZJL010000180.1 Yponomeuta cagnagella genome assembly, contig: atg000185l_1, whole genome shotgun sequence
-CAMZJL010000181.1 Yponomeuta cagnagella genome assembly, contig: atg000186l_1, whole genome shotgun sequence
-CAMZJL010000182.1 Yponomeuta cagnagella genome assembly, contig: atg000187l_1, whole genome shotgun sequence
-CAMZJL010000183.1 Yponomeuta cagnagella genome assembly, contig: atg000188l_1, whole genome shotgun sequence
-CAMZJL010000184.1 Yponomeuta cagnagella genome assembly, contig: atg000189l_1, whole genome shotgun sequence
-CAMZJL010000185.1 Yponomeuta cagnagella genome assembly, contig: atg000190l_1, whole genome shotgun sequence
-CAMZJL010000186.1 Yponomeuta cagnagella genome assembly, contig: atg000191l_1, whole genome shotgun sequence
-CAMZJL010000187.1 Yponomeuta cagnagella genome assembly, contig: atg000192l_1, whole genome shotgun sequence
-CAMZJL010000188.1 Yponomeuta cagnagella genome assembly, contig: atg000193l_1, whole genome shotgun sequence
-CAMZJL010000189.1 Yponomeuta cagnagella genome assembly, contig: atg000194l_1, whole genome shotgun sequence
-CAMZJL010000190.1 Yponomeuta cagnagella genome assembly, contig: atg000195l_1, whole genome shotgun sequence
-CAMZJL010000191.1 Yponomeuta cagnagella genome assembly, contig: atg000196l_1, whole genome shotgun sequence
-CAMZJL010000192.1 Yponomeuta cagnagella genome assembly, contig: atg000197l_1, whole genome shotgun sequence
-CAMZJL010000193.1 Yponomeuta cagnagella genome assembly, contig: atg000198l_1, whole genome shotgun sequence
-CAMZJL010000194.1 Yponomeuta cagnagella genome assembly, contig: atg000199l_1, whole genome shotgun sequence
-CAMZJL010000195.1 Yponomeuta cagnagella genome assembly, contig: atg000200l_1, whole genome shotgun sequence
-CAMZJL010000196.1 Yponomeuta cagnagella genome assembly, contig: atg000201l_1, whole genome shotgun sequence
-CAMZJL010000197.1 Yponomeuta cagnagella genome assembly, contig: atg000202l_1, whole genome shotgun sequence
-CAMZJL010000198.1 Yponomeuta cagnagella genome assembly, contig: atg000203l_1, whole genome shotgun sequence
-CAMZJL010000199.1 Yponomeuta cagnagella genome assembly, contig: atg000204l_1, whole genome shotgun sequence
-CAMZJL010000200.1 Yponomeuta cagnagella genome assembly, contig: atg000205l_1, whole genome shotgun sequence
-CAMZJL010000201.1 Yponomeuta cagnagella genome assembly, contig: atg000206l_1, whole genome shotgun sequence
-CAMZJL010000202.1 Yponomeuta cagnagella genome assembly, contig: atg000207l_1, whole genome shotgun sequence
-CAMZJL010000203.1 Yponomeuta cagnagella genome assembly, contig: atg000208l_1, whole genome shotgun sequence
-CAMZJL010000204.1 Yponomeuta cagnagella genome assembly, contig: atg000209l_1, whole genome shotgun sequence
-CAMZJL010000205.1 Yponomeuta cagnagella genome assembly, contig: atg000210l_1, whole genome shotgun sequence
-CAMZJL010000206.1 Yponomeuta cagnagella genome assembly, contig: atg000213l_1, whole genome shotgun sequence
-CAMZJL010000207.1 Yponomeuta cagnagella genome assembly, contig: atg000214l_1, whole genome shotgun sequence
-CAMZJL010000208.1 Yponomeuta cagnagella genome assembly, contig: atg000215l_1, whole genome shotgun sequence
-CAMZJL010000209.1 Yponomeuta cagnagella genome assembly, contig: atg000216l_1, whole genome shotgun sequence
-CAMZJL010000210.1 Yponomeuta cagnagella genome assembly, contig: atg000217l_1, whole genome shotgun sequence
-CAMZJL010000211.1 Yponomeuta cagnagella genome assembly, contig: atg000218l_1, whole genome shotgun sequence
-CAMZJL010000212.1 Yponomeuta cagnagella genome assembly, contig: atg000219l_1, whole genome shotgun sequence
-CAMZJL010000213.1 Yponomeuta cagnagella genome assembly, contig: atg000220l_1, whole genome shotgun sequence
-CAMZJL010000214.1 Yponomeuta cagnagella genome assembly, contig: atg000222l_1, whole genome shotgun sequence
-CAMZJL010000215.1 Yponomeuta cagnagella genome assembly, contig: atg000223l_1, whole genome shotgun sequence
-CAMZJL010000216.1 Yponomeuta cagnagella genome assembly, contig: atg000224l_1, whole genome shotgun sequence
-CAMZJL010000217.1 Yponomeuta cagnagella genome assembly, contig: atg000225l_1, whole genome shotgun sequence
-CAMZJL010000218.1 Yponomeuta cagnagella genome assembly, contig: atg000226l_1, whole genome shotgun sequence
-CAMZJL010000219.1 Yponomeuta cagnagella genome assembly, contig: atg000227l_1, whole genome shotgun sequence
-CAMZJL010000220.1 Yponomeuta cagnagella genome assembly, contig: atg000229l_1, whole genome shotgun sequence
-CAMZJL010000221.1 Yponomeuta cagnagella genome assembly, contig: atg000230l_1, whole genome shotgun sequence
-CAMZJL010000222.1 Yponomeuta cagnagella genome assembly, contig: atg000231l_1, whole genome shotgun sequence
-CAMZJL010000223.1 Yponomeuta cagnagella genome assembly, contig: atg000232l_1, whole genome shotgun sequence
-CAMZJL010000225.1 Yponomeuta cagnagella genome assembly, contig: atg000234l_1, whole genome shotgun sequence
-CAMZJL010000226.1 Yponomeuta cagnagella genome assembly, contig: atg000235l_1, whole genome shotgun sequence
-CAMZJL010000227.1 Yponomeuta cagnagella genome assembly, contig: atg000236l_1, whole genome shotgun sequence
-CAMZJL010000228.1 Yponomeuta cagnagella genome assembly, contig: atg000237l_1, whole genome shotgun sequence
-CAMZJL010000229.1 Yponomeuta cagnagella genome assembly, contig: atg000238l_1, whole genome shotgun sequence
-CAMZJL010000230.1 Yponomeuta cagnagella genome assembly, contig: atg000239l_1, whole genome shotgun sequence
-CAMZJL010000231.1 Yponomeuta cagnagella genome assembly, contig: atg000240l_1, whole genome shotgun sequence
-CAMZJL010000232.1 Yponomeuta cagnagella genome assembly, contig: atg000241l_1, whole genome shotgun sequence
-CAMZJL010000233.1 Yponomeuta cagnagella genome assembly, contig: atg000242l_1, whole genome shotgun sequence
-CAMZJL010000234.1 Yponomeuta cagnagella genome assembly, contig: atg000244l_1, whole genome shotgun sequence
-CAMZJL010000235.1 Yponomeuta cagnagella genome assembly, contig: atg000245l_1, whole genome shotgun sequence
-CAMZJL010000237.1 Yponomeuta cagnagella genome assembly, contig: atg000247l_1, whole genome shotgun sequence
-CAMZJL010000238.1 Yponomeuta cagnagella genome assembly, contig: atg000248l_1, whole genome shotgun sequence
-CAMZJL010000239.1 Yponomeuta cagnagella genome assembly, contig: atg000251l_1, whole genome shotgun sequence
-CAMZJL010000240.1 Yponomeuta cagnagella genome assembly, contig: atg000252l_1, whole genome shotgun sequence
-CAMZJL010000241.1 Yponomeuta cagnagella genome assembly, contig: atg000253l_1, whole genome shotgun sequence
-CAMZJL010000242.1 Yponomeuta cagnagella genome assembly, contig: atg000254l_1, whole genome shotgun sequence
-CAMZJL010000243.1 Yponomeuta cagnagella genome assembly, contig: atg000255l_1, whole genome shotgun sequence
-CAMZJL010000244.1 Yponomeuta cagnagella genome assembly, contig: atg000256l_1, whole genome shotgun sequence
-CAMZJL010000245.1 Yponomeuta cagnagella genome assembly, contig: atg000257l_1, whole genome shotgun sequence
-CAMZJL010000247.1 Yponomeuta cagnagella genome assembly, contig: atg000260l_1, whole genome shotgun sequence
-CAMZJL010000248.1 Yponomeuta cagnagella genome assembly, contig: atg000263l_1, whole genome shotgun sequence
-CAMZJL010000249.1 Yponomeuta cagnagella genome assembly, contig: atg000264l_1, whole genome shotgun sequence
-CAMZJL010000250.1 Yponomeuta cagnagella genome assembly, contig: atg000265l_1, whole genome shotgun sequence
-CAMZJL010000251.1 Yponomeuta cagnagella genome assembly, contig: atg000266l_1, whole genome shotgun sequence
-CAMZJL010000252.1 Yponomeuta cagnagella genome assembly, contig: atg000267l_1, whole genome shotgun sequence
-CAMZJL010000253.1 Yponomeuta cagnagella genome assembly, contig: atg000268l_1, whole genome shotgun sequence
-CAMZJL010000254.1 Yponomeuta cagnagella genome assembly, contig: atg000270l_1, whole genome shotgun sequence
-CAMZJL010000255.1 Yponomeuta cagnagella genome assembly, contig: atg000271l_1, whole genome shotgun sequence
-CAMZJL010000256.1 Yponomeuta cagnagella genome assembly, contig: atg000272l_1, whole genome shotgun sequence
-CAMZJL010000257.1 Yponomeuta cagnagella genome assembly, contig: atg000273l_1, whole genome shotgun sequence
-CAMZJL010000258.1 Yponomeuta cagnagella genome assembly, contig: atg000274l_1, whole genome shotgun sequence
-CAMZJL010000259.1 Yponomeuta cagnagella genome assembly, contig: atg000275l_1, whole genome shotgun sequence
-CAMZJL010000260.1 Yponomeuta cagnagella genome assembly, contig: atg000276l_1, whole genome shotgun sequence
-CAMZJL010000261.1 Yponomeuta cagnagella genome assembly, contig: atg000277l_1, whole genome shotgun sequence
-CAMZJL010000262.1 Yponomeuta cagnagella genome assembly, contig: atg000279l_1, whole genome shotgun sequence
-CAMZJL010000263.1 Yponomeuta cagnagella genome assembly, contig: atg000280l_1, whole genome shotgun sequence
-CAMZJL010000264.1 Yponomeuta cagnagella genome assembly, contig: atg000281l_1, whole genome shotgun sequence
-CAMZJL010000265.1 Yponomeuta cagnagella genome assembly, contig: atg000282l_1, whole genome shotgun sequence
-CAMZJL010000266.1 Yponomeuta cagnagella genome assembly, contig: atg000283l_1, whole genome shotgun sequence
-CAMZJL010000267.1 Yponomeuta cagnagella genome assembly, contig: atg000284l_1, whole genome shotgun sequence
-CAMZJL010000268.1 Yponomeuta cagnagella genome assembly, contig: atg000285l_1, whole genome shotgun sequence
-CAMZJL010000269.1 Yponomeuta cagnagella genome assembly, contig: atg000286l_1, whole genome shotgun sequence
-CAMZJL010000270.1 Yponomeuta cagnagella genome assembly, contig: atg000287l_1, whole genome shotgun sequence
-CAMZJL010000271.1 Yponomeuta cagnagella genome assembly, contig: atg000288l_1, whole genome shotgun sequence
-CAMZJL010000272.1 Yponomeuta cagnagella genome assembly, contig: atg000289l_1, whole genome shotgun sequence
-CAMZJL010000273.1 Yponomeuta cagnagella genome assembly, contig: atg000291l_1, whole genome shotgun sequence
-CAMZJL010000274.1 Yponomeuta cagnagella genome assembly, contig: atg000293l_1, whole genome shotgun sequence
-CAMZJL010000275.1 Yponomeuta cagnagella genome assembly, contig: atg000294l_1, whole genome shotgun sequence
-CAMZJL010000276.1 Yponomeuta cagnagella genome assembly, contig: atg000295l_1, whole genome shotgun sequence
-CAMZJL010000277.1 Yponomeuta cagnagella genome assembly, contig: atg000296l_1, whole genome shotgun sequence
-CAMZJL010000278.1 Yponomeuta cagnagella genome assembly, contig: atg000297l_1, whole genome shotgun sequence
-CAMZJL010000280.1 Yponomeuta cagnagella genome assembly, contig: atg000300l_1, whole genome shotgun sequence
-CAMZJL010000281.1 Yponomeuta cagnagella genome assembly, contig: atg000301l_1, whole genome shotgun sequence
-CAMZJL010000282.1 Yponomeuta cagnagella genome assembly, contig: atg000303l_1, whole genome shotgun sequence
-CAMZJL010000283.1 Yponomeuta cagnagella genome assembly, contig: atg000304l_1, whole genome shotgun sequence
-CAMZJL010000284.1 Yponomeuta cagnagella genome assembly, contig: atg000305l_1, whole genome shotgun sequence
-CAMZJL010000285.1 Yponomeuta cagnagella genome assembly, contig: atg000306l_1, whole genome shotgun sequence
-CAMZJL010000286.1 Yponomeuta cagnagella genome assembly, contig: atg000307l_1, whole genome shotgun sequence
-CAMZJL010000287.1 Yponomeuta cagnagella genome assembly, contig: atg000308l_1, whole genome shotgun sequence
-CAMZJL010000288.1 Yponomeuta cagnagella genome assembly, contig: atg000309l_1, whole genome shotgun sequence
-CAMZJL010000289.1 Yponomeuta cagnagella genome assembly, contig: atg000310l_1, whole genome shotgun sequence
-CAMZJL010000290.1 Yponomeuta cagnagella genome assembly, contig: atg000311l_1, whole genome shotgun sequence
-CAMZJL010000291.1 Yponomeuta cagnagella genome assembly, contig: atg000312l_1, whole genome shotgun sequence
-CAMZJL010000292.1 Yponomeuta cagnagella genome assembly, contig: atg000313l_1, whole genome shotgun sequence
-CAMZJL010000293.1 Yponomeuta cagnagella genome assembly, contig: atg000314l_1, whole genome shotgun sequence
-CAMZJL010000294.1 Yponomeuta cagnagella genome assembly, contig: atg000315l_1, whole genome shotgun sequence
-CAMZJL010000295.1 Yponomeuta cagnagella genome assembly, contig: atg000316l_1, whole genome shotgun sequence
-CAMZJL010000296.1 Yponomeuta cagnagella genome assembly, contig: atg000317l_1, whole genome shotgun sequence
-CAMZJL010000297.1 Yponomeuta cagnagella genome assembly, contig: atg000318l_1, whole genome shotgun sequence
-CAMZJL010000298.1 Yponomeuta cagnagella genome assembly, contig: atg000320l_1, whole genome shotgun sequence
-CAMZJL010000299.1 Yponomeuta cagnagella genome assembly, contig: atg000322l_1, whole genome shotgun sequence
-CAMZJL010000300.1 Yponomeuta cagnagella genome assembly, contig: atg000324l_1, whole genome shotgun sequence
-CAMZJL010000301.1 Yponomeuta cagnagella genome assembly, contig: atg000325l_1, whole genome shotgun sequence
-CAMZJL010000302.1 Yponomeuta cagnagella genome assembly, contig: atg000326l_1, whole genome shotgun sequence
-CAMZJL010000303.1 Yponomeuta cagnagella genome assembly, contig: atg000327l_1, whole genome shotgun sequence
-CAMZJL010000304.1 Yponomeuta cagnagella genome assembly, contig: atg000328l_1, whole genome shotgun sequence
-CAMZJL010000305.1 Yponomeuta cagnagella genome assembly, contig: atg000332l_1, whole genome shotgun sequence
-CAMZJL010000306.1 Yponomeuta cagnagella genome assembly, contig: atg000333l_1, whole genome shotgun sequence
-CAMZJL010000307.1 Yponomeuta cagnagella genome assembly, contig: atg000334l_1, whole genome shotgun sequence
-CAMZJL010000308.1 Yponomeuta cagnagella genome assembly, contig: atg000336l_1, whole genome shotgun sequence
-CAMZJL010000309.1 Yponomeuta cagnagella genome assembly, contig: atg000337l_1, whole genome shotgun sequence
-CAMZJL010000310.1 Yponomeuta cagnagella genome assembly, contig: atg000338l_1, whole genome shotgun sequence
-CAMZJL010000311.1 Yponomeuta cagnagella genome assembly, contig: atg000339l_1, whole genome shotgun sequence
-CAMZJL010000312.1 Yponomeuta cagnagella genome assembly, contig: atg000340l_1, whole genome shotgun sequence
-CAMZJL010000313.1 Yponomeuta cagnagella genome assembly, contig: atg000342l_1, whole genome shotgun sequence
-CAMZJL010000314.1 Yponomeuta cagnagella genome assembly, contig: atg000343l_1, whole genome shotgun sequence
-CAMZJL010000315.1 Yponomeuta cagnagella genome assembly, contig: atg000345l_1, whole genome shotgun sequence
-CAMZJL010000317.1 Yponomeuta cagnagella genome assembly, contig: atg000349l_1, whole genome shotgun sequence
-CAMZJL010000318.1 Yponomeuta cagnagella genome assembly, contig: atg000350l_1, whole genome shotgun sequence
-CAMZJL010000319.1 Yponomeuta cagnagella genome assembly, contig: atg000351l_1, whole genome shotgun sequence
-CAMZJL010000321.1 Yponomeuta cagnagella genome assembly, contig: atg000353l_1, whole genome shotgun sequence
-CAMZJL010000322.1 Yponomeuta cagnagella genome assembly, contig: atg000354l_1, whole genome shotgun sequence
-CAMZJL010000323.1 Yponomeuta cagnagella genome assembly, contig: atg000355l_1, whole genome shotgun sequence
-CAMZJL010000325.1 Yponomeuta cagnagella genome assembly, contig: atg000361l_1, whole genome shotgun sequence
-CAMZJL010000326.1 Yponomeuta cagnagella genome assembly, contig: atg000364l_1, whole genome shotgun sequence
-CAMZJL010000327.1 Yponomeuta cagnagella genome assembly, contig: atg000365l_1, whole genome shotgun sequence
-CAMZJL010000328.1 Yponomeuta cagnagella genome assembly, contig: atg000366l_1, whole genome shotgun sequence
-CAMZJL010000329.1 Yponomeuta cagnagella genome assembly, contig: atg000368l_1, whole genome shotgun sequence
-CAMZJL010000330.1 Yponomeuta cagnagella genome assembly, contig: atg000369l_1, whole genome shotgun sequence
-CAMZJL010000331.1 Yponomeuta cagnagella genome assembly, contig: atg000372l_1, whole genome shotgun sequence
-CAMZJL010000333.1 Yponomeuta cagnagella genome assembly, contig: atg000374l_1, whole genome shotgun sequence
-CAMZJL010000334.1 Yponomeuta cagnagella genome assembly, contig: atg000375l_1, whole genome shotgun sequence
-CAMZJL010000335.1 Yponomeuta cagnagella genome assembly, contig: atg000377l_1, whole genome shotgun sequence
-CAMZJL010000337.1 Yponomeuta cagnagella genome assembly, contig: atg000379l_1, whole genome shotgun sequence
-CAMZJL010000339.1 Yponomeuta cagnagella genome assembly, contig: atg000381l_1, whole genome shotgun sequence
-CAMZJL010000340.1 Yponomeuta cagnagella genome assembly, contig: atg000382l_1, whole genome shotgun sequence
-CAMZJL010000341.1 Yponomeuta cagnagella genome assembly, contig: atg000384l_1, whole genome shotgun sequence
-CAMZJL010000343.1 Yponomeuta cagnagella genome assembly, contig: atg000389l_1, whole genome shotgun sequence
-CAMZJL010000344.1 Yponomeuta cagnagella genome assembly, contig: atg000391l_1, whole genome shotgun sequence
-CAMZJL010000345.1 Yponomeuta cagnagella genome assembly, contig: atg000392l_1, whole genome shotgun sequence
-CAMZJL010000346.1 Yponomeuta cagnagella genome assembly, contig: atg000393l_1, whole genome shotgun sequence
-CAMZJL010000347.1 Yponomeuta cagnagella genome assembly, contig: atg000394l_1, whole genome shotgun sequence
-CAMZJL010000348.1 Yponomeuta cagnagella genome assembly, contig: atg000395l_1, whole genome shotgun sequence
-CAMZJL010000349.1 Yponomeuta cagnagella genome assembly, contig: atg000396l_1, whole genome shotgun sequence
-CAMZJL010000350.1 Yponomeuta cagnagella genome assembly, contig: atg000397l_1, whole genome shotgun sequence
-CAMZJL010000351.1 Yponomeuta cagnagella genome assembly, contig: atg000399l_1, whole genome shotgun sequence
-CAMZJL010000352.1 Yponomeuta cagnagella genome assembly, contig: atg000400l_1, whole genome shotgun sequence
-CAMZJL010000354.1 Yponomeuta cagnagella genome assembly, contig: atg000402l_1, whole genome shotgun sequence
-CAMZJL010000356.1 Yponomeuta cagnagella genome assembly, contig: atg000405l_1, whole genome shotgun sequence
-CAMZJL010000357.1 Yponomeuta cagnagella genome assembly, contig: atg000406l_1, whole genome shotgun sequence
-CAMZJL010000358.1 Yponomeuta cagnagella genome assembly, contig: atg000408l_1, whole genome shotgun sequence
-CAMZJL010000359.1 Yponomeuta cagnagella genome assembly, contig: atg000409l_1, whole genome shotgun sequence
-CAMZJL010000360.1 Yponomeuta cagnagella genome assembly, contig: atg000410l_1, whole genome shotgun sequence
-CAMZJL010000361.1 Yponomeuta cagnagella genome assembly, contig: atg000411l_1, whole genome shotgun sequence
-CAMZJL010000362.1 Yponomeuta cagnagella genome assembly, contig: atg000412l_1, whole genome shotgun sequence
-CAMZJL010000363.1 Yponomeuta cagnagella genome assembly, contig: atg000413l_1, whole genome shotgun sequence
-CAMZJL010000364.1 Yponomeuta cagnagella genome assembly, contig: atg000414l_1, whole genome shotgun sequence
-CAMZJL010000365.1 Yponomeuta cagnagella genome assembly, contig: atg000415l_1, whole genome shotgun sequence
-CAMZJL010000366.1 Yponomeuta cagnagella genome assembly, contig: atg000416l_1, whole genome shotgun sequence
-CAMZJL010000367.1 Yponomeuta cagnagella genome assembly, contig: atg000417l_1, whole genome shotgun sequence
-CAMZJL010000368.1 Yponomeuta cagnagella genome assembly, contig: atg000418l_1, whole genome shotgun sequence
-CAMZJL010000369.1 Yponomeuta cagnagella genome assembly, contig: atg000419l_1, whole genome shotgun sequence
-CAMZJL010000371.1 Yponomeuta cagnagella genome assembly, contig: atg000421l_1, whole genome shotgun sequence
-CAMZJL010000372.1 Yponomeuta cagnagella genome assembly, contig: atg000422l_1, whole genome shotgun sequence
-CAMZJL010000374.1 Yponomeuta cagnagella genome assembly, contig: atg000424l_1, whole genome shotgun sequence
-CAMZJL010000375.1 Yponomeuta cagnagella genome assembly, contig: atg000425l_1, whole genome shotgun sequence
-CAMZJL010000376.1 Yponomeuta cagnagella genome assembly, contig: atg000426l_1, whole genome shotgun sequence
-CAMZJL010000377.1 Yponomeuta cagnagella genome assembly, contig: atg000427l_1, whole genome shotgun sequence
-CAMZJL010000378.1 Yponomeuta cagnagella genome assembly, contig: atg000428l_1, whole genome shotgun sequence
-CAMZJL010000379.1 Yponomeuta cagnagella genome assembly, contig: atg000429l_1, whole genome shotgun sequence
-CAMZJL010000380.1 Yponomeuta cagnagella genome assembly, contig: atg000430l_1, whole genome shotgun sequence
-CAMZJL010000381.1 Yponomeuta cagnagella genome assembly, contig: atg000431l_1, whole genome shotgun sequence
-CAMZJL010000382.1 Yponomeuta cagnagella genome assembly, contig: atg000432l_1, whole genome shotgun sequence
-CAMZJL010000384.1 Yponomeuta cagnagella genome assembly, contig: atg000434l_1, whole genome shotgun sequence
-CAMZJL010000386.1 Yponomeuta cagnagella genome assembly, contig: atg000436l_1, whole genome shotgun sequence
-CAMZJL010000387.1 Yponomeuta cagnagella genome assembly, contig: atg000437l_1, whole genome shotgun sequence
-CAMZJL010000388.1 Yponomeuta cagnagella genome assembly, contig: atg000438l_1, whole genome shotgun sequence
-CAMZJL010000389.1 Yponomeuta cagnagella genome assembly, contig: atg000439l_1, whole genome shotgun sequence
-CAMZJL010000390.1 Yponomeuta cagnagella genome assembly, contig: atg000440l_1, whole genome shotgun sequence
-CAMZJL010000391.1 Yponomeuta cagnagella genome assembly, contig: atg000441l_1, whole genome shotgun sequence
-CAMZJL010000392.1 Yponomeuta cagnagella genome assembly, contig: atg000442l_1, whole genome shotgun sequence
-CAMZJL010000393.1 Yponomeuta cagnagella genome assembly, contig: atg000444l_1, whole genome shotgun sequence
-CAMZJL010000394.1 Yponomeuta cagnagella genome assembly, contig: atg000445l_1, whole genome shotgun sequence
-CAMZJL010000395.1 Yponomeuta cagnagella genome assembly, contig: atg000446l_1, whole genome shotgun sequence
-CAMZJL010000396.1 Yponomeuta cagnagella genome assembly, contig: atg000447l_1, whole genome shotgun sequence
-CAMZJL010000397.1 Yponomeuta cagnagella genome assembly, contig: atg000448l_1, whole genome shotgun sequence
-CAMZJL010000398.1 Yponomeuta cagnagella genome assembly, contig: atg000449l_1, whole genome shotgun sequence
-CAMZJL010000399.1 Yponomeuta cagnagella genome assembly, contig: atg000452l_1, whole genome shotgun sequence
-CAMZJL010000400.1 Yponomeuta cagnagella genome assembly, contig: atg000453l_1, whole genome shotgun sequence
-CAMZJL010000402.1 Yponomeuta cagnagella genome assembly, contig: atg000455l_1, whole genome shotgun sequence
-CAMZJL010000404.1 Yponomeuta cagnagella genome assembly, contig: atg000457l_1, whole genome shotgun sequence
-CAMZJL010000406.1 Yponomeuta cagnagella genome assembly, contig: atg000460l_1, whole genome shotgun sequence
-CAMZJL010000407.1 Yponomeuta cagnagella genome assembly, contig: atg000464l_1, whole genome shotgun sequence
-CAMZJL010000408.1 Yponomeuta cagnagella genome assembly, contig: atg000467l_1, whole genome shotgun sequence
-CAMZJL010000409.1 Yponomeuta cagnagella genome assembly, contig: atg000470l_1, whole genome shotgun sequence
-CAMZJL010000411.1 Yponomeuta cagnagella genome assembly, contig: atg000473l_1, whole genome shotgun sequence
-CAMZJL010000412.1 Yponomeuta cagnagella genome assembly, contig: atg000474l_1, whole genome shotgun sequence
-CAMZJL010000413.1 Yponomeuta cagnagella genome assembly, contig: atg000477l_1, whole genome shotgun sequence
-CAMZJL010000414.1 Yponomeuta cagnagella genome assembly, contig: atg000478l_1, whole genome shotgun sequence
+ENA|OX371268|OX371268.1 Yponomeuta cagnagella genome assembly, chromosome: Z
+ENA|OX371267|OX371267.1 CAMZJL010000010.1
+ENA|OX371267|OX371267.1 CAMZJL010000068.1
+ENA|OX371267|OX371267.1 CAMZJL010000099.1
+ENA|OX371267|OX371267.1 CAMZJL010000113.1
+ENA|OX371267|OX371267.1 CAMZJL010000117.1
+ENA|OX371267|OX371267.1 CAMZJL010000122.1
+ENA|OX371267|OX371267.1 CAMZJL010000136.1
+ENA|OX371267|OX371267.1 CAMZJL010000155.1
+ENA|OX371267|OX371267.1 CAMZJL010000170.1
+ENA|OX371267|OX371267.1 CAMZJL010000186.1
+ENA|OX371267|OX371267.1 CAMZJL010000195.1
+ENA|OX371267|OX371267.1 CAMZJL010000201.1
+ENA|OX371267|OX371267.1 CAMZJL010000203.1
+ENA|OX371267|OX371267.1 CAMZJL010000286.1
+ENA|OX371267|OX371267.1 CAMZJL010000398.1
+ENA|OX371268|OX371268.1 CAMZJL010000257.1
+ENA|OX371268|OX371268.1 CAMZJL010000340.1
+ENA|OX371269|OX371269.1 CAMZJL010000072.1
+ENA|OX371269|OX371269.1 CAMZJL010000076.1
+ENA|OX371269|OX371269.1 CAMZJL010000105.1
+ENA|OX371269|OX371269.1 CAMZJL010000107.1
+ENA|OX371269|OX371269.1 CAMZJL010000125.1
+ENA|OX371269|OX371269.1 CAMZJL010000143.1
+ENA|OX371269|OX371269.1 CAMZJL010000179.1
+ENA|OX371269|OX371269.1 CAMZJL010000184.1
+ENA|OX371269|OX371269.1 CAMZJL010000212.1
+ENA|OX371269|OX371269.1 CAMZJL010000225.1
+ENA|OX371269|OX371269.1 CAMZJL010000227.1
+ENA|OX371269|OX371269.1 CAMZJL010000259.1
+ENA|OX371269|OX371269.1 CAMZJL010000285.1
+ENA|OX371269|OX371269.1 CAMZJL010000298.1
+ENA|OX371269|OX371269.1 CAMZJL010000300.1
+ENA|OX371269|OX371269.1 CAMZJL010000317.1
+ENA|OX371269|OX371269.1 CAMZJL010000325.1
+ENA|OX371269|OX371269.1 CAMZJL010000329.1
+ENA|OX371269|OX371269.1 CAMZJL010000346.1
+ENA|OX371269|OX371269.1 CAMZJL010000354.1
+ENA|OX371269|OX371269.1 CAMZJL010000388.1
+ENA|OX371269|OX371269.1 CAMZJL010000413.1
+ENA|OX371270|OX371270.1 CAMZJL010000030.1
+ENA|OX371270|OX371270.1 CAMZJL010000042.1
+ENA|OX371270|OX371270.1 CAMZJL010000043.1
+ENA|OX371270|OX371270.1 CAMZJL010000046.1
+ENA|OX371270|OX371270.1 CAMZJL010000066.1
+ENA|OX371270|OX371270.1 CAMZJL010000098.1
+ENA|OX371270|OX371270.1 CAMZJL010000149.1
+ENA|OX371270|OX371270.1 CAMZJL010000204.1
+ENA|OX371270|OX371270.1 CAMZJL010000213.1
+ENA|OX371270|OX371270.1 CAMZJL010000217.1
+ENA|OX371270|OX371270.1 CAMZJL010000273.1
+ENA|OX371270|OX371270.1 CAMZJL010000282.1
+ENA|OX371270|OX371270.1 CAMZJL010000350.1
+ENA|OX371270|OX371270.1 CAMZJL010000397.1
+ENA|OX371271|OX371271.1 CAMZJL010000029.1
+ENA|OX371271|OX371271.1 CAMZJL010000052.1
+ENA|OX371271|OX371271.1 CAMZJL010000057.1
+ENA|OX371271|OX371271.1 CAMZJL010000063.1
+ENA|OX371271|OX371271.1 CAMZJL010000065.1
+ENA|OX371271|OX371271.1 CAMZJL010000069.1
+ENA|OX371271|OX371271.1 CAMZJL010000080.1
+ENA|OX371271|OX371271.1 CAMZJL010000082.1
+ENA|OX371271|OX371271.1 CAMZJL010000086.1
+ENA|OX371271|OX371271.1 CAMZJL010000091.1
+ENA|OX371271|OX371271.1 CAMZJL010000194.1
+ENA|OX371271|OX371271.1 CAMZJL010000269.1
+ENA|OX371271|OX371271.1 CAMZJL010000306.1
+ENA|OX371272|OX371272.1 CAMZJL010000003.1
+ENA|OX371272|OX371272.1 CAMZJL010000041.1
+ENA|OX371272|OX371272.1 CAMZJL010000045.1
+ENA|OX371272|OX371272.1 CAMZJL010000055.1
+ENA|OX371272|OX371272.1 CAMZJL010000075.1
+ENA|OX371272|OX371272.1 CAMZJL010000140.1
+ENA|OX371272|OX371272.1 CAMZJL010000156.1
+ENA|OX371272|OX371272.1 CAMZJL010000209.1
+ENA|OX371272|OX371272.1 CAMZJL010000235.1
+ENA|OX371272|OX371272.1 CAMZJL010000284.1
+ENA|OX371272|OX371272.1 CAMZJL010000295.1
+ENA|OX371273|OX371273.1 CAMZJL010000026.1
+ENA|OX371273|OX371273.1 CAMZJL010000101.1
+ENA|OX371273|OX371273.1 CAMZJL010000130.1
+ENA|OX371273|OX371273.1 CAMZJL010000135.1
+ENA|OX371273|OX371273.1 CAMZJL010000138.1
+ENA|OX371273|OX371273.1 CAMZJL010000139.1
+ENA|OX371273|OX371273.1 CAMZJL010000206.1
+ENA|OX371273|OX371273.1 CAMZJL010000207.1
+ENA|OX371273|OX371273.1 CAMZJL010000230.1
+ENA|OX371273|OX371273.1 CAMZJL010000254.1
+ENA|OX371273|OX371273.1 CAMZJL010000263.1
+ENA|OX371273|OX371273.1 CAMZJL010000266.1
+ENA|OX371273|OX371273.1 CAMZJL010000314.1
+ENA|OX371273|OX371273.1 CAMZJL010000335.1
+ENA|OX371273|OX371273.1 CAMZJL010000360.1
+ENA|OX371273|OX371273.1 CAMZJL010000366.1
+ENA|OX371273|OX371273.1 CAMZJL010000411.1
+ENA|OX371273|OX371273.1 CAMZJL010000412.1
+ENA|OX371274|OX371274.1 CAMZJL010000004.1
+ENA|OX371274|OX371274.1 CAMZJL010000009.1
+ENA|OX371274|OX371274.1 CAMZJL010000123.1
+ENA|OX371274|OX371274.1 CAMZJL010000151.1
+ENA|OX371274|OX371274.1 CAMZJL010000164.1
+ENA|OX371274|OX371274.1 CAMZJL010000177.1
+ENA|OX371274|OX371274.1 CAMZJL010000232.1
+ENA|OX371274|OX371274.1 CAMZJL010000309.1
+ENA|OX371274|OX371274.1 CAMZJL010000372.1
+ENA|OX371274|OX371274.1 CAMZJL010000380.1
+ENA|OX371275|OX371275.1 CAMZJL010000012.1
+ENA|OX371275|OX371275.1 CAMZJL010000013.1
+ENA|OX371275|OX371275.1 CAMZJL010000056.1
+ENA|OX371275|OX371275.1 CAMZJL010000116.1
+ENA|OX371275|OX371275.1 CAMZJL010000147.1
+ENA|OX371275|OX371275.1 CAMZJL010000148.1
+ENA|OX371275|OX371275.1 CAMZJL010000180.1
+ENA|OX371275|OX371275.1 CAMZJL010000193.1
+ENA|OX371275|OX371275.1 CAMZJL010000205.1
+ENA|OX371275|OX371275.1 CAMZJL010000228.1
+ENA|OX371275|OX371275.1 CAMZJL010000268.1
+ENA|OX371275|OX371275.1 CAMZJL010000278.1
+ENA|OX371275|OX371275.1 CAMZJL010000327.1
+ENA|OX371275|OX371275.1 CAMZJL010000333.1
+ENA|OX371275|OX371275.1 CAMZJL010000352.1
+ENA|OX371275|OX371275.1 CAMZJL010000362.1
+ENA|OX371276|OX371276.1 CAMZJL010000031.1
+ENA|OX371276|OX371276.1 CAMZJL010000053.1
+ENA|OX371276|OX371276.1 CAMZJL010000064.1
+ENA|OX371276|OX371276.1 CAMZJL010000092.1
+ENA|OX371276|OX371276.1 CAMZJL010000093.1
+ENA|OX371276|OX371276.1 CAMZJL010000109.1
+ENA|OX371276|OX371276.1 CAMZJL010000110.1
+ENA|OX371276|OX371276.1 CAMZJL010000146.1
+ENA|OX371276|OX371276.1 CAMZJL010000172.1
+ENA|OX371276|OX371276.1 CAMZJL010000178.1
+ENA|OX371276|OX371276.1 CAMZJL010000185.1
+ENA|OX371276|OX371276.1 CAMZJL010000237.1
+ENA|OX371276|OX371276.1 CAMZJL010000238.1
+ENA|OX371276|OX371276.1 CAMZJL010000290.1
+ENA|OX371276|OX371276.1 CAMZJL010000313.1
+ENA|OX371276|OX371276.1 CAMZJL010000363.1
+ENA|OX371276|OX371276.1 CAMZJL010000374.1
+ENA|OX371276|OX371276.1 CAMZJL010000389.1
+ENA|OX371276|OX371276.1 CAMZJL010000400.1
+ENA|OX371277|OX371277.1 CAMZJL010000006.1
+ENA|OX371277|OX371277.1 CAMZJL010000016.1
+ENA|OX371277|OX371277.1 CAMZJL010000048.1
+ENA|OX371277|OX371277.1 CAMZJL010000049.1
+ENA|OX371277|OX371277.1 CAMZJL010000059.1
+ENA|OX371277|OX371277.1 CAMZJL010000090.1
+ENA|OX371277|OX371277.1 CAMZJL010000100.1
+ENA|OX371277|OX371277.1 CAMZJL010000102.1
+ENA|OX371277|OX371277.1 CAMZJL010000202.1
+ENA|OX371277|OX371277.1 CAMZJL010000270.1
+ENA|OX371277|OX371277.1 CAMZJL010000281.1
+ENA|OX371277|OX371277.1 CAMZJL010000307.1
+ENA|OX371277|OX371277.1 CAMZJL010000356.1
+ENA|OX371277|OX371277.1 CAMZJL010000358.1
+ENA|OX371278|OX371278.1 CAMZJL010000022.1
+ENA|OX371278|OX371278.1 CAMZJL010000038.1
+ENA|OX371278|OX371278.1 CAMZJL010000062.1
+ENA|OX371278|OX371278.1 CAMZJL010000070.1
+ENA|OX371278|OX371278.1 CAMZJL010000166.1
+ENA|OX371278|OX371278.1 CAMZJL010000211.1
+ENA|OX371278|OX371278.1 CAMZJL010000240.1
+ENA|OX371278|OX371278.1 CAMZJL010000291.1
+ENA|OX371278|OX371278.1 CAMZJL010000308.1
+ENA|OX371278|OX371278.1 CAMZJL010000337.1
+ENA|OX371278|OX371278.1 CAMZJL010000343.1
+ENA|OX371278|OX371278.1 CAMZJL010000369.1
+ENA|OX371279|OX371279.1 CAMZJL010000035.1
+ENA|OX371279|OX371279.1 CAMZJL010000047.1
+ENA|OX371279|OX371279.1 CAMZJL010000060.1
+ENA|OX371279|OX371279.1 CAMZJL010000131.1
+ENA|OX371279|OX371279.1 CAMZJL010000154.1
+ENA|OX371279|OX371279.1 CAMZJL010000160.1
+ENA|OX371279|OX371279.1 CAMZJL010000196.1
+ENA|OX371279|OX371279.1 CAMZJL010000277.1
+ENA|OX371279|OX371279.1 CAMZJL010000299.1
+ENA|OX371279|OX371279.1 CAMZJL010000301.1
+ENA|OX371279|OX371279.1 CAMZJL010000322.1
+ENA|OX371280|OX371280.1 CAMZJL010000005.1
+ENA|OX371280|OX371280.1 CAMZJL010000014.1
+ENA|OX371280|OX371280.1 CAMZJL010000017.1
+ENA|OX371280|OX371280.1 CAMZJL010000078.1
+ENA|OX371280|OX371280.1 CAMZJL010000085.1
+ENA|OX371280|OX371280.1 CAMZJL010000118.1
+ENA|OX371280|OX371280.1 CAMZJL010000190.1
+ENA|OX371280|OX371280.1 CAMZJL010000244.1
+ENA|OX371280|OX371280.1 CAMZJL010000283.1
+ENA|OX371281|OX371281.1 CAMZJL010000044.1
+ENA|OX371281|OX371281.1 CAMZJL010000050.1
+ENA|OX371281|OX371281.1 CAMZJL010000114.1
+ENA|OX371281|OX371281.1 CAMZJL010000137.1
+ENA|OX371281|OX371281.1 CAMZJL010000182.1
+ENA|OX371281|OX371281.1 CAMZJL010000187.1
+ENA|OX371281|OX371281.1 CAMZJL010000218.1
+ENA|OX371281|OX371281.1 CAMZJL010000248.1
+ENA|OX371281|OX371281.1 CAMZJL010000292.1
+ENA|OX371281|OX371281.1 CAMZJL010000359.1
+ENA|OX371281|OX371281.1 CAMZJL010000402.1
+ENA|OX371282|OX371282.1 CAMZJL010000019.1
+ENA|OX371282|OX371282.1 CAMZJL010000020.1
+ENA|OX371282|OX371282.1 CAMZJL010000058.1
+ENA|OX371282|OX371282.1 CAMZJL010000067.1
+ENA|OX371282|OX371282.1 CAMZJL010000132.1
+ENA|OX371282|OX371282.1 CAMZJL010000219.1
+ENA|OX371282|OX371282.1 CAMZJL010000264.1
+ENA|OX371282|OX371282.1 CAMZJL010000272.1
+ENA|OX371282|OX371282.1 CAMZJL010000276.1
+ENA|OX371282|OX371282.1 CAMZJL010000280.1
+ENA|OX371282|OX371282.1 CAMZJL010000296.1
+ENA|OX371282|OX371282.1 CAMZJL010000323.1
+ENA|OX371282|OX371282.1 CAMZJL010000328.1
+ENA|OX371282|OX371282.1 CAMZJL010000339.1
+ENA|OX371282|OX371282.1 CAMZJL010000365.1
+ENA|OX371282|OX371282.1 CAMZJL010000391.1
+ENA|OX371282|OX371282.1 CAMZJL010000407.1
+ENA|OX371283|OX371283.1 CAMZJL010000018.1
+ENA|OX371283|OX371283.1 CAMZJL010000027.1
+ENA|OX371283|OX371283.1 CAMZJL010000028.1
+ENA|OX371283|OX371283.1 CAMZJL010000036.1
+ENA|OX371283|OX371283.1 CAMZJL010000097.1
+ENA|OX371283|OX371283.1 CAMZJL010000163.1
+ENA|OX371283|OX371283.1 CAMZJL010000312.1
+ENA|OX371283|OX371283.1 CAMZJL010000361.1
+ENA|OX371283|OX371283.1 CAMZJL010000379.1
+ENA|OX371284|OX371284.1 CAMZJL010000079.1
+ENA|OX371284|OX371284.1 CAMZJL010000095.1
+ENA|OX371284|OX371284.1 CAMZJL010000106.1
+ENA|OX371284|OX371284.1 CAMZJL010000111.1
+ENA|OX371284|OX371284.1 CAMZJL010000126.1
+ENA|OX371284|OX371284.1 CAMZJL010000161.1
+ENA|OX371284|OX371284.1 CAMZJL010000162.1
+ENA|OX371284|OX371284.1 CAMZJL010000167.1
+ENA|OX371284|OX371284.1 CAMZJL010000168.1
+ENA|OX371284|OX371284.1 CAMZJL010000175.1
+ENA|OX371284|OX371284.1 CAMZJL010000183.1
+ENA|OX371284|OX371284.1 CAMZJL010000210.1
+ENA|OX371284|OX371284.1 CAMZJL010000222.1
+ENA|OX371284|OX371284.1 CAMZJL010000226.1
+ENA|OX371284|OX371284.1 CAMZJL010000239.1
+ENA|OX371284|OX371284.1 CAMZJL010000243.1
+ENA|OX371284|OX371284.1 CAMZJL010000247.1
+ENA|OX371284|OX371284.1 CAMZJL010000249.1
+ENA|OX371284|OX371284.1 CAMZJL010000251.1
+ENA|OX371284|OX371284.1 CAMZJL010000252.1
+ENA|OX371284|OX371284.1 CAMZJL010000256.1
+ENA|OX371284|OX371284.1 CAMZJL010000261.1
+ENA|OX371284|OX371284.1 CAMZJL010000274.1
+ENA|OX371284|OX371284.1 CAMZJL010000293.1
+ENA|OX371284|OX371284.1 CAMZJL010000310.1
+ENA|OX371284|OX371284.1 CAMZJL010000311.1
+ENA|OX371284|OX371284.1 CAMZJL010000321.1
+ENA|OX371284|OX371284.1 CAMZJL010000334.1
+ENA|OX371284|OX371284.1 CAMZJL010000349.1
+ENA|OX371284|OX371284.1 CAMZJL010000392.1
+ENA|OX371284|OX371284.1 CAMZJL010000393.1
+ENA|OX371285|OX371285.1 CAMZJL010000001.1
+ENA|OX371285|OX371285.1 CAMZJL010000034.1
+ENA|OX371285|OX371285.1 CAMZJL010000051.1
+ENA|OX371285|OX371285.1 CAMZJL010000127.1
+ENA|OX371285|OX371285.1 CAMZJL010000128.1
+ENA|OX371285|OX371285.1 CAMZJL010000133.1
+ENA|OX371285|OX371285.1 CAMZJL010000150.1
+ENA|OX371285|OX371285.1 CAMZJL010000262.1
+ENA|OX371285|OX371285.1 CAMZJL010000271.1
+ENA|OX371285|OX371285.1 CAMZJL010000381.1
+ENA|OX371285|OX371285.1 CAMZJL010000382.1
+ENA|OX371285|OX371285.1 CAMZJL010000394.1
+ENA|OX371285|OX371285.1 CAMZJL010000406.1
+ENA|OX371286|OX371286.1 CAMZJL010000011.1
+ENA|OX371286|OX371286.1 CAMZJL010000021.1
+ENA|OX371286|OX371286.1 CAMZJL010000061.1
+ENA|OX371286|OX371286.1 CAMZJL010000094.1
+ENA|OX371286|OX371286.1 CAMZJL010000199.1
+ENA|OX371286|OX371286.1 CAMZJL010000214.1
+ENA|OX371286|OX371286.1 CAMZJL010000297.1
+ENA|OX371286|OX371286.1 CAMZJL010000408.1
+ENA|OX371287|OX371287.1 CAMZJL010000002.1
+ENA|OX371287|OX371287.1 CAMZJL010000129.1
+ENA|OX371287|OX371287.1 CAMZJL010000141.1
+ENA|OX371287|OX371287.1 CAMZJL010000145.1
+ENA|OX371287|OX371287.1 CAMZJL010000157.1
+ENA|OX371287|OX371287.1 CAMZJL010000171.1
+ENA|OX371287|OX371287.1 CAMZJL010000223.1
+ENA|OX371287|OX371287.1 CAMZJL010000229.1
+ENA|OX371287|OX371287.1 CAMZJL010000234.1
+ENA|OX371287|OX371287.1 CAMZJL010000253.1
+ENA|OX371287|OX371287.1 CAMZJL010000260.1
+ENA|OX371287|OX371287.1 CAMZJL010000341.1
+ENA|OX371287|OX371287.1 CAMZJL010000345.1
+ENA|OX371287|OX371287.1 CAMZJL010000357.1
+ENA|OX371287|OX371287.1 CAMZJL010000376.1
+ENA|OX371288|OX371288.1 CAMZJL010000040.1
+ENA|OX371288|OX371288.1 CAMZJL010000073.1
+ENA|OX371288|OX371288.1 CAMZJL010000074.1
+ENA|OX371288|OX371288.1 CAMZJL010000103.1
+ENA|OX371288|OX371288.1 CAMZJL010000108.1
+ENA|OX371288|OX371288.1 CAMZJL010000119.1
+ENA|OX371288|OX371288.1 CAMZJL010000120.1
+ENA|OX371288|OX371288.1 CAMZJL010000153.1
+ENA|OX371288|OX371288.1 CAMZJL010000181.1
+ENA|OX371288|OX371288.1 CAMZJL010000287.1
+ENA|OX371288|OX371288.1 CAMZJL010000390.1
+ENA|OX371288|OX371288.1 CAMZJL010000409.1
+ENA|OX371289|OX371289.1 CAMZJL010000077.1
+ENA|OX371289|OX371289.1 CAMZJL010000081.1
+ENA|OX371289|OX371289.1 CAMZJL010000115.1
+ENA|OX371289|OX371289.1 CAMZJL010000124.1
+ENA|OX371289|OX371289.1 CAMZJL010000169.1
+ENA|OX371289|OX371289.1 CAMZJL010000191.1
+ENA|OX371289|OX371289.1 CAMZJL010000197.1
+ENA|OX371289|OX371289.1 CAMZJL010000265.1
+ENA|OX371289|OX371289.1 CAMZJL010000326.1
+ENA|OX371289|OX371289.1 CAMZJL010000378.1
+ENA|OX371290|OX371290.1 CAMZJL010000007.1
+ENA|OX371290|OX371290.1 CAMZJL010000023.1
+ENA|OX371290|OX371290.1 CAMZJL010000037.1
+ENA|OX371290|OX371290.1 CAMZJL010000083.1
+ENA|OX371290|OX371290.1 CAMZJL010000112.1
+ENA|OX371290|OX371290.1 CAMZJL010000158.1
+ENA|OX371290|OX371290.1 CAMZJL010000159.1
+ENA|OX371290|OX371290.1 CAMZJL010000233.1
+ENA|OX371290|OX371290.1 CAMZJL010000242.1
+ENA|OX371290|OX371290.1 CAMZJL010000302.1
+ENA|OX371290|OX371290.1 CAMZJL010000303.1
+ENA|OX371290|OX371290.1 CAMZJL010000304.1
+ENA|OX371290|OX371290.1 CAMZJL010000305.1
+ENA|OX371290|OX371290.1 CAMZJL010000347.1
+ENA|OX371290|OX371290.1 CAMZJL010000351.1
+ENA|OX371290|OX371290.1 CAMZJL010000368.1
+ENA|OX371290|OX371290.1 CAMZJL010000377.1
+ENA|OX371291|OX371291.1 CAMZJL010000033.1
+ENA|OX371291|OX371291.1 CAMZJL010000088.1
+ENA|OX371291|OX371291.1 CAMZJL010000144.1
+ENA|OX371291|OX371291.1 CAMZJL010000165.1
+ENA|OX371291|OX371291.1 CAMZJL010000174.1
+ENA|OX371291|OX371291.1 CAMZJL010000221.1
+ENA|OX371291|OX371291.1 CAMZJL010000315.1
+ENA|OX371291|OX371291.1 CAMZJL010000399.1
+ENA|OX371291|OX371291.1 CAMZJL010000414.1
+ENA|OX371292|OX371292.1 CAMZJL010000024.1
+ENA|OX371292|OX371292.1 CAMZJL010000025.1
+ENA|OX371292|OX371292.1 CAMZJL010000032.1
+ENA|OX371292|OX371292.1 CAMZJL010000188.1
+ENA|OX371292|OX371292.1 CAMZJL010000200.1
+ENA|OX371292|OX371292.1 CAMZJL010000215.1
+ENA|OX371292|OX371292.1 CAMZJL010000216.1
+ENA|OX371292|OX371292.1 CAMZJL010000220.1
+ENA|OX371292|OX371292.1 CAMZJL010000241.1
+ENA|OX371292|OX371292.1 CAMZJL010000258.1
+ENA|OX371292|OX371292.1 CAMZJL010000288.1
+ENA|OX371292|OX371292.1 CAMZJL010000318.1
+ENA|OX371292|OX371292.1 CAMZJL010000367.1
+ENA|OX371292|OX371292.1 CAMZJL010000387.1
+ENA|OX371293|OX371293.1 CAMZJL010000008.1
+ENA|OX371293|OX371293.1 CAMZJL010000039.1
+ENA|OX371293|OX371293.1 CAMZJL010000087.1
+ENA|OX371293|OX371293.1 CAMZJL010000134.1
+ENA|OX371293|OX371293.1 CAMZJL010000176.1
+ENA|OX371293|OX371293.1 CAMZJL010000189.1
+ENA|OX371293|OX371293.1 CAMZJL010000192.1
+ENA|OX371293|OX371293.1 CAMZJL010000231.1
+ENA|OX371293|OX371293.1 CAMZJL010000275.1
+ENA|OX371293|OX371293.1 CAMZJL010000331.1
+ENA|OX371293|OX371293.1 CAMZJL010000386.1
+ENA|OX371294|OX371294.1 CAMZJL010000330.1
+ENA|OX371295|OX371295.1 CAMZJL010000071.1
+ENA|OX371295|OX371295.1 CAMZJL010000084.1
+ENA|OX371295|OX371295.1 CAMZJL010000121.1
+ENA|OX371295|OX371295.1 CAMZJL010000152.1
+ENA|OX371295|OX371295.1 CAMZJL010000348.1
+ENA|OX371295|OX371295.1 CAMZJL010000364.1
+ENA|OX371295|OX371295.1 CAMZJL010000371.1
+ENA|OX371295|OX371295.1 CAMZJL010000384.1
+ENA|OX371296|OX371296.1 CAMZJL010000015.1
+ENA|OX371296|OX371296.1 CAMZJL010000142.1
+ENA|OX371296|OX371296.1 CAMZJL010000198.1
+ENA|OX371296|OX371296.1 CAMZJL010000255.1
+ENA|OX371296|OX371296.1 CAMZJL010000294.1
+ENA|OX371296|OX371296.1 CAMZJL010000375.1
+ENA|OX371296|OX371296.1 CAMZJL010000396.1
+ENA|OX371297|OX371297.1 CAMZJL010000054.1
+ENA|OX371297|OX371297.1 CAMZJL010000089.1
+ENA|OX371297|OX371297.1 CAMZJL010000104.1
+ENA|OX371297|OX371297.1 CAMZJL010000208.1
+ENA|OX371297|OX371297.1 CAMZJL010000245.1
+ENA|OX371297|OX371297.1 CAMZJL010000250.1
+ENA|OX371297|OX371297.1 CAMZJL010000289.1
+ENA|OX371297|OX371297.1 CAMZJL010000319.1
+ENA|OX371297|OX371297.1 CAMZJL010000344.1
+ENA|OX371297|OX371297.1 CAMZJL010000395.1
+ENA|OX371297|OX371297.1 CAMZJL010000404.1
+CAMZJL010000267.1
