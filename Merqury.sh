@@ -1,8 +1,8 @@
 #!/bin/bash
-#PBS -N merqury
-#PBS -l select=1:ncpus=8:mem=64gb:scratch_local=200gb
-#PBS -l walltime=24:00:00
-#PBS -j oe
+#PBS -q default@pbs-m1.metacentrum.cz
+#PBS -l walltime=1:0:0
+#PBS -l select=1:ncpus=1:ngpus=4:mem=64gb:gpu_mem=64gb:scratch_local=400gb:vnode=kirke59
+#PBS -N merqury_job
 
 # Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
