@@ -45,5 +45,5 @@ samtools view filtered.bam | awk '{print $3, $1}' | sort | uniq > scaffold_to_ch
 # Move results back to output folder
 cp -r "$SCRATCHDIR"/* "$Outdir/" || { export CLEAN_SCRATCH=false; exit 9; }
 
-# Final message with result path
+# Final message 
 echo "Done! Results saved in: $Outdir"
