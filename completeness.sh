@@ -38,5 +38,5 @@ echo "$completeness" > W_FINAL_completeness.txt
 cat W_FINAL_completeness.txt || exit 5
 cp W_FINAL_completeness.txt "$Outdir/" || { export CLEAN_SCRATCH=false; exit 6; }
 
-# Final message with result path
+# Final message 
 echo "W chromosome completeness results saved in: $Outdir/W_FINAL_completeness.txt"
