@@ -49,5 +49,5 @@ meryl print meryl_results/W_missing_in_assembly.meryl | awk '{sum += $2} END {pr
 # Move results back to output folder
 cp -r meryl_results/* "$Outdir" || { export CLEAN_SCRATCH=false; exit 9; }
 
-# Final message with result path
+# Final message 
 echo "First part completed. Results saved in: $Outdir"
