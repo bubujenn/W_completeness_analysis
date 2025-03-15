@@ -7,7 +7,7 @@
 # Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
 
-# Set base path and output structure
+# Set paths and variables
 Path=${PWD} 
 Base="Minimap2_Samtools"  
 TimeStamp=$(date +"%Y%m%d.%H%M")  
