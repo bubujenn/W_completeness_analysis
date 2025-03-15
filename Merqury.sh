@@ -2,7 +2,7 @@
 #PBS -q interactive@pbs-m1.metacentrum.cz 
 #PBS -l walltime=1:0:0
 #PBS -l select=1:ncpus=16:mem=128gb:gpu_mem=128gb:scratch_local=200gb:vnode=kirke59
-#PBS -N merqury
+#PBS -N merqury_job
 
 # Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
