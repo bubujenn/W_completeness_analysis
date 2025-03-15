@@ -39,5 +39,5 @@ meryl k="$KMER_SIZE" memory=60G threads=8 count output ERR_fastq.meryl "$FASTQ"
 # Move results back to output folder
 cp -r "$SCRATCHDIR/meryls"/* "$Outdir" || { export CLEAN_SCRATCH=false; exit 3; }
 
-# Final message with result path
+# Final message
 echo "Done! Meryl databases saved in: $Outdir (k-mer size: $KMER_SIZE)"
