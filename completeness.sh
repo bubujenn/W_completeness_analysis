@@ -4,24 +4,39 @@
 #PBS -l walltime=01:00:00
 #PBS -j oe
 
+# Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
 
-DATADIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets"
-OUTPUT_DIR="/storage/brno2/home/jendrb00/my_analysis/Ostrinia_nubilalis/creatig_my_datasets"
+# Set paths and variables
+Path=${PWD} 
+Base="W_completeness_calc" 
+TimeStamp=$(date +"%Y%m%d.%H%M")  
+Outdir=${Path}/${Base}_${TimeStamp}  
+SCRATCHDIR=${SCRATCHDIR:-"/scratch"}  
 
-cp $DATADIR/W_missing_in_assembly_sum.txt $SCRATCHDIR/ || exit 1
-cp $DATADIR/expected_W_size_sum.txt $SCRATCHDIR/ || exit 2
-cd $SCRATCHDIR || exit 3
+# Input files 
+MISSING_FILE="${1:-W_missing_in_assembly_sum.txt}"
+EXPECTED_FILE="${2:-expected_W_size_sum.txt}"
 
-expected=$(cat expected_W_size_sum.txt)
-missing=$(cat W_missing_in_assembly_sum.txt)
+# Create output directory
+mkdir -p "$Outdir"
+cd "$SCRATCHDIR" || exit 1
 
-completeness=$(awk -v missing="$missing" -v expected="$expected" 'BEGIN { printf "%.5f\n", (1 - (missing / expected)) * 100 }')  || exit 4
+# Copy input data to scratch
+cp "$Path/$MISSING_FILE" "$SCRATCHDIR/" || exit 2
+cp "$Path/$EXPECTED_FILE" "$SCRATCHDIR/" || exit 3
+
+# Read values from files
+expected=$(cat "$EXPECTED_FILE")
+missing=$(cat "$MISSING_FILE")
+
+# Calculate W chromosome completeness percentage
+completeness=$(awk -v missing="$missing" -v expected="$expected" 'BEGIN { printf "%.5f\n", (1 - (missing / expected)) * 100 }') || exit 4
 echo "$completeness" > W_FINAL_completeness.txt
 
-cat W_FINAL_completeness.txt  || exit 5
+# Print and store results
+cat W_FINAL_completeness.txt || exit 5
+cp W_FINAL_completeness.txt "$Outdir/" || { export CLEAN_SCRATCH=false; exit 6; }
 
-mkdir -p $OUTPUT_DIR
-cp W_FINAL_completeness.txt $OUTPUT_DIR/ || export CLEAN_SCRATCH=false  || exit 6
-
-echo "Výsledky completeness chromozomu W jsou uloženy v: $OUTPUT_DIR/W_FINAL_completeness.txt" 
+# Final message with result path
+echo "W chromosome completeness results saved in: $Outdir/W_FINAL_completeness.txt"
