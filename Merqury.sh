@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -N merqury_cytogenetic_analysis
+#PBS -N merqury
 #PBS -l select=1:ncpus=8:mem=64gb:scratch_local=200gb
 #PBS -l walltime=24:00:00
 #PBS -j oe
