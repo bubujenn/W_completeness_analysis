@@ -4,29 +4,41 @@
 #PBS -l walltime=24:00:00
 #PBS -j oe
 
+# Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
 
-MERYL_FILE="reads.meryl"
-ASSEMBLY_FILE="assembly.fasta"
-OUTPUT_DIR="/storage/brno2/home/jendrb00/merqury__analysis"
+# Set paths and variables
+Path=${PWD}  
+Base="merqury_analysis" 
+TimeStamp=$(date +"%Y%m%d.%H%M") 
+Outdir=${Path}/${Base}_${TimeStamp} 
 SCRATCH_OUTDIR="$SCRATCHDIR/merqury_results_end"
 
-cd $SCRATCHDIR || exit 1
+# Input files 
+MERYL_FILE="${1:-reads.meryl}"
+ASSEMBLY_FILE="${2:-assembly.fasta}"
 
-cp $OUTPUT_DIR/$MERYL_FILE $SCRATCHDIR/ || exit 2
-cp $OUTPUT_DIR/$ASSEMBLY_FILE $SCRATCHDIR/ || exit 3
+# Create output directory
+mkdir -p "$Outdir"
+cd "$SCRATCHDIR" || exit 1
 
+# Copy input data to scratch
+cp "$Path/$MERYL_FILE" "$SCRATCHDIR/" || exit 2
+cp "$Path/$ASSEMBLY_FILE" "$SCRATCHDIR/" || exit 3
+
+# Load necessary modules and activate Merqury environment
 export PATH=/storage/plzen1/home/jendrb00/meryl-1.4.1/bin:$PATH
 module add mambaforge || exit 4
 mamba activate /storage/plzen1/home/jendrb00/merqury-1.3/env_merqury || exit 5
-module add r || exit 5
+module add r || exit 6
 export R_LIBS_USER="/storage/plzen1/home/jendrb00/Rpackages"
 
-merqury.sh $MERYL_FILE $ASSEMBLY_FILE merqury_output || exit 6
+# Run Merqury
+merqury.sh "$MERYL_FILE" "$ASSEMBLY_FILE" merqury_output || exit 7
 
-mkdir -p $OUTPUT_DIR/merqury_output
-cp -r merqury_output/* $OUTPUT_DIR/merqury_output/ || exit 7
+# Move results back to output folder
+mkdir -p "$Outdir/merqury_output"
+cp -r merqury_output/* "$Outdir/merqury_output/" || exit 8
 
-clean_scratch
-
-echo "Analysis completed. Results are saved in: $OUTPUT_DIR/merqury_output2"
+# Final message with result path
+echo "Analysis completed. Results are saved in: $Outdir/merqury_output"
