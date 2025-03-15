@@ -30,270 +30,245 @@ ENA|OY979763|OY979763.1 Ostrinia nubilalis genome assembly, chromosome: 29
 ENA|OY979764|OY979764.1 Ostrinia nubilalis genome assembly, chromosome: 30
 ENA|OY979765|OY979765.1 Ostrinia nubilalis genome assembly, organelle: mitochondrion
 ENA|OY979733|OY979733.1 Ostrinia nubilalis genome assembly, chromosome: Z
-ENA|CAWLCS010000001|CAWLCS010000001.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_1
-ENA|CAWLCS010000002|CAWLCS010000002.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_2
-ENA|CAWLCS010000003|CAWLCS010000003.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_3
-ENA|CAWLCS010000004|CAWLCS010000004.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_4
-ENA|CAWLCS010000005|CAWLCS010000005.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_5
-ENA|CAWLCS010000006|CAWLCS010000006.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_6
-ENA|CAWLCS010000007|CAWLCS010000007.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_7
-ENA|CAWLCS010000008|CAWLCS010000008.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_8
-ENA|CAWLCS010000009|CAWLCS010000009.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_9
-ENA|CAWLCS010000010|CAWLCS010000010.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_10
-ENA|CAWLCS010000011|CAWLCS010000011.1 Ostrinia nubilalis genome assembly, contig: SUPER_W_unloc_11
-ENA|CAWLCS010000012|CAWLCS010000012.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_43
-ENA|CAWLCS010000013|CAWLCS010000013.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_45
-ENA|CAWLCS010000014|CAWLCS010000014.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_52
-ENA|CAWLCS010000015|CAWLCS010000015.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_42
-ENA|CAWLCS010000016|CAWLCS010000016.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_46
-ENA|CAWLCS010000017|CAWLCS010000017.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_49
-ENA|CAWLCS010000018|CAWLCS010000018.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_41
-ENA|CAWLCS010000019|CAWLCS010000019.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_50
-ENA|CAWLCS010000020|CAWLCS010000020.1 Ostrinia nubilalis genome assembly, contig: SCAFFOLD_51
-CAWLCT010000001.1 Ostrinia nubilalis genome assembly, contig: atg000001l_1, whole genome shotgun sequence
-CAWLCT010000002.1 Ostrinia nubilalis genome assembly, contig: atg000002l_1, whole genome shotgun sequence
-CAWLCT010000003.1 Ostrinia nubilalis genome assembly, contig: atg000003l_1, whole genome shotgun sequence
-CAWLCT010000004.1 Ostrinia nubilalis genome assembly, contig: atg000004l_1, whole genome shotgun sequence
-CAWLCT010000005.1 Ostrinia nubilalis genome assembly, contig: atg000005l_1, whole genome shotgun sequence
-CAWLCT010000006.1 Ostrinia nubilalis genome assembly, contig: atg000006l_1, whole genome shotgun sequence
-CAWLCT010000007.1 Ostrinia nubilalis genome assembly, contig: atg000007l_1, whole genome shotgun sequence
-CAWLCT010000008.1 Ostrinia nubilalis genome assembly, contig: atg000008l_1, whole genome shotgun sequence
-CAWLCT010000009.1 Ostrinia nubilalis genome assembly, contig: atg000009l_1, whole genome shotgun sequence
-CAWLCT010000010.1 Ostrinia nubilalis genome assembly, contig: atg000010l_1, whole genome shotgun sequence
-CAWLCT010000011.1 Ostrinia nubilalis genome assembly, contig: atg000011l_1, whole genome shotgun sequence
-CAWLCT010000012.1 Ostrinia nubilalis genome assembly, contig: atg000012l_1, whole genome shotgun sequence
-CAWLCT010000013.1 Ostrinia nubilalis genome assembly, contig: atg000013l_1, whole genome shotgun sequence
-CAWLCT010000014.1 Ostrinia nubilalis genome assembly, contig: atg000014l_1, whole genome shotgun sequence
-CAWLCT010000015.1 Ostrinia nubilalis genome assembly, contig: atg000015l_1, whole genome shotgun sequence
-CAWLCT010000016.1 Ostrinia nubilalis genome assembly, contig: atg000016l_1, whole genome shotgun sequence
-CAWLCT010000017.1 Ostrinia nubilalis genome assembly, contig: atg000017l_1, whole genome shotgun sequence
-CAWLCT010000018.1 Ostrinia nubilalis genome assembly, contig: atg000018l_1, whole genome shotgun sequence
-CAWLCT010000019.1 Ostrinia nubilalis genome assembly, contig: atg000019l_1, whole genome shotgun sequence
-CAWLCT010000020.1 Ostrinia nubilalis genome assembly, contig: atg000020l_1, whole genome shotgun sequence
-CAWLCT010000021.1 Ostrinia nubilalis genome assembly, contig: atg000021l_1, whole genome shotgun sequence
-CAWLCT010000022.1 Ostrinia nubilalis genome assembly, contig: atg000022l_1, whole genome shotgun sequence
-CAWLCT010000023.1 Ostrinia nubilalis genome assembly, contig: atg000023l_1, whole genome shotgun sequence
-CAWLCT010000024.1 Ostrinia nubilalis genome assembly, contig: atg000024l_1, whole genome shotgun sequence
-CAWLCT010000025.1 Ostrinia nubilalis genome assembly, contig: atg000025l_1, whole genome shotgun sequence
-CAWLCT010000026.1 Ostrinia nubilalis genome assembly, contig: atg000026l_1, whole genome shotgun sequence
-CAWLCT010000027.1 Ostrinia nubilalis genome assembly, contig: atg000027l_1, whole genome shotgun sequence
-CAWLCT010000028.1 Ostrinia nubilalis genome assembly, contig: atg000028l_1, whole genome shotgun sequence
-CAWLCT010000029.1 Ostrinia nubilalis genome assembly, contig: atg000029l_1, whole genome shotgun sequence
-CAWLCT010000030.1 Ostrinia nubilalis genome assembly, contig: atg000030l_1, whole genome shotgun sequence
-CAWLCT010000031.1 Ostrinia nubilalis genome assembly, contig: atg000031l_1, whole genome shotgun sequence
-CAWLCT010000032.1 Ostrinia nubilalis genome assembly, contig: atg000032l_1, whole genome shotgun sequence
-CAWLCT010000033.1 Ostrinia nubilalis genome assembly, contig: atg000033l_1, whole genome shotgun sequence
-CAWLCT010000034.1 Ostrinia nubilalis genome assembly, contig: atg000034l_1, whole genome shotgun sequence
-CAWLCT010000035.1 Ostrinia nubilalis genome assembly, contig: atg000035l_1, whole genome shotgun sequence
-CAWLCT010000036.1 Ostrinia nubilalis genome assembly, contig: atg000036l_1, whole genome shotgun sequence
-CAWLCT010000037.1 Ostrinia nubilalis genome assembly, contig: atg000037l_1, whole genome shotgun sequence
-CAWLCT010000038.1 Ostrinia nubilalis genome assembly, contig: atg000038l_1, whole genome shotgun sequence
-CAWLCT010000039.1 Ostrinia nubilalis genome assembly, contig: atg000039l_1, whole genome shotgun sequence
-CAWLCT010000040.1 Ostrinia nubilalis genome assembly, contig: atg000040l_1, whole genome shotgun sequence
-CAWLCT010000041.1 Ostrinia nubilalis genome assembly, contig: atg000041l_1, whole genome shotgun sequence
-CAWLCT010000042.1 Ostrinia nubilalis genome assembly, contig: atg000042l_1, whole genome shotgun sequence
-CAWLCT010000043.1 Ostrinia nubilalis genome assembly, contig: atg000043l_1, whole genome shotgun sequence
-CAWLCT010000044.1 Ostrinia nubilalis genome assembly, contig: atg000044l_1, whole genome shotgun sequence
-CAWLCT010000045.1 Ostrinia nubilalis genome assembly, contig: atg000046l_1, whole genome shotgun sequence
-CAWLCT010000046.1 Ostrinia nubilalis genome assembly, contig: atg000047l_1, whole genome shotgun sequence
-CAWLCT010000047.1 Ostrinia nubilalis genome assembly, contig: atg000048l_1, whole genome shotgun sequence
-CAWLCT010000048.1 Ostrinia nubilalis genome assembly, contig: atg000049l_1, whole genome shotgun sequence
-CAWLCT010000049.1 Ostrinia nubilalis genome assembly, contig: atg000051l_1, whole genome shotgun sequence
-CAWLCT010000050.1 Ostrinia nubilalis genome assembly, contig: atg000052l_1, whole genome shotgun sequence
-CAWLCT010000051.1 Ostrinia nubilalis genome assembly, contig: atg000053l_1, whole genome shotgun sequence
-CAWLCT010000052.1 Ostrinia nubilalis genome assembly, contig: atg000055l_1, whole genome shotgun sequence
-CAWLCT010000053.1 Ostrinia nubilalis genome assembly, contig: atg000056l_1, whole genome shotgun sequence
-CAWLCT010000054.1 Ostrinia nubilalis genome assembly, contig: atg000057l_1, whole genome shotgun sequence
-CAWLCT010000055.1 Ostrinia nubilalis genome assembly, contig: atg000058l_1, whole genome shotgun sequence
-CAWLCT010000056.1 Ostrinia nubilalis genome assembly, contig: atg000059l_1, whole genome shotgun sequence
-CAWLCT010000057.1 Ostrinia nubilalis genome assembly, contig: atg000060l_1, whole genome shotgun sequence
-CAWLCT010000058.1 Ostrinia nubilalis genome assembly, contig: atg000061l_1, whole genome shotgun sequence
-CAWLCT010000059.1 Ostrinia nubilalis genome assembly, contig: atg000062l_1, whole genome shotgun sequence
-CAWLCT010000060.1 Ostrinia nubilalis genome assembly, contig: atg000063l_1, whole genome shotgun sequence
-CAWLCT010000061.1 Ostrinia nubilalis genome assembly, contig: atg000064l_1, whole genome shotgun sequence
-CAWLCT010000062.1 Ostrinia nubilalis genome assembly, contig: atg000065l_1, whole genome shotgun sequence
-CAWLCT010000063.1 Ostrinia nubilalis genome assembly, contig: atg000066l_1, whole genome shotgun sequence
-CAWLCT010000064.1 Ostrinia nubilalis genome assembly, contig: atg000067l_1, whole genome shotgun sequence
-CAWLCT010000065.1 Ostrinia nubilalis genome assembly, contig: atg000068l_1, whole genome shotgun sequence
-CAWLCT010000066.1 Ostrinia nubilalis genome assembly, contig: atg000069l_1, whole genome shotgun sequence
-CAWLCT010000067.1 Ostrinia nubilalis genome assembly, contig: atg000070l_1, whole genome shotgun sequence
-CAWLCT010000068.1 Ostrinia nubilalis genome assembly, contig: atg000071l_1, whole genome shotgun sequence
-CAWLCT010000069.1 Ostrinia nubilalis genome assembly, contig: atg000072l_1, whole genome shotgun sequence
-CAWLCT010000070.1 Ostrinia nubilalis genome assembly, contig: atg000073l_1, whole genome shotgun sequence
-CAWLCT010000071.1 Ostrinia nubilalis genome assembly, contig: atg000074l_1, whole genome shotgun sequence
-CAWLCT010000072.1 Ostrinia nubilalis genome assembly, contig: atg000076l_1, whole genome shotgun sequence
-CAWLCT010000073.1 Ostrinia nubilalis genome assembly, contig: atg000077l_1, whole genome shotgun sequence
-CAWLCT010000074.1 Ostrinia nubilalis genome assembly, contig: atg000080l_1, whole genome shotgun sequence
-CAWLCT010000075.1 Ostrinia nubilalis genome assembly, contig: atg000081l_1, whole genome shotgun sequence
-CAWLCT010000076.1 Ostrinia nubilalis genome assembly, contig: atg000082l_1, whole genome shotgun sequence
-CAWLCT010000077.1 Ostrinia nubilalis genome assembly, contig: atg000083l_1, whole genome shotgun sequence
-CAWLCT010000078.1 Ostrinia nubilalis genome assembly, contig: atg000084l_1, whole genome shotgun sequence
-CAWLCT010000079.1 Ostrinia nubilalis genome assembly, contig: atg000085l_1, whole genome shotgun sequence
-CAWLCT010000080.1 Ostrinia nubilalis genome assembly, contig: atg000088l_1, whole genome shotgun sequence
-CAWLCT010000081.1 Ostrinia nubilalis genome assembly, contig: atg000089l_1, whole genome shotgun sequence
-CAWLCT010000082.1 Ostrinia nubilalis genome assembly, contig: atg000091l_1, whole genome shotgun sequence
-CAWLCT010000083.1 Ostrinia nubilalis genome assembly, contig: atg000092l_1, whole genome shotgun sequence
-CAWLCT010000084.1 Ostrinia nubilalis genome assembly, contig: atg000094l_1, whole genome shotgun sequence
-CAWLCT010000085.1 Ostrinia nubilalis genome assembly, contig: atg000096l_1, whole genome shotgun sequence
-CAWLCT010000086.1 Ostrinia nubilalis genome assembly, contig: atg000097l_1, whole genome shotgun sequence
-CAWLCT010000087.1 Ostrinia nubilalis genome assembly, contig: atg000099l_1, whole genome shotgun sequence
-CAWLCT010000088.1 Ostrinia nubilalis genome assembly, contig: atg000100l_1, whole genome shotgun sequence
-CAWLCT010000089.1 Ostrinia nubilalis genome assembly, contig: atg000101l_1, whole genome shotgun sequence
-CAWLCT010000090.1 Ostrinia nubilalis genome assembly, contig: atg000102l_1, whole genome shotgun sequence
-CAWLCT010000091.1 Ostrinia nubilalis genome assembly, contig: atg000103l_1, whole genome shotgun sequence
-CAWLCT010000092.1 Ostrinia nubilalis genome assembly, contig: atg000104l_1, whole genome shotgun sequence
-CAWLCT010000093.1 Ostrinia nubilalis genome assembly, contig: atg000105l_1, whole genome shotgun sequence
-CAWLCT010000094.1 Ostrinia nubilalis genome assembly, contig: atg000108l_1, whole genome shotgun sequence
-CAWLCT010000095.1 Ostrinia nubilalis genome assembly, contig: atg000111l_1, whole genome shotgun sequence
-CAWLCT010000096.1 Ostrinia nubilalis genome assembly, contig: atg000112l_1, whole genome shotgun sequence
-CAWLCT010000097.1 Ostrinia nubilalis genome assembly, contig: atg000113l_1, whole genome shotgun sequence
-CAWLCT010000098.1 Ostrinia nubilalis genome assembly, contig: atg000116l_1, whole genome shotgun sequence
-CAWLCT010000099.1 Ostrinia nubilalis genome assembly, contig: atg000117l_1, whole genome shotgun sequence
-CAWLCT010000100.1 Ostrinia nubilalis genome assembly, contig: atg000118l_1, whole genome shotgun sequence
-CAWLCT010000101.1 Ostrinia nubilalis genome assembly, contig: atg000119l_1, whole genome shotgun sequence
-CAWLCT010000102.1 Ostrinia nubilalis genome assembly, contig: atg000120l_1, whole genome shotgun sequence
-CAWLCT010000103.1 Ostrinia nubilalis genome assembly, contig: atg000121l_1, whole genome shotgun sequence
-CAWLCT010000104.1 Ostrinia nubilalis genome assembly, contig: atg000124l_1, whole genome shotgun sequence
-CAWLCT010000105.1 Ostrinia nubilalis genome assembly, contig: atg000125l_1, whole genome shotgun sequence
-CAWLCT010000106.1 Ostrinia nubilalis genome assembly, contig: atg000126l_1, whole genome shotgun sequence
-CAWLCT010000107.1 Ostrinia nubilalis genome assembly, contig: atg000127l_1, whole genome shotgun sequence
-CAWLCT010000108.1 Ostrinia nubilalis genome assembly, contig: atg000130l_1, whole genome shotgun sequence
-CAWLCT010000109.1 Ostrinia nubilalis genome assembly, contig: atg000133l_1, whole genome shotgun sequence
-CAWLCT010000110.1 Ostrinia nubilalis genome assembly, contig: atg000134l_1, whole genome shotgun sequence
-CAWLCT010000111.1 Ostrinia nubilalis genome assembly, contig: atg000135l_1, whole genome shotgun sequence
-CAWLCT010000112.1 Ostrinia nubilalis genome assembly, contig: atg000137l_1, whole genome shotgun sequence
-CAWLCT010000113.1 Ostrinia nubilalis genome assembly, contig: atg000138l_1, whole genome shotgun sequence
-CAWLCT010000114.1 Ostrinia nubilalis genome assembly, contig: atg000139l_1, whole genome shotgun sequence
-CAWLCT010000115.1 Ostrinia nubilalis genome assembly, contig: atg000141l_1, whole genome shotgun sequence
-CAWLCT010000116.1 Ostrinia nubilalis genome assembly, contig: atg000142l_1, whole genome shotgun sequence
-CAWLCT010000117.1 Ostrinia nubilalis genome assembly, contig: atg000146l_1, whole genome shotgun sequence
-CAWLCT010000118.1 Ostrinia nubilalis genome assembly, contig: atg000147l_1, whole genome shotgun sequence
-CAWLCT010000119.1 Ostrinia nubilalis genome assembly, contig: atg000148l_1, whole genome shotgun sequence
-CAWLCT010000120.1 Ostrinia nubilalis genome assembly, contig: atg000159l_1, whole genome shotgun sequence
-CAWLCT010000121.1 Ostrinia nubilalis genome assembly, contig: atg000162l_1, whole genome shotgun sequence
-CAWLCT010000122.1 Ostrinia nubilalis genome assembly, contig: atg000164l_1, whole genome shotgun sequence
-CAWLCT010000123.1 Ostrinia nubilalis genome assembly, contig: atg000166l_1, whole genome shotgun sequence
-CAWLCT010000124.1 Ostrinia nubilalis genome assembly, contig: atg000167l_1, whole genome shotgun sequence
-CAWLCT010000125.1 Ostrinia nubilalis genome assembly, contig: atg000172l_1, whole genome shotgun sequence
-CAWLCT010000126.1 Ostrinia nubilalis genome assembly, contig: atg000173l_1, whole genome shotgun sequence
-CAWLCT010000127.1 Ostrinia nubilalis genome assembly, contig: atg000174l_1, whole genome shotgun sequence
-CAWLCT010000128.1 Ostrinia nubilalis genome assembly, contig: atg000183l_1, whole genome shotgun sequence
-CAWLCT010000129.1 Ostrinia nubilalis genome assembly, contig: atg000186l_1, whole genome shotgun sequence
-CAWLCT010000130.1 Ostrinia nubilalis genome assembly, contig: atg000187l_1, whole genome shotgun sequence
-CAWLCT010000131.1 Ostrinia nubilalis genome assembly, contig: atg000188l_1, whole genome shotgun sequence
-CAWLCT010000132.1 Ostrinia nubilalis genome assembly, contig: atg000189l_1, whole genome shotgun sequence
-CAWLCT010000133.1 Ostrinia nubilalis genome assembly, contig: atg000195l_1, whole genome shotgun sequence
-CAWLCT010000134.1 Ostrinia nubilalis genome assembly, contig: atg000196l_1, whole genome shotgun sequence
-CAWLCT010000135.1 Ostrinia nubilalis genome assembly, contig: atg000198l_1, whole genome shotgun sequence
-CAWLCT010000136.1 Ostrinia nubilalis genome assembly, contig: atg000201l_1, whole genome shotgun sequence
-CAWLCT010000137.1 Ostrinia nubilalis genome assembly, contig: atg000203l_1, whole genome shotgun sequence
-CAWLCT010000138.1 Ostrinia nubilalis genome assembly, contig: atg000204l_1, whole genome shotgun sequence
-CAWLCT010000139.1 Ostrinia nubilalis genome assembly, contig: atg000205l_1, whole genome shotgun sequence
-CAWLCT010000140.1 Ostrinia nubilalis genome assembly, contig: atg000208l_1, whole genome shotgun sequence
-CAWLCT010000141.1 Ostrinia nubilalis genome assembly, contig: atg000209l_1, whole genome shotgun sequence
-CAWLCT010000142.1 Ostrinia nubilalis genome assembly, contig: atg000210l_1, whole genome shotgun sequence
-CAWLCT010000143.1 Ostrinia nubilalis genome assembly, contig: atg000211l_1, whole genome shotgun sequence
-CAWLCT010000144.1 Ostrinia nubilalis genome assembly, contig: atg000213l_1, whole genome shotgun sequence
-CAWLCT010000145.1 Ostrinia nubilalis genome assembly, contig: atg000214l_1, whole genome shotgun sequence
-CAWLCT010000146.1 Ostrinia nubilalis genome assembly, contig: atg000215l_1, whole genome shotgun sequence
-CAWLCT010000147.1 Ostrinia nubilalis genome assembly, contig: atg000216l_1, whole genome shotgun sequence
-CAWLCT010000148.1 Ostrinia nubilalis genome assembly, contig: atg000220l_1, whole genome shotgun sequence
-CAWLCT010000149.1 Ostrinia nubilalis genome assembly, contig: atg000221l_1, whole genome shotgun sequence
-CAWLCT010000150.1 Ostrinia nubilalis genome assembly, contig: atg000222l_1, whole genome shotgun sequence
-CAWLCT010000151.1 Ostrinia nubilalis genome assembly, contig: atg000225l_1, whole genome shotgun sequence
-CAWLCT010000152.1 Ostrinia nubilalis genome assembly, contig: atg000226l_1, whole genome shotgun sequence
-CAWLCT010000153.1 Ostrinia nubilalis genome assembly, contig: atg000230l_1, whole genome shotgun sequence
-CAWLCT010000154.1 Ostrinia nubilalis genome assembly, contig: atg000232l_1, whole genome shotgun sequence
-CAWLCT010000155.1 Ostrinia nubilalis genome assembly, contig: atg000233l_1, whole genome shotgun sequence
-CAWLCT010000156.1 Ostrinia nubilalis genome assembly, contig: atg000235l_1, whole genome shotgun sequence
-CAWLCT010000157.1 Ostrinia nubilalis genome assembly, contig: atg000237l_1, whole genome shotgun sequence
-CAWLCT010000158.1 Ostrinia nubilalis genome assembly, contig: atg000238l_1, whole genome shotgun sequence
-CAWLCT010000159.1 Ostrinia nubilalis genome assembly, contig: atg000240l_1, whole genome shotgun sequence
-CAWLCT010000160.1 Ostrinia nubilalis genome assembly, contig: atg000246l_1, whole genome shotgun sequence
-CAWLCT010000161.1 Ostrinia nubilalis genome assembly, contig: atg000247l_1, whole genome shotgun sequence
-CAWLCT010000162.1 Ostrinia nubilalis genome assembly, contig: atg000252l_1, whole genome shotgun sequence
-CAWLCT010000163.1 Ostrinia nubilalis genome assembly, contig: atg000254l_1, whole genome shotgun sequence
-CAWLCT010000164.1 Ostrinia nubilalis genome assembly, contig: atg000256l_1, whole genome shotgun sequence
-CAWLCT010000165.1 Ostrinia nubilalis genome assembly, contig: atg000257l_1, whole genome shotgun sequence
-CAWLCT010000166.1 Ostrinia nubilalis genome assembly, contig: atg000259l_1, whole genome shotgun sequence
-CAWLCT010000167.1 Ostrinia nubilalis genome assembly, contig: atg000260l_1, whole genome shotgun sequence
-CAWLCT010000168.1 Ostrinia nubilalis genome assembly, contig: atg000261l_1, whole genome shotgun sequence
-CAWLCT010000169.1 Ostrinia nubilalis genome assembly, contig: atg000270l_1, whole genome shotgun sequence
-CAWLCT010000172.1 Ostrinia nubilalis genome assembly, contig: atg000280l_1, whole genome shotgun sequence
-CAWLCT010000173.1 Ostrinia nubilalis genome assembly, contig: atg000281l_1, whole genome shotgun sequence
-CAWLCT010000174.1 Ostrinia nubilalis genome assembly, contig: atg000290l_1, whole genome shotgun sequence
-CAWLCT010000175.1 Ostrinia nubilalis genome assembly, contig: atg000292l_1, whole genome shotgun sequence
-CAWLCT010000176.1 Ostrinia nubilalis genome assembly, contig: atg000302l_1, whole genome shotgun sequence
-CAWLCT010000177.1 Ostrinia nubilalis genome assembly, contig: atg000303l_1, whole genome shotgun sequence
-CAWLCT010000178.1 Ostrinia nubilalis genome assembly, contig: atg000304l_1, whole genome shotgun sequence
-CAWLCT010000179.1 Ostrinia nubilalis genome assembly, contig: atg000307l_1, whole genome shotgun sequence
-CAWLCT010000180.1 Ostrinia nubilalis genome assembly, contig: atg000312l_1, whole genome shotgun sequence
-CAWLCT010000181.1 Ostrinia nubilalis genome assembly, contig: atg000321l_1, whole genome shotgun sequence
-CAWLCT010000182.1 Ostrinia nubilalis genome assembly, contig: atg000328l_1, whole genome shotgun sequence
-CAWLCT010000183.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000007l_1_1, whole genome shotgun sequence
-CAWLCT010000184.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000013l_1_1, whole genome shotgun sequence
-CAWLCT010000185.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000015l_1_1, whole genome shotgun sequence
-CAWLCT010000186.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000018l_1_1, whole genome shotgun sequence
-CAWLCT010000187.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000019l_1_1, whole genome shotgun sequence
-CAWLCT010000188.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000020l_1_1, whole genome shotgun sequence
-CAWLCT010000189.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000021l_1_1, whole genome shotgun sequence
-CAWLCT010000190.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000024l_1_1, whole genome shotgun sequence
-CAWLCT010000191.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000029l_1_1, whole genome shotgun sequence
-CAWLCT010000192.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000032l_1_1, whole genome shotgun sequence
-CAWLCT010000193.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000035l_1_1, whole genome shotgun sequence
-CAWLCT010000194.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000036l_1_1, whole genome shotgun sequence
-CAWLCT010000195.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000037l_1_1, whole genome shotgun sequence
-CAWLCT010000196.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000038l_1_1, whole genome shotgun sequence
-CAWLCT010000197.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000039l_1_1, whole genome shotgun sequence
-CAWLCT010000198.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000040l_1_1, whole genome shotgun sequence
-CAWLCT010000199.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000043l_1_1, whole genome shotgun sequence
-CAWLCT010000200.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000046l_1_1, whole genome shotgun sequence
-CAWLCT010000201.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000048l_1_1, whole genome shotgun sequence
-CAWLCT010000202.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000049l_1_1, whole genome shotgun sequence
-CAWLCT010000203.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000050l_1_1, whole genome shotgun sequence
-CAWLCT010000204.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000052l_1_1, whole genome shotgun sequence
-CAWLCT010000205.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000053l_1_1, whole genome shotgun sequence
-CAWLCT010000206.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000054l_1_1, whole genome shotgun sequence
-CAWLCT010000207.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000056l_1_1, whole genome shotgun sequence
-CAWLCT010000208.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000057l_1_1, whole genome shotgun sequence
-CAWLCT010000209.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000059l_1_1, whole genome shotgun sequence
-CAWLCT010000210.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000060l_1_1, whole genome shotgun sequence
-CAWLCT010000211.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000062l_1_1, whole genome shotgun sequence
-CAWLCT010000212.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000063l_1_1, whole genome shotgun sequence
-CAWLCT010000213.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000064l_1_1, whole genome shotgun sequence
-CAWLCT010000214.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000065l_1_1, whole genome shotgun sequence
-CAWLCT010000215.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000066l_1_1, whole genome shotgun sequence
-CAWLCT010000216.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000070l_1_1, whole genome shotgun sequence
-CAWLCT010000217.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000072l_1_1, whole genome shotgun sequence
-CAWLCT010000218.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000073l_1_1, whole genome shotgun sequence
-CAWLCT010000219.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000075l_1_1, whole genome shotgun sequence
-CAWLCT010000220.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000076l_1_1, whole genome shotgun sequence
-CAWLCT010000221.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000077l_1_1, whole genome shotgun sequence
-CAWLCT010000222.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000078l_1_1, whole genome shotgun sequence
-CAWLCT010000223.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000079l_1_1, whole genome shotgun sequence
-CAWLCT010000224.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000080l_1_1, whole genome shotgun sequence
-CAWLCT010000225.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000081l_1_1, whole genome shotgun sequence
-CAWLCT010000226.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000082l_1_1, whole genome shotgun sequence
-CAWLCT010000227.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000085l_1_1, whole genome shotgun sequence
-CAWLCT010000228.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000086l_1_1, whole genome shotgun sequence
-CAWLCT010000229.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000087l_1_1, whole genome shotgun sequence
-CAWLCT010000230.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000088l_1_1, whole genome shotgun sequence
-CAWLCT010000231.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000089l_1_1, whole genome shotgun sequence
-CAWLCT010000232.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000090l_1_1, whole genome shotgun sequence
-CAWLCT010000233.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000091l_1_1, whole genome shotgun sequence
-CAWLCT010000234.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000092l_1_1, whole genome shotgun sequence
-CAWLCT010000235.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000093l_1_1, whole genome shotgun sequence
-CAWLCT010000236.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000094l_1_1, whole genome shotgun sequence
-CAWLCT010000237.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000096l_1_1, whole genome shotgun sequence
-CAWLCT010000238.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000098l_1_1, whole genome shotgun sequence
-CAWLCT010000239.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000100l_1_1, whole genome shotgun sequence
-CAWLCT010000240.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000101l_1_1, whole genome shotgun sequence
-CAWLCT010000241.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000102l_1_1, whole genome shotgun sequence
-CAWLCT010000242.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000105l_1_1, whole genome shotgun sequence
-CAWLCT010000243.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000109l_1_1, whole genome shotgun sequence
-CAWLCT010000244.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000121l_1_1, whole genome shotgun sequence
-CAWLCT010000245.1 Ostrinia nubilalis genome assembly, contig: hap_ptg000123l_1_1, whole genome shotgun sequence
-CAWLCT010000246.1 Ostrinia nubilalis genome assembly, contig: H_1, whole genome shotgun sequence
-CAWLCT010000247.1 Ostrinia nubilalis genome assembly, contig: H_2, whole genome shotgun sequence
-CAWLCT010000248.1 Ostrinia nubilalis genome assembly, contig: H_3, whole genome shotgun sequence
-CAWLCT010000249.1 Ostrinia nubilalis genome assembly, contig: H_4, whole genome shotgun sequence
+ENA|OY979733|OY979733.1 CAWLCT010000128.1
+ENA|OY979733|OY979733.1 CAWLCT010000138.1
+ENA|OY979733|OY979733.1 CAWLCT010000156.1
+ENA|OY979733|OY979733.1 CAWLCT010000159.1
+ENA|OY979733|OY979733.1 CAWLCT010000179.1
+ENA|OY979733|OY979733.1 CAWLCT010000187.1
+ENA|OY979734|OY979734.1 CAWLCT010000004.1
+ENA|OY979734|OY979734.1 CAWLCT010000042.1
+ENA|OY979734|OY979734.1 CAWLCT010000044.1
+ENA|OY979734|OY979734.1 CAWLCT010000060.1
+ENA|OY979734|OY979734.1 CAWLCT010000141.1
+ENA|OY979734|OY979734.1 CAWLCT010000200.1
+ENA|OY979734|OY979734.1 CAWLCT010000221.1
+ENA|OY979736|OY979736.1 CAWLCT010000005.1
+ENA|OY979736|OY979736.1 CAWLCT010000019.1
+ENA|OY979736|OY979736.1 CAWLCT010000023.1
+ENA|OY979736|OY979736.1 CAWLCT010000092.1
+ENA|OY979736|OY979736.1 CAWLCT010000158.1
+ENA|OY979736|OY979736.1 CAWLCT010000193.1
+ENA|OY979736|OY979736.1 CAWLCT010000209.1
+ENA|OY979737|OY979737.1 CAWLCT010000001.1
+ENA|OY979737|OY979737.1 CAWLCT010000008.1
+ENA|OY979737|OY979737.1 CAWLCT010000014.1
+ENA|OY979737|OY979737.1 CAWLCT010000034.1
+ENA|OY979737|OY979737.1 CAWLCT010000048.1
+ENA|OY979737|OY979737.1 CAWLCT010000049.1
+ENA|OY979737|OY979737.1 CAWLCT010000073.1
+ENA|OY979737|OY979737.1 CAWLCT010000236.1
+ENA|OY979737|OY979737.1 CAWLCT010000243.1
+ENA|OY979738|OY979738.1 CAWLCT010000032.1
+ENA|OY979738|OY979738.1 CAWLCT010000035.1
+ENA|OY979738|OY979738.1 CAWLCT010000043.1
+ENA|OY979738|OY979738.1 CAWLCT010000093.1
+ENA|OY979738|OY979738.1 CAWLCT010000109.1
+ENA|OY979738|OY979738.1 CAWLCT010000124.1
+ENA|OY979738|OY979738.1 CAWLCT010000192.1
+ENA|OY979738|OY979738.1 CAWLCT010000248.1
+ENA|OY979739|OY979739.1 CAWLCT010000028.1
+ENA|OY979739|OY979739.1 CAWLCT010000039.1
+ENA|OY979739|OY979739.1 CAWLCT010000054.1
+ENA|OY979739|OY979739.1 CAWLCT010000066.1
+ENA|OY979739|OY979739.1 CAWLCT010000075.1
+ENA|OY979739|OY979739.1 CAWLCT010000082.1
+ENA|OY979739|OY979739.1 CAWLCT010000104.1
+ENA|OY979739|OY979739.1 CAWLCT010000113.1
+ENA|OY979739|OY979739.1 CAWLCT010000118.1
+ENA|OY979739|OY979739.1 CAWLCT010000147.1
+ENA|OY979739|OY979739.1 CAWLCT010000150.1
+ENA|OY979739|OY979739.1 CAWLCT010000166.1
+ENA|OY979739|OY979739.1 CAWLCT010000202.1
+ENA|OY979739|OY979739.1 CAWLCT010000214.1
+ENA|OY979740|OY979740.1 CAWLCT010000020.1
+ENA|OY979740|OY979740.1 CAWLCT010000025.1
+ENA|OY979740|OY979740.1 CAWLCT010000027.1
+ENA|OY979740|OY979740.1 CAWLCT010000029.1
+ENA|OY979740|OY979740.1 CAWLCT010000036.1
+ENA|OY979740|OY979740.1 CAWLCT010000062.1
+ENA|OY979740|OY979740.1 CAWLCT010000112.1
+ENA|OY979740|OY979740.1 CAWLCT010000125.1
+ENA|OY979740|OY979740.1 CAWLCT010000174.1
+ENA|OY979740|OY979740.1 CAWLCT010000186.1
+ENA|OY979740|OY979740.1 CAWLCT010000241.1
+ENA|OY979741|OY979741.1 CAWLCT010000022.1
+ENA|OY979741|OY979741.1 CAWLCT010000038.1
+ENA|OY979741|OY979741.1 CAWLCT010000058.1
+ENA|OY979741|OY979741.1 CAWLCT010000070.1
+ENA|OY979741|OY979741.1 CAWLCT010000111.1
+ENA|OY979741|OY979741.1 CAWLCT010000119.1
+ENA|OY979741|OY979741.1 CAWLCT010000160.1
+ENA|OY979741|OY979741.1 CAWLCT010000164.1
+ENA|OY979741|OY979741.1 CAWLCT010000185.1
+ENA|OY979741|OY979741.1 CAWLCT010000235.1
+ENA|OY979742|OY979742.1 CAWLCT010000009.1
+ENA|OY979742|OY979742.1 CAWLCT010000010.1
+ENA|OY979742|OY979742.1 CAWLCT010000031.1
+ENA|OY979742|OY979742.1 CAWLCT010000063.1
+ENA|OY979742|OY979742.1 CAWLCT010000064.1
+ENA|OY979742|OY979742.1 CAWLCT010000080.1
+ENA|OY979742|OY979742.1 CAWLCT010000086.1
+ENA|OY979742|OY979742.1 CAWLCT010000114.1
+ENA|OY979742|OY979742.1 CAWLCT010000131.1
+ENA|OY979742|OY979742.1 CAWLCT010000133.1
+ENA|OY979742|OY979742.1 CAWLCT010000136.1
+ENA|OY979742|OY979742.1 CAWLCT010000140.1
+ENA|OY979742|OY979742.1 CAWLCT010000225.1
+ENA|OY979743|OY979743.1 CAWLCT010000007.1
+ENA|OY979743|OY979743.1 CAWLCT010000176.1
+ENA|OY979743|OY979743.1 CAWLCT010000184.1
+ENA|OY979743|OY979743.1 CAWLCT010000234.1
+ENA|OY979744|OY979744.1 CAWLCT010000006.1
+ENA|OY979744|OY979744.1 CAWLCT010000015.1
+ENA|OY979744|OY979744.1 CAWLCT010000033.1
+ENA|OY979744|OY979744.1 CAWLCT010000037.1
+ENA|OY979744|OY979744.1 CAWLCT010000041.1
+ENA|OY979744|OY979744.1 CAWLCT010000052.1
+ENA|OY979744|OY979744.1 CAWLCT010000057.1
+ENA|OY979744|OY979744.1 CAWLCT010000059.1
+ENA|OY979744|OY979744.1 CAWLCT010000069.1
+ENA|OY979744|OY979744.1 CAWLCT010000088.1
+ENA|OY979744|OY979744.1 CAWLCT010000089.1
+ENA|OY979744|OY979744.1 CAWLCT010000094.1
+ENA|OY979744|OY979744.1 CAWLCT010000105.1
+ENA|OY979744|OY979744.1 CAWLCT010000106.1
+ENA|OY979744|OY979744.1 CAWLCT010000108.1
+ENA|OY979744|OY979744.1 CAWLCT010000139.1
+ENA|OY979744|OY979744.1 CAWLCT010000169.1
+ENA|OY979744|OY979744.1 CAWLCT010000220.1
+ENA|OY979744|OY979744.1 CAWLCT010000242.1
+ENA|OY979745|OY979745.1 CAWLCT010000003.1
+ENA|OY979745|OY979745.1 CAWLCT010000012.1
+ENA|OY979745|OY979745.1 CAWLCT010000040.1
+ENA|OY979745|OY979745.1 CAWLCT010000103.1
+ENA|OY979746|OY979746.1 CAWLCT010000002.1
+ENA|OY979746|OY979746.1 CAWLCT010000026.1
+ENA|OY979746|OY979746.1 CAWLCT010000050.1
+ENA|OY979747|OY979747.1 CAWLCT010000030.1
+ENA|OY979747|OY979747.1 CAWLCT010000152.1
+ENA|OY979747|OY979747.1 CAWLCT010000191.1
+ENA|OY979747|OY979747.1 CAWLCT010000205.1
+ENA|OY979747|OY979747.1 CAWLCT010000233.1
+ENA|OY979748|OY979748.1 CAWLCT010000016.1
+ENA|OY979748|OY979748.1 CAWLCT010000017.1
+ENA|OY979748|OY979748.1 CAWLCT010000081.1
+ENA|OY979748|OY979748.1 CAWLCT010000098.1
+ENA|OY979748|OY979748.1 CAWLCT010000149.1
+ENA|OY979748|OY979748.1 CAWLCT010000161.1
+ENA|OY979748|OY979748.1 CAWLCT010000223.1
+ENA|OY979748|OY979748.1 CAWLCT010000237.1
+ENA|OY979748|OY979748.1 CAWLCT010000247.1
+ENA|OY979749|OY979749.1 CAWLCT010000045.1
+ENA|OY979749|OY979749.1 CAWLCT010000051.1
+ENA|OY979749|OY979749.1 CAWLCT010000218.1
+ENA|OY979749|OY979749.1 CAWLCT010000228.1
+ENA|OY979750|OY979750.1 CAWLCT010000011.1
+ENA|OY979750|OY979750.1 CAWLCT010000047.1
+ENA|OY979750|OY979750.1 CAWLCT010000055.1
+ENA|OY979750|OY979750.1 CAWLCT010000079.1
+ENA|OY979750|OY979750.1 CAWLCT010000084.1
+ENA|OY979750|OY979750.1 CAWLCT010000097.1
+ENA|OY979750|OY979750.1 CAWLCT010000100.1
+ENA|OY979750|OY979750.1 CAWLCT010000110.1
+ENA|OY979750|OY979750.1 CAWLCT010000126.1
+ENA|OY979750|OY979750.1 CAWLCT010000129.1
+ENA|OY979750|OY979750.1 CAWLCT010000134.1
+ENA|OY979750|OY979750.1 CAWLCT010000143.1
+ENA|OY979750|OY979750.1 CAWLCT010000146.1
+ENA|OY979750|OY979750.1 CAWLCT010000157.1
+ENA|OY979750|OY979750.1 CAWLCT010000162.1
+ENA|OY979750|OY979750.1 CAWLCT010000171.1
+ENA|OY979750|OY979750.1 CAWLCT010000212.1
+ENA|OY979750|OY979750.1 CAWLCT010000240.1
+ENA|OY979751|OY979751.1 CAWLCT010000024.1
+ENA|OY979751|OY979751.1 CAWLCT010000217.1
+ENA|OY979751|OY979751.1 CAWLCT010000229.1
+ENA|OY979752|OY979752.1 CAWLCT010000053.1
+ENA|OY979752|OY979752.1 CAWLCT010000072.1
+ENA|OY979752|OY979752.1 CAWLCT010000074.1
+ENA|OY979752|OY979752.1 CAWLCT010000087.1
+ENA|OY979752|OY979752.1 CAWLCT010000091.1
+ENA|OY979752|OY979752.1 CAWLCT010000099.1
+ENA|OY979752|OY979752.1 CAWLCT010000132.1
+ENA|OY979752|OY979752.1 CAWLCT010000168.1
+ENA|OY979752|OY979752.1 CAWLCT010000182.1
+ENA|OY979752|OY979752.1 CAWLCT010000199.1
+ENA|OY979752|OY979752.1 CAWLCT010000215.1
+ENA|OY979753|OY979753.1 CAWLCT010000145.1
+ENA|OY979753|OY979753.1 CAWLCT010000198.1
+ENA|OY979753|OY979753.1 CAWLCT010000232.1
+ENA|OY979753|OY979753.1 CAWLCT010000245.1
+ENA|OY979754|OY979754.1 CAWLCT010000095.1
+ENA|OY979754|OY979754.1 CAWLCT010000120.1
+ENA|OY979754|OY979754.1 CAWLCT010000135.1
+ENA|OY979754|OY979754.1 CAWLCT010000190.1
+ENA|OY979754|OY979754.1 CAWLCT010000197.1
+ENA|OY979754|OY979754.1 CAWLCT010000210.1
+ENA|OY979754|OY979754.1 CAWLCT010000239.1
+ENA|OY979755|OY979755.1 CAWLCT010000018.1
+ENA|OY979755|OY979755.1 CAWLCT010000068.1
+ENA|OY979755|OY979755.1 CAWLCT010000071.1
+ENA|OY979755|OY979755.1 CAWLCT010000121.1
+ENA|OY979755|OY979755.1 CAWLCT010000122.1
+ENA|OY979755|OY979755.1 CAWLCT010000130.1
+ENA|OY979755|OY979755.1 CAWLCT010000172.1
+ENA|OY979755|OY979755.1 CAWLCT010000183.1
+ENA|OY979755|OY979755.1 CAWLCT010000203.1
+ENA|OY979755|OY979755.1 CAWLCT010000213.1
+ENA|OY979756|OY979756.1 CAWLCT010000077.1
+ENA|OY979756|OY979756.1 CAWLCT010000142.1
+ENA|OY979756|OY979756.1 CAWLCT010000173.1
+ENA|OY979756|OY979756.1 CAWLCT010000196.1
+ENA|OY979756|OY979756.1 CAWLCT010000224.1
+ENA|OY979757|OY979757.1 CAWLCT010000046.1
+ENA|OY979757|OY979757.1 CAWLCT010000123.1
+ENA|OY979757|OY979757.1 CAWLCT010000154.1
+ENA|OY979757|OY979757.1 CAWLCT010000165.1
+ENA|OY979757|OY979757.1 CAWLCT010000194.1
+ENA|OY979757|OY979757.1 CAWLCT010000216.1
+ENA|OY979758|OY979758.1 CAWLCT010000013.1
+ENA|OY979758|OY979758.1 CAWLCT010000083.1
+ENA|OY979758|OY979758.1 CAWLCT010000085.1
+ENA|OY979758|OY979758.1 CAWLCT010000090.1
+ENA|OY979758|OY979758.1 CAWLCT010000096.1
+ENA|OY979758|OY979758.1 CAWLCT010000101.1
+ENA|OY979758|OY979758.1 CAWLCT010000116.1
+ENA|OY979758|OY979758.1 CAWLCT010000163.1
+ENA|OY979758|OY979758.1 CAWLCT010000167.1
+ENA|OY979758|OY979758.1 CAWLCT010000175.1
+ENA|OY979758|OY979758.1 CAWLCT010000180.1
+ENA|OY979758|OY979758.1 CAWLCT010000181.1
+ENA|OY979758|OY979758.1 CAWLCT010000222.1
+ENA|OY979758|OY979758.1 CAWLCT010000244.1
+ENA|OY979759|OY979759.1 CAWLCT010000102.1
+ENA|OY979759|OY979759.1 CAWLCT010000189.1
+ENA|OY979759|OY979759.1 CAWLCT010000238.1
+ENA|OY979760|OY979760.1 CAWLCT010000056.1
+ENA|OY979760|OY979760.1 CAWLCT010000065.1
+ENA|OY979760|OY979760.1 CAWLCT010000067.1
+ENA|OY979760|OY979760.1 CAWLCT010000137.1
+ENA|OY979760|OY979760.1 CAWLCT010000219.1
+ENA|OY979760|OY979760.1 CAWLCT010000226.1
+ENA|OY979760|OY979760.1 CAWLCT010000227.1
+ENA|OY979761|OY979761.1 CAWLCT010000151.1
+ENA|OY979761|OY979761.1 CAWLCT010000155.1
+ENA|OY979761|OY979761.1 CAWLCT010000206.1
+ENA|OY979761|OY979761.1 CAWLCT010000231.1
+ENA|OY979762|OY979762.1 CAWLCT010000117.1
+ENA|OY979762|OY979762.1 CAWLCT010000127.1
+ENA|OY979762|OY979762.1 CAWLCT010000148.1
+ENA|OY979762|OY979762.1 CAWLCT010000153.1
+ENA|OY979762|OY979762.1 CAWLCT010000178.1
+ENA|OY979762|OY979762.1 CAWLCT010000201.1
+ENA|OY979762|OY979762.1 CAWLCT010000207.1
+ENA|OY979762|OY979762.1 CAWLCT010000211.1
+ENA|OY979762|OY979762.1 CAWLCT010000249.1
+ENA|OY979763|OY979763.1 CAWLCT010000188.1
+ENA|OY979764|OY979764.1 CAWLCT010000021.1
+ENA|OY979764|OY979764.1 CAWLCT010000061.1
+ENA|OY979764|OY979764.1 CAWLCT010000078.1
+ENA|OY979764|OY979764.1 CAWLCT010000115.1
+ENA|OY979764|OY979764.1 CAWLCT010000204.1
+ENA|OY979764|OY979764.1 CAWLCT010000208.1
+ENA|OY979764|OY979764.1 CAWLCT010000246.1
