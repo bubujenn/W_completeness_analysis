@@ -20,7 +20,7 @@ mkdir -p "$Outdir"
 # Input file 
 KMER_DB="${1:-fastq.gz.meryl}"
 FILTERED_DB="without_errors.meryl"
-CUTOFF=10  # Cut-off value from GenomeScope2.0
+CUTOFF=10  # Cut-off value from GenomeScope2.0 (or Cut-off.sh)
 
 # Copy input data to scratch
 cp -r "$Path/$KMER_DB" "$SCRATCHDIR/" || exit 1
