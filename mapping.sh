@@ -28,6 +28,7 @@ cp "$Path/$QUERY" "$SCRATCHDIR/" || exit 2
 cd "$SCRATCHDIR" || exit 3
 
 # Load required tools
+module purge (just in case)
 module load minimap2
 module load samtools
 
