@@ -42,8 +42,19 @@ samtools index filtered.bam || exit 7
 # Extract scaffold-to-chromosome mapping
 samtools view filtered.bam | awk '{print $3, $1}' | sort | uniq > scaffold_to_chr.tsv || exit 8
 
+# Compute query coverage using awk
+samtools view filtered.bam | awk '
+    { 
+        qname[$1] = $1;  # Query (scaffold) name
+        qlen[$1] += $9;  # Aligned length
+    }
+    END {
+        for (scaffold in qname)
+            print scaffold, qlen[scaffold];  
+    }' > query_coverage.tsv || exit 9
+
 # Move results back to output folder
-cp -r "$SCRATCHDIR"/* "$Outdir/" || { export CLEAN_SCRATCH=false; exit 9; }
+cp -r "$SCRATCHDIR"/* "$Outdir/" || { export CLEAN_SCRATCH=false; exit 10; }
 
 # Final message 
 echo "Done! Results saved in: $Outdir"
