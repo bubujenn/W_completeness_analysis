@@ -1,8 +1,8 @@
 #!/bin/bash
-#PBS -l select=1:ncpus=8:mem=32gb:scratch_local=500gb
-#PBS -l walltime=12:00:00
-#PBS -N Minimap2_Samtools
-#PBS -j oe
+#PBS -q interactive
+#PBS -l walltime=5:0:0
+#PBS -l select=1:ncpus=16:mem=128gb:scratch_local=200gb:vnode=kirke59+nympha53
+#PBS -N mapping_H2_H1
 
 # Clean scratch space on exit
 trap 'clean_scratch' TERM EXIT
