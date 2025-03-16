@@ -28,8 +28,7 @@ cp "$Path/$QUERY" "$SCRATCHDIR/" || exit 2
 cd "$SCRATCHDIR" || exit 3
 
 # Load required tools + module purge (just in case)
-module purge 
-module load python/3.7.7-intel-19.0.4
+module purge
 module load minimap2
 module load samtools
 
