@@ -29,8 +29,10 @@ cd "$SCRATCHDIR" || exit 3
 
 # Load required tools + module purge (just in case)
 module purge
-module load minimap2
-module load samtools
+module load python/3.9.12-gcc-10.2.1
+module load samtools/1.13-gcc-10.2.1
+module load minimap2/2.22-gcc-10.2.1
+
 
 # Run Minimap2 alignment
 minimap2 -ax asm5 --secondary=no "$REFERENCE" "$QUERY" > alignment.sam || exit 4
