@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -q interactive@pbs-m1.metacentrum.cz
+#PBS -q interactive@pbs-m1.metacentrum.cz (vnodes with samtools)
 #PBS -l walltime=5:0:0
 #PBS -l select=1:ncpus=16:mem=128gb:scratch_local=200gb
 #PBS -N mapping_H2_H1
