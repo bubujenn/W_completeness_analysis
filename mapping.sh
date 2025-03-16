@@ -27,7 +27,7 @@ cp "$Path/$REFERENCE" "$SCRATCHDIR/" || exit 1
 cp "$Path/$QUERY" "$SCRATCHDIR/" || exit 2
 cd "$SCRATCHDIR" || exit 3
 
-# Load required tools + module purge (just in case)
+# Load required tools + module purge (just in case.. # Ensuring compatibility between minimap2 and samtools by loading compatible module versions and resolving Python conflicts.)
 module purge
 module load python/3.9.12-gcc-10.2.1
 module load samtools/1.13-gcc-10.2.1
