@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -q interactive
+#PBS -q interactive@pbs-m1.metacentrum.cz
 #PBS -l walltime=5:0:0
-#PBS -l select=1:ncpus=16:mem=128gb:scratch_local=200gb:vnode=kirke59+nympha53
+#PBS -l select=1:ncpus=16:mem=128gb:scratch_local=200gb:vnode=kirke59
 #PBS -N mapping_H2_H1
 
 # Clean scratch space on exit
