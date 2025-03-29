@@ -7,7 +7,7 @@
 # Clean scratch on exit
 trap 'clean_scratch' TERM EXIT
 
-### USER-DEFINED VARIABLES TO FILL ###
+#VARIABLES
 READ_COVERAGE=45       # e.g., 45
 KMER_SIZE=19           # optional, merfin by to mel brat uz z merylu
 
