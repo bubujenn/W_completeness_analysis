@@ -11,7 +11,7 @@ trap 'clean_scratch' TERM EXIT
 READ_COVERAGE=45       # e.g., 45
 KMER_SIZE=19           # optional, merfin by to mel brat uz z merylu
 
-# Paths (already fixed for your current setup)
+# Paths 
 WORKDIR="/storage/brno2/home/jendrb00/DIPLOMOVA_PRACE_VYSLEDKY/my_analysis/Abraxas_sylvata_merfin/AA_Z_W"
 MERFIN_BIN="/storage/brno2/home/jendrb00/merfin/build/bin/merfin"
 MERYL_PATH="/storage/plzen1/home/jendrb00/meryl-1.4.1/bin"
