@@ -9,7 +9,7 @@ trap 'clean_scratch' TERM EXIT
 
 ### USER-DEFINED VARIABLES TO FILL ###
 READ_COVERAGE=45       # e.g., 45
-KMER_SIZE=19           # optional, just for clarity/reference
+KMER_SIZE=19           # optional, merfin by to mel brat uz z merylu
 
 # Paths (already fixed for your current setup)
 WORKDIR="/storage/brno2/home/jendrb00/DIPLOMOVA_PRACE_VYSLEDKY/my_analysis/Abraxas_sylvata_merfin/AA_Z_W"
