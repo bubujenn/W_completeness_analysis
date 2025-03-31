@@ -87,7 +87,7 @@ samtools index "$WORKDIR/problem_reads.sorted.bam"
 bedtools bamtobed -i "$WORKDIR/problem_reads.sorted.bam" > "$WORKDIR/problem_reads.bed"
 
 # Copy back
-cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "❌ Chyba při kopírování výsledků!"; exit 9; }
+cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "Chyba při kopírování"; exit 9; }
 
 # Hotovo
 echo "HOTOVO. Výsledky byly uloženy do: $OUTDIR"
