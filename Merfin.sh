@@ -50,13 +50,13 @@ NR>1 {
   exp_cn = ($2 / cov);
   dev = $3 - exp_cn;
   cn_class = (exp_cn < 1.5) ? "1x" : ((exp_cn < 2.5) ? "2x" : ((exp_cn < 5) ? "repeat" : "high-copy"));
-   print $0, exp_cn, dev, cn_class
+  print $0, exp_cn, dev, cn_class
 }' "$WORKDIR/merfin_stats.tsv" > "$WORKDIR/merfin_stats_annotated.tsv"
 
 # Extract kmers
-awk -F'\t' 'NR>1 && $3 == 0 && $2 >= 3 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/missing_km>
-awk -F'\t' -v cov=$READ_COVERAGE 'NR>1 && $3 != 0 && ($3 - ($2 / cov)) < -1 {print $1}' "$WORKDIR/merfin_stats_>
-cat "$WORKDIR/missing_kmers.txt" "$WORKDIR/collapsed_kmers.txt" | sort -T "$WORKDIR" | uniq > "$WORKDIR/problem>
+awk -F'\t' 'NR>1 && $3 == 0 && $2 >= 3 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/missing_kmers.txt"
+awk -F'\t' -v cov=$READ_COVERAGE 'NR>1 && $3 != 0 && ($3 - ($2 / cov)) < -1 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/collapsed_kmers.txt"
+cat "$WORKDIR/missing_kmers.txt" "$WORKDIR/collapsed_kmers.txt" | sort -T "$WORKDIR" | uniq > "$WORKDIR/problem_kmers.txt"
 
 # Activate meryl
 export PATH="$MERYL_PATH:$PATH"
@@ -86,7 +86,12 @@ minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/proble
 samtools index "$WORKDIR/problem_reads.sorted.bam"
 bedtools bamtobed -i "$WORKDIR/problem_reads.sorted.bam" > "$WORKDIR/problem_reads.bed"
 
-echo "\n DONE. Outputs saved in $WORKDIR"
+# Copy back
+cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "❌ Chyba při kopírování výsledků!"; exit 9; }
+
+# Hotovo
+echo "HOTOVO. Výsledky byly uloženy do: $OUTDIR"
+
 
 
 
