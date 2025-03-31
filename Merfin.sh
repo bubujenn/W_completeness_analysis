@@ -71,13 +71,13 @@ grep -Ff "$WORKDIR/problem_kmers.txt" "$WORKDIR/all_headers.txt" > "$WORKDIR/pro
 seqtk subseq "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_headers.txt" > "$WORKDIR/problem_scaffolds.fa"
 
 # Create meryl db from scaffolds
-meryl count k=$KMER_SIZE "$WORKDIR/problem_scaffolds.fa" output "$WORKDIR/problem_kmers2.meryl"
+meryl count k=$KMER_SIZE "$WORKDIR/problem_scaffolds.fa" output "$WORKDIR/problem_kmers.meryl"
 
 # Recover reads using meryl-lookup
 meryl-lookup -include \
   -sequence "$WORKDIR/$READS_FASTQ" \
-  -mers "$WORKDIR/problem_kmers2.meryl" \
-  -output "$WORKDIR/problem_reads2.fa"
+  -mers "$WORKDIR/problem_kmers.meryl" \
+  -output "$WORKDIR/problem_reads.fa"
 
 # Load modules
 module purge
@@ -87,7 +87,7 @@ module load minimap2/2.22-gcc-10.2.1
 module load bedtools
 
 # Map recovered reads and process
-minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_reads2.fa" | \
+minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_reads.fa" | \
   samtools sort -@ "$THREADS" -o "$WORKDIR/problem_reads.sorted.bam"
 samtools index "$WORKDIR/problem_reads.sorted.bam"
 bedtools bamtobed -i "$WORKDIR/problem_reads.sorted.bam" > "$WORKDIR/problem_reads.bed"
