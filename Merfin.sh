@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l select=1:ncpus=8:mem=64gb:scratch_local=500gb
+#PBS -l select=1:ncpus=8:mem=64gb:scratch_local=200gb
 #PBS -l walltime=12:00:00
 #PBS -N Merfin_job
 #PBS -j oe
@@ -7,9 +7,9 @@
 # Clean scratch on exit
 trap 'clean_scratch' TERM EXIT
 
-#VARIABLES
-READ_COVERAGE=45       # e.g., 45
-KMER_SIZE=19           # optional, merfin by to mel brat uz z merylu
+# VARIABLES
+READ_COVERAGE=45       
+KMER_SIZE=19           
 
 # Paths 
 WORKDIR="/storage/brno2/home/jendrb00/DIPLOMOVA_PRACE_VYSLEDKY/my_analysis/Abraxas_sylvata_merfin/AA_Z_W"
@@ -50,20 +50,28 @@ NR>1 {
   exp_cn = ($2 / cov);
   dev = $3 - exp_cn;
   cn_class = (exp_cn < 1.5) ? "1x" : ((exp_cn < 2.5) ? "2x" : ((exp_cn < 5) ? "repeat" : "high-copy"));
-  print $0, exp_cn, dev, cn_class
+   print $0, exp_cn, dev, cn_class
 }' "$WORKDIR/merfin_stats.tsv" > "$WORKDIR/merfin_stats_annotated.tsv"
 
 # Extract kmers
-awk -F'\t' 'NR>1 && $3 == 0 && $2 >= 3 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/missing_kmers.txt"
-awk -F'\t' -v cov=$READ_COVERAGE 'NR>1 && $3 != 0 && ($3 - ($2 / cov)) < -1 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/collapsed_kmers.txt"
-cat "$WORKDIR/missing_kmers.txt" "$WORKDIR/collapsed_kmers.txt" | sort -T "$WORKDIR" | uniq > "$WORKDIR/problem_kmers.txt"
+awk -F'\t' 'NR>1 && $3 == 0 && $2 >= 3 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/missing_km>
+awk -F'\t' -v cov=$READ_COVERAGE 'NR>1 && $3 != 0 && ($3 - ($2 / cov)) < -1 {print $1}' "$WORKDIR/merfin_stats_>
+cat "$WORKDIR/missing_kmers.txt" "$WORKDIR/collapsed_kmers.txt" | sort -T "$WORKDIR" | uniq > "$WORKDIR/problem>
 
-# Run meryl-lookup
+# Activate meryl
 export PATH="$MERYL_PATH:$PATH"
-"$MERYL_PATH/meryl-lookup" -include \
+
+# Convert kmers list to FASTA
+seqtk subseq "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_kmers.txt" > "$WORKDIR/problem_scaffolds.fa"
+
+# Create meryl db from scaffolds
+meryl count k=$KMER_SIZE "$WORKDIR/problem_scaffolds.fa" output "$WORKDIR/problem_kmers2.meryl"
+
+# Recover reads using meryl-lookup
+meryl-lookup -include \
   -sequence "$WORKDIR/$READS_FASTQ" \
-  -mers "$WORKDIR/problem_kmers.txt" \
-  -output "$WORKDIR/problem_reads.fa"
+  -mers "$WORKDIR/problem_kmers2.meryl" \
+  -output "$WORKDIR/problem_reads2.fa"
 
 # Load modules
 module purge
@@ -72,10 +80,13 @@ module load samtools/1.13-gcc-10.2.1
 module load minimap2/2.22-gcc-10.2.1
 module load bedtools
 
-# Map reads and process alignments
-minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_reads.fa" | \
+# Map recovered reads and process
+minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_reads2.fa" | \
   samtools sort -@ "$THREADS" -o "$WORKDIR/problem_reads.sorted.bam"
 samtools index "$WORKDIR/problem_reads.sorted.bam"
 bedtools bamtobed -i "$WORKDIR/problem_reads.sorted.bam" > "$WORKDIR/problem_reads.bed"
 
-echo "✅ DONE. Outputs saved in $WORKDIR"
+echo "\n✅ DONE. Outputs saved in $WORKDIR"
+
+
+
