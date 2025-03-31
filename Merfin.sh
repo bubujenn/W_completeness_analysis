@@ -61,8 +61,14 @@ cat "$WORKDIR/missing_kmers.txt" "$WORKDIR/collapsed_kmers.txt" | sort -T "$WORK
 # Activate meryl
 export PATH="$MERYL_PATH:$PATH"
 
+# Extract FASTA headers
+grep "^>" "$WORKDIR/$ASSEMBLY_FASTA" | cut -d' ' -f1 | sed 's/^>//' > "$WORKDIR/all_headers.txt"
+
+# Match headers
+grep -Ff "$WORKDIR/problem_kmers.txt" "$WORKDIR/all_headers.txt" > "$WORKDIR/problem_headers.txt"
+
 # Convert kmers list to FASTA
-seqtk subseq "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_kmers.txt" > "$WORKDIR/problem_scaffolds.fa"
+seqtk subseq "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_headers.txt" > "$WORKDIR/problem_scaffolds.fa"
 
 # Create meryl db from scaffolds
 meryl count k=$KMER_SIZE "$WORKDIR/problem_scaffolds.fa" output "$WORKDIR/problem_kmers2.meryl"
@@ -87,11 +93,10 @@ samtools index "$WORKDIR/problem_reads.sorted.bam"
 bedtools bamtobed -i "$WORKDIR/problem_reads.sorted.bam" > "$WORKDIR/problem_reads.bed"
 
 # Copy back
+mkdir -p "$OUTDIR"
 cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "Chyba při kopírování"; exit 9; }
 
 # Hotovo
 echo "HOTOVO. Výsledky byly uloženy do: $OUTDIR"
-
-
 
 
