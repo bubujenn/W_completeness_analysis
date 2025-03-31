@@ -86,7 +86,7 @@ minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/proble
 samtools index "$WORKDIR/problem_reads.sorted.bam"
 bedtools bamtobed -i "$WORKDIR/problem_reads.sorted.bam" > "$WORKDIR/problem_reads.bed"
 
-echo "\n✅ DONE. Outputs saved in $WORKDIR"
+echo "\n DONE. Outputs saved in $WORKDIR"
 
 
 
