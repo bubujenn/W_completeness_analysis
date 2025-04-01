@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -l select=1:ncpus=8:mem=64gb:scratch_local=200gb
 #PBS -l walltime=12:00:00
-#PBS -N Merfin_job
+#PBS -N Merfin_vystup4
 #PBS -j oe
 
 # Clean scratch on exit
@@ -10,6 +10,7 @@ trap 'clean_scratch' TERM EXIT
 # VARIABLES
 READ_COVERAGE=45       
 KMER_SIZE=19           
+THREADS=8
 
 # Paths 
 WORKDIR="/storage/brno2/home/jendrb00/DIPLOMOVA_PRACE_VYSLEDKY/my_analysis/Abraxas_sylvata_merfin/AA_Z_W"
@@ -19,9 +20,8 @@ READ_KMER_DB="without_errors.meryl"
 ASM_KMER_DB="AA_Z_W.meryl"
 READS_FASTQ="ERR12370385.fastq.gz"
 ASSEMBLY_FASTA="AA_Z_Wasmbl.fasta"
-THREADS=8
 TIMESTAMP=$(date +"%Y%m%d_%H%M")
-OUTDIR="$WORKDIR/merfin_output_$TIMESTAMP"
+OUTDIR="$WORKDIR/merfin_output4_$TIMESTAMP"
 
 # Prepare scratch
 mkdir -p "$SCRATCHDIR/merfin_run"
@@ -37,10 +37,10 @@ cd "$SCRATCHDIR/merfin_run"
   -readmers "$READ_KMER_DB" \
   -seqmers "$ASM_KMER_DB" \
   -peak "$READ_COVERAGE" \
-  -output merfin_stats.tsv
+  -output merfin_stats4.tsv
 
 # Copy result back
-cp merfin_stats.tsv "$WORKDIR/"
+cp merfin_stats4.tsv "$WORKDIR/"
 
 # Annotate copy number
 awk -v cov=$READ_COVERAGE -F'\t' '
@@ -51,33 +51,33 @@ NR>1 {
   dev = $3 - exp_cn;
   cn_class = (exp_cn < 1.5) ? "1x" : ((exp_cn < 2.5) ? "2x" : ((exp_cn < 5) ? "repeat" : "high-copy"));
   print $0, exp_cn, dev, cn_class
-}' "$WORKDIR/merfin_stats.tsv" > "$WORKDIR/merfin_stats_annotated.tsv"
+}' "$WORKDIR/merfin_stats4.tsv" > "$WORKDIR/merfin_stats_annotated4.tsv"
 
 # Extract kmers
-awk -F'\t' 'NR>1 && $3 == 0 && $2 >= 3 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/missing_kmers.txt"
-awk -F'\t' -v cov=$READ_COVERAGE 'NR>1 && $3 != 0 && ($3 - ($2 / cov)) < -1 {print $1}' "$WORKDIR/merfin_stats_annotated.tsv" > "$WORKDIR/collapsed_kmers.txt"
-cat "$WORKDIR/missing_kmers.txt" "$WORKDIR/collapsed_kmers.txt" | sort -T "$WORKDIR" | uniq > "$WORKDIR/problem_kmers.txt"
+awk -F'\t' 'NR>1 && $3 == 0 && $2 >= 3 {print $1}' "$WORKDIR/merfin_stats_annotated4.tsv" > "$WORKDIR/missing_kmers4.txt"
+awk -F'\t' -v cov=$READ_COVERAGE 'NR>1 && $3 != 0 && ($3 - ($2 / cov)) < -1 {print $1}' "$WORKDIR/merfin_stats_annotated4.tsv" > "$WORKDIR/collapsed_kmers4.txt"
+cat "$WORKDIR/missing_kmers4.txt" "$WORKDIR/collapsed_kmers4.txt" | sort -T "$WORKDIR" | uniq > "$WORKDIR/problem_kmers4.txt"
 
 # Activate meryl
 export PATH="$MERYL_PATH:$PATH"
 
 # Extract FASTA headers
-grep "^>" "$WORKDIR/$ASSEMBLY_FASTA" | cut -d' ' -f1 | sed 's/^>//' > "$WORKDIR/all_headers.txt"
+grep "^>" "$WORKDIR/$ASSEMBLY_FASTA" | cut -d' ' -f1 | sed 's/^>//' > "$WORKDIR/all_headers4.txt"
 
 # Match headers
-grep -Ff "$WORKDIR/problem_kmers.txt" "$WORKDIR/all_headers.txt" > "$WORKDIR/problem_headers.txt"
+grep -Ff "$WORKDIR/problem_kmers4.txt" "$WORKDIR/all_headers4.txt" > "$WORKDIR/problem_headers4.txt"
 
 # Convert kmers list to FASTA
-seqtk subseq "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_headers.txt" > "$WORKDIR/problem_scaffolds.fa"
+seqtk subseq "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_headers4.txt" > "$WORKDIR/problem_scaffolds4.fa"
 
 # Create meryl db from scaffolds
-meryl count k=$KMER_SIZE "$WORKDIR/problem_scaffolds.fa" output "$WORKDIR/problem_kmers.meryl"
+meryl count k=$KMER_SIZE "$WORKDIR/problem_scaffolds4.fa" output "$WORKDIR/problem_kmers4.meryl"
 
 # Recover reads using meryl-lookup
 meryl-lookup -include \
   -sequence "$WORKDIR/$READS_FASTQ" \
-  -mers "$WORKDIR/problem_kmers.meryl" \
-  -output "$WORKDIR/problem_reads.fa"
+  -mers "$WORKDIR/problem_kmers4.meryl" \
+  -output "$WORKDIR/problem_reads4.fa"
 
 # Load modules
 module purge
@@ -87,16 +87,16 @@ module load minimap2/2.22-gcc-10.2.1
 module load bedtools
 
 # Map recovered reads and process
-minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_reads.fa" | \
-  samtools sort -@ "$THREADS" -o "$WORKDIR/problem_reads.sorted.bam"
-samtools index "$WORKDIR/problem_reads.sorted.bam"
-bedtools bamtobed -i "$WORKDIR/problem_reads.sorted.bam" > "$WORKDIR/problem_reads.bed"
+minimap2 -t "$THREADS" -a -x map-ont "$WORKDIR/$ASSEMBLY_FASTA" "$WORKDIR/problem_reads4.fa" | \
+  samtools sort -@ "$THREADS" -o "$WORKDIR/problem_reads4.sorted.bam"
+samtools index "$WORKDIR/problem_reads4.sorted.bam"
+bedtools bamtobed -i "$WORKDIR/problem_reads4.sorted.bam" > "$WORKDIR/problem_reads4.bed"
 
 # Copy back
 mkdir -p "$OUTDIR"
-cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "Chyba při kopírování"; exit 9; }
+cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "Chyba pri kopirovani"; exit 9; }
 
 # Hotovo
-echo "HOTOVO. Výsledky byly uloženy do: $OUTDIR"
+echo "HOTOVO: Výsledky byly uloženy do složky: $OUTDIR (verze 4)"
 
 
