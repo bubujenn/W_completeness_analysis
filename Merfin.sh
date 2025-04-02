@@ -1,3 +1,24 @@
+#Download Merfin
+#Cílová složka 
+INSTALL_DIR="/storage/brno12-cerit/home/jendrb00/merfin"
+#Přesun do složky
+cd "$(dirname "$INSTALL_DIR")"
+# Klonuj repozitář
+if [ -d "$INSTALL_DIR" ]; then
+  echo "❗ Starý Merfin se maže..."
+  rm -rf "$INSTALL_DIR"
+fi
+git clone --recursive https://github.com/arangrhie/merfin.git
+# Přesun do složky se zdroji
+cd "$INSTALL_DIR/src"
+# Pridat modul
+module add gcc
+#Kompilace
+cd ~/merfin/src
+make
+
+
+
 #!/bin/bash
 #PBS -l select=1:ncpus=8:mem=64gb:scratch_local=200gb
 #PBS -l walltime=12:00:00
