@@ -16,9 +16,7 @@ module add gcc
 #Kompilace
 cd ~/merfin/src
 make
-
-
-
+_________________________________________________________________
 #!/bin/bash
 #PBS -l select=1:ncpus=8:mem=64gb:scratch_local=200gb
 #PBS -l walltime=12:00:00
