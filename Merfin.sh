@@ -40,7 +40,7 @@ ASM_KMER_DB="AA_Z_W.meryl"
 READS_FASTQ="ERR12370385.fastq.gz"
 ASSEMBLY_FASTA="AA_Z_Wasmbl.fasta"
 TIMESTAMP=$(date +"%Y%m%d_%H%M")
-OUTDIR="$WORKDIR/merfin_output4_$TIMESTAMP"
+OUTDIR="$WORKDIR/merfin_output_sh_$TIMESTAMP"
 
 # ─── PŘÍPRAVA SCRATCHE 
 mkdir -p "$SCRATCHDIR/merfin_run"
