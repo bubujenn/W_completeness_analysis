@@ -35,7 +35,7 @@ meryl print "$READMERS" | cut -f1 | sort -T . > reads_kmers.txt
 echo "Vytahuju a třídím k-mery z assembly..."
 meryl print "$SEQMERS" | cut -f1 | sort -T . > asm_kmers.txt
 
-echo "🔍 Hledám chybějící k-mery..."
+echo "Hledám chybějící k-mery..."
 comm -23 reads_kmers.txt asm_kmers.txt > missing_kmers.txt
 
 # FASTA
