@@ -29,21 +29,21 @@ cp -r "$WORKDIR/$READMERS" "$SCRATCH_SUBDIR"
 cp -r "$WORKDIR/$SEQMERS" "$SCRATCH_SUBDIR"
 
 #Extract and compare k-mers
-echo "🧪 Vytahuju a třídím k-mery z reads..."
+echo "Vytahuju a třídím k-mery z reads..."
 meryl print "$READMERS" | cut -f1 | sort -T . > reads_kmers.txt
 
-echo "🧪 Vytahuju a třídím k-mery z assembly..."
+echo "Vytahuju a třídím k-mery z assembly..."
 meryl print "$SEQMERS" | cut -f1 | sort -T . > asm_kmers.txt
 
 echo "🔍 Hledám chybějící k-mery..."
 comm -23 reads_kmers.txt asm_kmers.txt > missing_kmers.txt
 
 # FASTA
-echo "📄 Převádím na FASTA..."
+echo "Převádím na FASTA..."
 awk '{print ">kmer" NR "\n" $1}' missing_kmers.txt > missing_kmers.fasta
 
 #Copy back
-echo "💾 Kopíruju výsledky zpět do: $OUTDIR"
+echo "Kopíruju výsledky zpět do: $OUTDIR"
 cp missing_kmers.txt missing_kmers.fasta "$OUTDIR" || { export CLEAN_SCRATCH=false; exit 2; }
 
 #Shrnutí
