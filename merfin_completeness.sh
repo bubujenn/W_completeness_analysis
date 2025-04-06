@@ -40,7 +40,7 @@ cd "$SCRATCHDIR/merfin_run"
   -readmers without_errors.meryl \
   -seqmers AA_Z_W.meryl \
   -peak 45 \
-  -output merfin_completeness.tsv)
+  > merfin_completeness.txt 2>&1)
 
 mkdir -p "$OUTDIR"
 cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "Chyba při kopírování!"; exit 9; }
