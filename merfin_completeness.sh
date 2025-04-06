@@ -34,6 +34,14 @@ cd "$SCRATCHDIR/merfin_run"
   -peak "$READ_COVERAGE" \
   -output merfin_completeness.tsv
 
+  (/storage/brno2/home/jendrb00/merfin/build/bin/merfin \
+  -completeness \
+  -sequence AA_Z_Wasmbl.fasta \
+  -readmers without_errors.meryl \
+  -seqmers AA_Z_W.meryl \
+  -peak 45 \
+  -output merfin_completeness.tsv)
+
 mkdir -p "$OUTDIR"
 cp -r "$SCRATCHDIR/merfin_run/"* "$OUTDIR/" || { export CLEAN_SCRATCH=false; echo "Chyba při kopírování!"; exit 9; }
 
