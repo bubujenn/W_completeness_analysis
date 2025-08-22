@@ -6,59 +6,54 @@
 
 trap 'clean_scratch' TERM EXIT
 
-#nastaveni vstupu a promennych
+# nastaveni vstupu
 WORKDIR="${PWD}"
 CLUSTERS="cluster_list.txt"
 CONTIGS="contigs.fasta"
-TADEAM_DIR="tandem_consensi"
+TAREAN_DIR="tandem_consensi"   # slozka s TAREAN konsenzy
 
 MERYL_BIN="/storage/plzen1/home/jendrb00/meryl-1.4.1/bin"
 export PATH="$MERYL_BIN:$PATH"
 
-MERYL_READS="reads.meryl"
-MERYL_AAZ="AAZ.meryl"
-MERYL_AAZW="AAZW.meryl"
+MERYL_READS="reads.meryl"      # PacBio raw
+MERYL_AAZ="AAZ.meryl"          # AA+Z assembly
+MERYL_AAZW="AAZW.meryl"        # AA+Z+W assembly
 
 KMER=63
 DO_DIMER=1
 PB_PEAK=45
+EPS=1e-9
 
 TS=$(date +"%Y%m%d_%H%M")
 OUTDIR="$WORKDIR/repeats_k${KMER}_$TS"
 OUT_TABLE="$OUTDIR/repeats_k${KMER}_summary.tsv"
 OUT_DIMER="$OUTDIR/repeats_dimer_profile.tsv"
 
-#kopie na scratch
+# kopie na scratch
 mkdir -p "$SCRATCHDIR/repeat_analysis"
 cp "$WORKDIR/$CLUSTERS" "$SCRATCHDIR/repeat_analysis/"
 cp "$WORKDIR/$CONTIGS" "$SCRATCHDIR/repeat_analysis/"
-cp -r "$WORKDIR/$TADEAM_DIR" "$SCRATCHDIR/repeat_analysis/" || true
+cp -r "$WORKDIR/$TAREAN_DIR" "$SCRATCHDIR/repeat_analysis/" || true
 cp -r "$WORKDIR/$MERYL_READS" "$SCRATCHDIR/repeat_analysis/"
 cp -r "$WORKDIR/$MERYL_AAZ" "$SCRATCHDIR/repeat_analysis/"
 cp -r "$WORKDIR/$MERYL_AAZW" "$SCRATCHDIR/repeat_analysis/"
 cd "$SCRATCHDIR/repeat_analysis"
 
-TADEAM_DIR="$(basename "$TADEAM_DIR")"
+TAREAN_DIR="$(basename "$TAREAN_DIR")"
 MERYL_READS="$(basename "$MERYL_READS")"
 MERYL_AAZ="$(basename "$MERYL_AAZ")"
 MERYL_AAZW="$(basename "$MERYL_AAZW")"
 
-#hlavicky vystupu
+# hlavicky vystupu
 mkdir -p "$OUTDIR"
 echo -e "Cluster\tNumKmers\tPB_sum\tAAZ_sum\tAAZW_sum\tPB_norm\tAAZW_minus_AAZ\tW_ratio" > "$OUT_TABLE"
 if [[ "$DO_DIMER" -eq 1 ]]; then
   echo -e "Cluster\tA\tC\tG\tT\tAA\tAC\tAG\tAT\tCA\tCC\tCG\tCT\tGA\tGC\tGG\tGT\tTA\tTC\tTG\tTT" > "$OUT_DIMER"
 fi
 
-#pomocne funkce
-sum_lookup_counts() {
-  awk 'NF==2 {s+=$2; next} NF==1 {s+=$1; next} END{print (s+0)}'
-}
-
-pb_norm() {
-  awk -v cov="$PB_PEAK" '{printf "%.6f", $1/cov}'
-}
-
+# pomocne funkce
+sum_lookup_counts() { awk 'NF==2 {s+=$2; next} NF==1 {s+=$1; next} END{print (s+0)}'; }
+pb_norm() { awk -v cov="$PB_PEAK" '{printf "%.6f", $1/cov}'; }
 dimer_profile() {
   local fasta="$1"
   meryl count k=2 output tmp_dimer.meryl "$fasta"
@@ -71,63 +66,63 @@ dimer_profile() {
   rm -rf tmp_dimer.meryl
 }
 
-#for loop pres klastry
+# for loop pres klastry
 while read -r cid; do
   [[ -z "$cid" ]] && continue
   echo ">>> delam cluster${cid}"
 
-  # 4.1 hledam TADEAM nebo contig
-  if [[ -f "${TADEAM_DIR}/cluster${cid}_TADEAM.consensus.fasta" ]]; then
-    seqfile="${TADEAM_DIR}/cluster${cid}_TADEAM.consensus.fasta"
-    source_type="TADEAM"
+  # hledam TAREAN konsenzus nebo contig
+  if [[ -f "${TAREAN_DIR}/cluster${cid}_TAREAN.consensus.fasta" ]]; then
+    seqfile="${TAREAN_DIR}/cluster${cid}_TAREAN.consensus.fasta"
+    source_type="TAREAN"
   else
     seqfile="cluster${cid}.fa"
     grep -A1 -w ">cluster${cid}" "$CONTIGS" > "$seqfile" || true
     source_type="CONTIG"
   fi
 
-  #kdyz neni sekvence tak preskocim
+  # kdyz neni sekvence preskocim
   if [[ ! -s "$seqfile" ]]; then
     echo "!! nic pro cluster${cid}"
     continue
   fi
 
-  #spocitam kmery z celeho souboru
+  # spocitam kmery
   meryl count k=$KMER memory=4 output "tmp_${cid}.meryl" "$seqfile"
 
-  #vytvorim fasta se seznamem kmeru
+  # vytvorim fasta se seznamem kmeru
   meryl print "tmp_${cid}.meryl" | awk '{print ">"NR"\n"$1}' > "kmers_${cid}.fa"
   nkmers=$(grep -c '^>' "kmers_${cid}.fa")
 
-  #lookup v databazich
+  # lookup v databazich
   pb_sum=$(meryl-lookup -dump -sequence "kmers_${cid}.fa" -mers "$MERYL_READS" | sum_lookup_counts)
-  aaz_sum=$(meryl-lookup -dump -sequence "kmers_${cid}.fa" -mers "$MERYL_AAZ"   | sum_lookup_counts)
+  aaz_sum=$(meryl-lookup -dump -sequence "kmers_${cid}.fa" -mers "$MERYL_AAZ" | sum_lookup_counts)
   aazw_sum=$(meryl-lookup -dump -sequence "kmers_${cid}.fa" -mers "$MERYL_AAZW" | sum_lookup_counts)
 
-  #normalizace pacbio
+  # normalizace pacbio
   pb_norm_val=$(printf "%s\n" "$pb_sum" | pb_norm)
 
-  #rozdil a pomer pro W
+  # rozdil a pomer pro W
   delta_w=$(awk -v x="$aazw_sum" -v y="$aaz_sum" 'BEGIN{printf "%.6f", x - y}')
   w_ratio=$(awk -v x="$aazw_sum" -v y="$aaz_sum" -v e="$EPS" 'BEGIN{printf "%.6f", (x+e)/(y+e)}')
 
-  #zapisu do tabulky
+  # zapisu do tabulky
   echo -e "cluster${cid}\t${nkmers}\t${pb_sum}\t${aaz_sum}\t${aazw_sum}\t${pb_norm_val}\t${delta_w}\t${w_ratio}" >> "$OUT_TABLE"
 
-  #kdyz mam TADEAM udelam dimery
-  if [[ "$DO_DIMER" -eq 1 && "$source_type" == "TADEAM" ]]; then
+  # kdyz mam TAREAN udelam dimery
+  if [[ "$DO_DIMER" -eq 1 && "$source_type" == "TAREAN" ]]; then
     line=$(dimer_profile "$seqfile")
     echo -e "cluster${cid}\t${line}" >> "$OUT_DIMER"
   fi
 
-  #uklid
+  # uklid
   rm -rf "tmp_${cid}.meryl" "kmers_${cid}.fa"
   if [[ "$source_type" == "CONTIG" ]]; then rm -f "$seqfile"; fi
 
   echo "✓ cluster${cid} hotovo"
 done < "$CLUSTERS"
 
-#zkopiruju vysledky zpet
+# zkopiruju vysledky zpet
 cp "$OUT_TABLE" "$OUTDIR/"
 if [[ "$DO_DIMER" -eq 1 && -f "$OUT_DIMER" ]]; then
   cp "$OUT_DIMER" "$OUTDIR/"
