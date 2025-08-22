@@ -22,7 +22,6 @@ MERYL_AAZW="AAZW.meryl"        # AA+Z+W assembly
 KMER=63
 DO_DIMER=1
 PB_PEAK=45
-EPS=1e-9
 
 TS=$(date +"%Y%m%d_%H%M")
 OUTDIR="$WORKDIR/repeats_k${KMER}_$TS"
