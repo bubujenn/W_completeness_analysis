@@ -1,9 +1,8 @@
 #!/bin/bash
-
-# script to comparative clustering by RepeatExplorer
-# expected name of fasta files /PATH/PrefixSampleNumber*.fasta 
-# usage: bash /PATH/script.sh /PATH/inputs/file.fasta prefix_length
-
+# RepeatExplorer Pipeline for W Chromosome Completeness Analysis
+============================================================================
+# PART 1: RE_clustering.sh
+============================================================================
 Fasta=$(basename ${1})
 TimeStamp=$(date +"%Y%m%d.%H%M")
 Outdir=$PWD/RE_${TimeStamp} 
@@ -49,13 +48,10 @@ chmod +x ${Outfile}
 qsub ${Outfile}
 cd ..
 
-
-
-
-
-#Priprava dat - 
-#!/bin/bash
-# Data preparation for RE 
+============================================================================
+# PART 2: Data Preparation
+# Working directory: /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs
+============================================================================
 
 cd /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs
 
@@ -73,9 +69,13 @@ sed 's/>/&PBrw_/' PBrw_short.fa > PBrw_tagged.fa
 cat AAZ0_tagged.fa PBrw_tagged.fa > AAZ0_vs_PBrw.fa
 cat AAZW_tagged.fa PBrw_tagged.fa > AAZW_vs_PBrw.fa
 
-#Spusteni -
-# Dataset 1: AAZ0 vs PBrw (W chromosome)
-bash RE_clustering.sh AAZ0_vs_PBrw.fa 5
 
-# Dataset 2: AAZW vs PBrw (W chromosome completeness)  
-bash RE_clustering.sh AAZW_vs_PBrw.fa 5
+============================================================================
+# PART 3: Spuštění RepeatExplorer
+============================================================================
+
+# Dataset 1: AAZ0 vs PBrw
+bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/AAZ0_vs_PBrw.fa 5
+
+# Dataset 2: AAZW vs PBrw
+bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/AAZW_vs_PBrw.fa 5
