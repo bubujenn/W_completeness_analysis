@@ -53,7 +53,7 @@ cd ..
 
 
 
-Priprava dat - 
+#Priprava dat - 
 #!/bin/bash
 # Data preparation for RE 
 
@@ -73,7 +73,7 @@ sed 's/>/&PBrw_/' PBrw_short.fa > PBrw_tagged.fa
 cat AAZ0_tagged.fa PBrw_tagged.fa > AAZ0_vs_PBrw.fa
 cat AAZW_tagged.fa PBrw_tagged.fa > AAZW_vs_PBrw.fa
 
-Spusteni -
+#Spusteni -
 # Dataset 1: AAZ0 vs PBrw (W chromosome)
 bash RE_clustering.sh AAZ0_vs_PBrw.fa 5
 
