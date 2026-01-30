@@ -75,7 +75,7 @@ cat AAZW_tagged.fa PBrw_tagged.fa > AAZW_vs_PBrw.fa
 
 Spusteni -
 # Dataset 1: AAZ0 vs PBrw (W chromosome)
-bash RE_clustering.sh AAZ0_vs_PBrw_v3.fa 5
+bash RE_clustering.sh AAZ0_vs_PBrw.fa 5
 
 # Dataset 2: AAZW vs PBrw (W chromosome completeness)  
-bash RE_clustering.sh AAZW_vs_PBrw_v3.fa 5
+bash RE_clustering.sh AAZW_vs_PBrw.fa 5
