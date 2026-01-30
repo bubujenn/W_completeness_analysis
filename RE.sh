@@ -1,7 +1,7 @@
 #!/bin/bash
 # RepeatExplorer Pipeline for W Chromosome Completeness Analysis
 ============================================================================
-# PART 1: RE_clustering.sh
+#  RE_clustering.sh
 ============================================================================
 Fasta=$(basename ${1})
 TimeStamp=$(date +"%Y%m%d.%H%M")
