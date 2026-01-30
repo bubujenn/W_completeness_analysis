@@ -56,7 +56,6 @@ cd ..
 
 ============================================================================
 # PART 2: Data Preparation
-# Working directory: /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs
 ============================================================================
 
 cd /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs
