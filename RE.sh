@@ -83,3 +83,87 @@ bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh /storag
 
 # Dataset 2: AAZW vs PBrw
 bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/AAZW_vs_PBrw.fa 5
+
+
+
+______________________________________________________________________________________________________________________________
+
+ =============================================================================
+# PART 1: SIMULATION (randomreads.sh)
+ =============================================================================
+# AAZ (genom samce, bez W) ---
+# ref: AA_Z_chr.fasta
+randomreads.sh ref=AA_Z_chr.fasta out=AAZ_100bp.fastq.gz \
+    len=100 reads=20000000 seed=42 paired=f adderrors=f
+
+# AAZW (genom samice, s W) ---
+# ref: AA_Z_Wasmbl.fasta
+randomreads.sh ref=AA_Z_Wasmbl.fasta out=AAZW_100bp.fastq.gz \
+    len=100 reads=20000000 seed=42 paired=f adderrors=f
+
+# PBrw (PacBio 2× vzorek) ---
+# Krok 1: 2× vzorek z PacBio (14M readů = 1.4 Gb)
+seqtk sample -s42 pb_100_se.fastq.gz 14000000 > PB_2xgenome.fastq
+seqtk seq -a PB_2xgenome.fastq > PB_2xgenome.fasta
+
+# Krok 2: Simulace
+randomreads.sh ref=PB_2xgenome.fasta out1=PBrw_R1.fastq.gz out2=PBrw_R2.fastq.gz \
+    len=100 reads=20000000 seed=42 paired=t adderrors=f
+
+ =============================================================================
+# PART 2: SUBSAMPLE (normalizace na 0.4× coverage)
+ =============================================================================
+# Počty: AAZ 438646 párů, AAZW/PBrw 449857 párů
+
+# AAZ (438646 párů)
+seqtk sample -s42 ../AAZ_R1.fastq.gz 438646 > AAZ_R1.sampled.fq
+seqtk sample -s42 ../AAZ_R2.fastq.gz 438646 > AAZ_R2.sampled.fq
+
+# AAZW (449857 párů)
+seqtk sample -s42 ../AAZW_R1.fastq.gz 449857 > AAZW_R1.sampled.fq
+seqtk sample -s42 ../AAZW_R2.fastq.gz 449857 > AAZW_R2.sampled.fq
+
+# PBrw (449857 párů)
+seqtk sample -s42 ../PBrw_2xgenome/PBrw_R1.fastq.gz 449857 > PBrw_R1.sampled.fq
+seqtk sample -s42 ../PBrw_2xgenome/PBrw_R2.fastq.gz 449857 > PBrw_R2.sampled.fq
+
+=============================================================================
+# PART 3: INTERLEAVE + FASTA
+=============================================================================
+
+seqtk mergepe AAZ_R1.sampled.fq AAZ_R2.sampled.fq > AAZ_interleaved.fastq
+seqtk seq -a AAZ_interleaved.fastq > AAZ_interleaved.fa
+
+seqtk mergepe AAZW_R1.sampled.fq AAZW_R2.sampled.fq > AAZW_interleaved.fastq
+seqtk seq -a AAZW_interleaved.fastq > AAZW_interleaved.fa
+
+seqtk mergepe PBrw_R1.sampled.fq PBrw_R2.sampled.fq > PBrw_interleaved.fastq
+seqtk seq -a PBrw_interleaved.fastq > PBrw_interleaved.fa
+
+=============================================================================
+# PART 4: ZKRÁCENÍ NÁZVŮ
+=============================================================================
+
+awk '/^>/{split($0,a," "); print a[1]; next} {print}' AAZ_interleaved.fa > AAZ_short.fa
+awk '/^>/{split($0,a," "); print a[1]; next} {print}' AAZW_interleaved.fa > AAZW_short.fa
+awk '/^>/{split($0,a," "); print a[1]; next} {print}' PBrw_interleaved.fa > PBrw_short.fa
+
+=============================================================================
+# PART 5: TAGOVÁNÍ (prefix_length = 5)
+=============================================================================
+
+sed 's/>/>AAZ0_/' AAZ_short.fa > AAZ0_tagged.fa
+sed 's/>/>AAZW_/' AAZW_short.fa > AAZW_tagged.fa
+sed 's/>/>PBrw_/' PBrw_short.fa > PBrw_tagged.fa
+
+=============================================================================
+# PART 6: CONCATENACE
+=============================================================================
+
+cat AAZ0_tagged.fa PBrw_tagged.fa > AAZ0_vs_PBrw.fa   # Složení repetic W
+cat AAZW_tagged.fa PBrw_tagged.fa > AAZW_vs_PBrw.fa   # Kompletnost W
+
+# Ověření
+grep -c '^>' AAZ0_vs_PBrw.fa   # 1777006
+grep -c '^>' AAZW_vs_PBrw.fa   # 1799428
+
