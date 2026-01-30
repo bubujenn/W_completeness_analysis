@@ -1,5 +1,12 @@
 #!/bin/bash
 # RepeatExplorer Pipeline for W Chromosome Completeness Analysis
+
+# STEP 1: Zkrácení názvů sekvencí (awk)
+# STEP 2: Tagování (sed)  
+# STEP 3: Concatenace (cat)
+# STEP 4: Spuštění RepeatExplorer (bash RE_clustering.sh)
+
+
 ============================================================================
 #  RE_clustering.sh
 ============================================================================
