@@ -5,11 +5,10 @@
 # STEP 2: Tagování (sed)  
 # STEP 3: Concatenace (cat)
 # STEP 4: Spuštění RepeatExplorer (bash RE_clustering.sh)
-
-
 ============================================================================
 #  RE_clustering.sh
 ============================================================================
+
 Fasta=$(basename ${1})
 TimeStamp=$(date +"%Y%m%d.%H%M")
 Outdir=$PWD/RE_${TimeStamp} 
@@ -75,7 +74,6 @@ sed 's/>/&PBrw_/' PBrw_short.fa > PBrw_tagged.fa
 # Concatenace
 cat AAZ0_tagged.fa PBrw_tagged.fa > AAZ0_vs_PBrw.fa
 cat AAZW_tagged.fa PBrw_tagged.fa > AAZW_vs_PBrw.fa
-
 
 ============================================================================
 # PART 3: Spuštění RepeatExplorer
