@@ -49,8 +49,6 @@ randomreads.sh \
 # =============================================================================
 # Počty: AAZ 438646 párů, AAZW/PBrw 449857 párů
 
-cd /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs
-
 # AAZ (438646 párů)
 seqtk sample -s42 ../AAZ_R1.fastq.gz 438646 > AAZ_R1.sampled.fq
 seqtk sample -s42 ../AAZ_R2.fastq.gz 438646 > AAZ_R2.sampled.fq
