@@ -97,8 +97,12 @@ grep -c '^>' AAZW_vs_PBrw.fa   # 1799428
 # PART 6: SPUŠTĚNÍ RepeatExplorer
 # =============================================================================
 
+# =============================================================================
+# PART 6: SPUŠTĚNÍ RepeatExplorer
+# =============================================================================
+
 # Dataset 1: AAZ0 vs PBrw
-bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh AAZ0_vs_PBrw.fa 5
+bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/AAZ0_vs_PBrw.fa 5
 
 # Dataset 2: AAZW vs PBrw
-bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh AAZW_vs_PBrw.fa 5
+bash /storage/plzen1/home/p817n421/Shared/blues/scripts/RE_clustering.sh /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/AAZW_vs_PBrw.fa 5
