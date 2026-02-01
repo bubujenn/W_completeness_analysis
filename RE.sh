@@ -6,8 +6,6 @@ RepeatExplorer Pipeline for W Chromosome Completeness Analysis
 # =============================================================================
 # Parametry: len=100, reads=20M, seed=42, paired=t, adderrors=f
 
-cd /storage/brno2/home/jendrb00/20_10_consultation
-
 # --- AAZ (genom samce, BEZ W chromozomu) ---
 randomreads.sh \
     ref=AA_Z_chr.fasta \
