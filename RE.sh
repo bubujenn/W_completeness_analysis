@@ -6,7 +6,7 @@ RepeatExplorer Pipeline for W Chromosome Completeness Analysis
 # =============================================================================
 # Parametry: len=100, reads=20M, seed=42, paired=t, adderrors=f
 
-# --- AAZ (genom samce, BEZ W chromozomu) ---
+# --- AAZ (genom, BEZ W chromozomu) ---
 randomreads.sh \
     ref=AA_Z_chr.fasta \
     out1=AAZ_R1.fastq.gz \
@@ -28,7 +28,7 @@ randomreads.sh \
     paired=t \
     adderrors=f
 
-# --- PBrw (PacBio data samice) ---
+# --- PBrw (PacBio data) ---
 # Krok 1: 2× vzorek z PacBio (14M readů = ~1.4 Gb)
 seqtk sample -s42 pb_100_se.fastq.gz 14000000 > PB_2xgenome_new.fastq
 seqtk seq -a PB_2xgenome_new.fastq > PB_2xgenome_new.fasta
@@ -75,7 +75,7 @@ seqtk mergepe PBrw_R1.sampled.fq PBrw_R2.sampled.fq > PBrw_interleaved.fastq
 seqtk seq -a PBrw_interleaved.fastq > PBrw_interleaved_new.fa
 
 # =============================================================================
-# PART 4: ZKRÁCENÍ NÁZVŮ + TAGOVÁNÍ (v jednom kroku)
+# PART 4: ZKRÁCENÍ NÁZVŮ + TAGOVÁNÍ 
 # =============================================================================
 
 awk '/^>/{split($0,a," "); print a[1]; next} {print}' AAZ_interleaved_new.fa | sed 's/>/>AAZ0_/' > AAZ0_tagged.fa
