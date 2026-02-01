@@ -1,8 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# RepeatExplorer Pipeline for W Chromosome Completeness Analysis
-# =============================================================================
-
+RepeatExplorer Pipeline for W Chromosome Completeness Analysis
 # =============================================================================
 # PART 1: SIMULATION (randomreads.sh)
 # =============================================================================
