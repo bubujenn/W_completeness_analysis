@@ -11,8 +11,7 @@
 # ============================================================
 # RepeatExplorer - AAZ0 vs PBrw (složení repetic W)
 # Abraxas sylvata - Blanka Jendrisková
-# Opravená verze 2 (11.2.2026)
-# Změna: scratch_ssd místo scratch_local (řeší disk I/O error)
+# Opravená verze
 # ============================================================
 
 trap 'clean_scratch' TERM EXIT
