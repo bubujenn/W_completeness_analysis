@@ -1,78 +1,77 @@
 #!/bin/bash
-# =============================================================================
-# RE.sh - RepeatExplorer High Memory 
-# Testing first dataset: AAZ0 vs PBrw (Male vs PacBio)
-# =============================================================================
-
-# Define input file and tag length
-INPUT_FILE="AAZ0_vs_PBrw.fa"
-TAG_LENGTH=5
-
-# Check if file exists
-if [ ! -f "$INPUT_FILE" ]; then
-    echo "ERROR: Input file '$INPUT_FILE' not found in current directory!"
-    exit 1
-fi
-
-echo "Preparing PBS job for: $INPUT_FILE"
-
-# Create output directory for this analysis
-JOB_ID="RE_RUN_AAZ0"
-OUT_DIR="$PWD/${JOB_ID}_Output"
-mkdir -p "$OUT_DIR"
-
-PBS_SCRIPT="${OUT_DIR}/${JOB_ID}.pbs"
-
-# Generate PBS script dynamically (based on 'Vadovick' high-mem template)
-cat <<EOF > "$PBS_SCRIPT"
-#!/bin/bash
-#PBS -N $JOB_ID
-#PBS -l select=1:ncpus=20:mem=1024gb:scratch_local=1400gb:singularity=True
+#PBS -N RE_RUN_AAZ0_v2
+#PBS -l select=1:ncpus=20:mem=1024gb:scratch_ssd=500gb:singularity=True
 #PBS -l walltime=144:00:00
 #PBS -q large_mem@pbs-m1.metacentrum.cz
 #PBS -M blanka.jendriskova0000@seznam.cz
 #PBS -m bea
-#PBS -o ${OUT_DIR}/stdout.txt
-#PBS -e ${OUT_DIR}/stderr.txt
+#PBS -o /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/RE_RUN_AAZ0_v2_Output/stdout.txt
+#PBS -e /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/RE_RUN_AAZ0_v2_Output/stderr.txt
 
-# Clean scratch on exit
+# ============================================================
+# RepeatExplorer - AAZ0 vs PBrw (složení repetic W)
+# Abraxas sylvata - Blanka Jendrisková
+# Opravená verze 2 (11.2.2026)
+# Změna: scratch_ssd místo scratch_local (řeší disk I/O error)
+# ============================================================
+
 trap 'clean_scratch' TERM EXIT
 
-# 1. Copy input data to scratch (fast local disk)
-echo "Copying data to scratch..."
-cp "$PWD/$INPUT_FILE" "\$SCRATCHDIR" || exit 1
-cd "\$SCRATCHDIR"
-
-# 2. Setup Singularity (RE image)
-export SINGULARITY_CACHEDIR="\$SCRATCHDIR"
-export SINGULARITY_LOCALCACHEDIR="\$SCRATCHDIR"
-export SINGULARITY_TMPDIR="\$SCRATCHDIR"
-export TMPDIR="\$SCRATCHDIR"
-
+INPUT_FILE="AAZ0_vs_PBrw.fa"
+INPUT_DIR="/storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs"
+OUTPUT_DIR="${INPUT_DIR}/RE_RUN_AAZ0_v2_Output"
 REPO_IMAGE="library://repeatexplorer/default/repex_tarean:0.3.12-7a7dc9e"
-echo "Pulling Singularity image..."
-singularity pull --arch amd64 "\$REPO_IMAGE"
 
-# 3. Run RepeatExplorer Analysis (High Memory: 1024GB)
-echo "Running seqclust on $INPUT_FILE with prefix length $TAG_LENGTH..."
+# Vytvoř výstupní složku
+mkdir -p "$OUTPUT_DIR"
 
-singularity exec --bind "\$SCRATCHDIR:/data" "\$SCRATCHDIR/repex_tarean_0.3.12-7a7dc9e.sif" \\
-seqclust --paired \\
---automatic_filtering --mincl 0.001 --cpu 18 --prefix_length $TAG_LENGTH \\
---output_dir=/data/output/ --max_memory 900000000 --cleanup \\
---assembly_min 3 --taxon METAZOA3.0 "/data/$INPUT_FILE"
+# 1. Kopie vstupních dat na scratch SSD
+echo "=== KROK 1: Kopíruji data na scratch ==="
+echo "Scratch: $SCRATCHDIR"
+df -h "$SCRATCHDIR"
+cp "${INPUT_DIR}/${INPUT_FILE}" "$SCRATCHDIR" || exit 1
+cd "$SCRATCHDIR"
 
-# 4. Copy results back to home directory
-echo "Analysis complete. Copying results back..."
-cp -r "\$SCRATCHDIR/output"/* "$OUT_DIR" || export CLEAN_SCRATCH=false
-echo "Done."
-EOF
+# 2. Stažení Singularity image
+echo "=== KROK 2: Stahuji Singularity image ==="
+export SINGULARITY_CACHEDIR="$SCRATCHDIR"
+export SINGULARITY_LOCALCACHEDIR="$SCRATCHDIR"
+export SINGULARITY_TMPDIR="$SCRATCHDIR"
+export TMPDIR="$SCRATCHDIR"
+singularity pull --arch amd64 "$REPO_IMAGE"
+echo "Stav disku po stažení image:"
+df -h "$SCRATCHDIR"
 
-# Submit the job
-echo "Submitting job to Metacentrum..."
-qsub "$PBS_SCRIPT"
+# 3. Spuštění RepeatExplorer
+echo "=== KROK 3: Spouštím RepeatExplorer ==="
+echo "Vstup: ${INPUT_FILE}, prefix_length=5"
+echo "Start: $(date)"
 
-echo "---------------------------------------------------"
-echo "Job '$JOB_ID' submitted successfully!"
-echo "Check status with: qstat -u jendrb00"
-echo "Results will be in: $OUT_DIR"
+singularity exec --bind "$SCRATCHDIR:/data" "$SCRATCHDIR/repex_tarean_0.3.12-7a7dc9e.sif" \
+    seqclust --paired \
+    --automatic_filtering \
+    --mincl 0.001 \
+    --cpu 18 \
+    --prefix_length 5 \
+    --output_dir=/data/output/ \
+    --max_memory 900000000 \
+    --cleanup \
+    --assembly_min 3 \
+    --taxon METAZOA3.0 \
+    "/data/${INPUT_FILE}"
+
+SEQCLUST_EXIT=$?
+echo "Seqclust skončil s kódem: $SEQCLUST_EXIT"
+echo "Konec: $(date)"
+df -h "$SCRATCHDIR"
+
+# 4. Kopie výsledků zpět
+echo "=== KROK 4: Kopíruji výsledky ==="
+if [ -d "$SCRATCHDIR/output" ]; then
+    cp -r "$SCRATCHDIR/output"/* "$OUTPUT_DIR" || export CLEAN_SCRATCH=false
+    echo "Výsledky úspěšně zkopírovány do: $OUTPUT_DIR"
+else
+    echo "CHYBA: složka output nenalezena!"
+    export CLEAN_SCRATCH=false
+fi
+echo "=== HOTOVO ==="
