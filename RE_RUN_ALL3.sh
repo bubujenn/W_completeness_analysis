@@ -19,7 +19,7 @@
 # and tagged with unique prefixes so that RepeatExplorer2
 #
 # 1. AAZ0 (male genome, no W chromosome):
-#    - Illumina-like paired-end reads simulated from male
+#    - Illumina-like paired-end reads simulated from “male“
 #      genome assembly (AA_Z_chr.fasta) using randomreads.sh
 #      (BBTools v39.01, read length 100 bp, 20M pairs,
 #      seed=42, no error simulation)
