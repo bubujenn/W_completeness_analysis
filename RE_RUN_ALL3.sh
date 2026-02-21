@@ -17,7 +17,6 @@
 # BACKGROUND:
 # Prior to running this script, three datasets were prepared
 # and tagged with unique prefixes so that RepeatExplorer2
-# can track the origin of each read during clustering.
 #
 # 1. AAZ0 (male genome, no W chromosome):
 #    - Illumina-like paired-end reads simulated from male
