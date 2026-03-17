@@ -1,0 +1,55 @@
+#!/bin/bash
+# =============================================================================
+# Prepares input data for RepeatExplorer seed runs (seeds 123, 456, 789).
+# Simulates paired-end reads from male (AAZ) and female (AAZW) assemblies,
+# subsamples PacBio reads, and creates tagged FASTA files for RE2 input.
+# This ensures independent replicates to verify robustness of W-linked findings.
+# =============================================================================
+#PBS -N seed_data_prep
+#PBS -l select=1:ncpus=4:mem=32gb:scratch_ssd=200gb
+#PBS -l walltime=24:00:00
+#PBS -M blanka.jendriskova0000@seznam.cz
+#PBS -m bea
+#PBS -o /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/seed_runs/prep_stdout.txt
+#PBS -e /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/seed_runs/prep_stderr.txt
+
+trap 'clean_scratch' TERM EXIT
+WORK="/storage/brno2/home/jendrb00/20_10_consultation"
+OUTDIR="${WORK}/RE_final_inputs/seed_runs"
+
+module load bbmap
+module load seqtk
+cd "$SCRATCHDIR"
+
+for SEED in 123 456 789; do
+    echo "=== SEED $SEED === $(date)"
+    randomreads.sh ref=${WORK}/AA_Z_chr.fasta out1=AAZ_R1.fq.gz out2=AAZ_R2.fq.gz len=100 reads=20000000 seed=$SEED paired=t adderrors=f
+    randomreads.sh ref=${WORK}/AA_Z_Wasmbl.fasta out1=AAZW_R1.fq.gz out2=AAZW_R2.fq.gz len=100 reads=20000000 seed=$SEED paired=t adderrors=f
+    seqtk sample -s$SEED /storage/brno2/home/jendrb00/PacBiok100/ERR12370385.fastq.gz 200000 > PB_raw.fq
+    seqtk seq -a PB_raw.fq > PB_raw.fa
+    randomreads.sh ref=PB_raw.fa out1=PBrw_R1.fq.gz out2=PBrw_R2.fq.gz len=100 reads=20000000 seed=$SEED paired=t adderrors=f
+
+    seqtk sample -s$SEED AAZ_R1.fq.gz 438646 > AAZ_R1.s.fq
+    seqtk sample -s$SEED AAZ_R2.fq.gz 438646 > AAZ_R2.s.fq
+    seqtk sample -s$SEED AAZW_R1.fq.gz 449857 > AAZW_R1.s.fq
+    seqtk sample -s$SEED AAZW_R2.fq.gz 449857 > AAZW_R2.s.fq
+    seqtk sample -s$SEED PBrw_R1.fq.gz 449857 > PBrw_R1.s.fq
+    seqtk sample -s$SEED PBrw_R2.fq.gz 449857 > PBrw_R2.s.fq
+
+    seqtk mergepe AAZ_R1.s.fq AAZ_R2.s.fq > AAZ_inter.fq
+    seqtk seq -a AAZ_inter.fq > AAZ_inter.fa
+    seqtk mergepe AAZW_R1.s.fq AAZW_R2.s.fq > AAZW_inter.fq
+    seqtk seq -a AAZW_inter.fq > AAZW_inter.fa
+    seqtk mergepe PBrw_R1.s.fq PBrw_R2.s.fq > PBrw_inter.fq
+    seqtk seq -a PBrw_inter.fq > PBrw_inter.fa
+
+    awk '/^>/{split($0,a," "); print a[1]; next} {print}' AAZ_inter.fa | sed 's/>/>AAZ0_/' > AAZ0_tagged.fa
+    awk '/^>/{split($0,a," "); print a[1]; next} {print}' AAZW_inter.fa | sed 's/>/>AAZW_/' > AAZW_tagged.fa
+    awk '/^>/{split($0,a," "); print a[1]; next} {print}' PBrw_inter.fa | sed 's/>/>PBrw_/' > PBrw_tagged.fa
+
+    cat AAZ0_tagged.fa AAZW_tagged.fa PBrw_tagged.fa > ALL3_s${SEED}.fa
+    cp ALL3_s${SEED}.fa ${OUTDIR}/ALL3_s${SEED}.fa
+    rm -f *.fq *.fq.gz *.fa
+    echo "=== SEED $SEED DONE === $(date)"
+done
+echo "=== ALL SEEDS DONE ==="
