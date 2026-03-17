@@ -1,0 +1,80 @@
+#!/bin/bash
+#PBS -N RE_ALL3_v3
+#PBS -l select=1:ncpus=20:mem=1024gb:scratch_ssd=500gb:singularity=True
+#PBS -l walltime=168:00:00
+#PBS -q large_mem@pbs-m1.metacentrum.cz
+#PBS -M blanka.jendriskova0000@seznam.cz
+#PBS -m bea
+#PBS -o /storage/brno2/home/jendrb00/RE_ALL3_v3_stdout.txt
+#PBS -e /storage/brno2/home/jendrb00/RE_ALL3_v3_stderr.txt
+
+trap 'clean_scratch' TERM EXIT
+
+INPUT_FILE="AAZ0_AAZW_PBrw.fa"
+INPUT_DIR="/storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs"
+OUTPUT_DIR="${INPUT_DIR}/RE_RUN_ALL3_v3_Output"
+REPO_IMAGE="library://repeatexplorer/default/repex_tarean:0.3.12-7a7dc9e"
+
+mkdir -p "$OUTPUT_DIR"
+
+echo "=== KROK 1: Kopie dat na scratch ==="
+echo "Scratch: $SCRATCHDIR"
+df -h "$SCRATCHDIR"
+cp "${INPUT_DIR}/${INPUT_FILE}" "$SCRATCHDIR" || exit 1
+cd "$SCRATCHDIR"
+
+echo "=== KROK 2: Singularity image ==="
+export SINGULARITY_CACHEDIR="$SCRATCHDIR"
+export SINGULARITY_LOCALCACHEDIR="$SCRATCHDIR"
+export SINGULARITY_TMPDIR="$SCRATCHDIR"
+export TMPDIR="$SCRATCHDIR"
+singularity pull --arch amd64 "$REPO_IMAGE"
+df -h "$SCRATCHDIR"
+
+echo "=== KROK 3: RepeatExplorer ==="
+echo "PARAMETRY: mincl=0.01, assembly_min=5"
+echo "Start: $(date)"
+
+singularity exec --bind "$SCRATCHDIR:/data" "$SCRATCHDIR/repex_tarean_0.3.12-7a7dc9e.sif" \
+    seqclust --paired \
+    --automatic_filtering \
+    --mincl 0.01 \
+    --cpu 18 \
+    --prefix_length 5 \
+    --output_dir=/data/output/ \
+    --max_memory 900000000 \
+    --cleanup \
+    --assembly_min 5 \
+    --taxon METAZOA3.0 \
+    "/data/${INPUT_FILE}"
+
+SEQCLUST_EXIT=$?
+echo "Exit code seqclust: $SEQCLUST_EXIT"
+echo "Konec: $(date)"
+df -h "$SCRATCHDIR"
+
+if [ $SEQCLUST_EXIT -ne 0 ]; then
+    echo "CHYBA: seqclust skoncil s kodem $SEQCLUST_EXIT"
+    export CLEAN_SCRATCH=false
+    exit $SEQCLUST_EXIT
+fi
+
+echo "=== KROK 4: Kopie vysledku ==="
+if [ -d "$SCRATCHDIR/output" ]; then
+    echo "Obsah output/:"
+    ls -la "$SCRATCHDIR/output/"
+    echo "Kopiruji..."
+    cp -rv "$SCRATCHDIR/output"/* "$OUTPUT_DIR" 2>&1 | tail -20
+    CP_EXIT=$?
+    if [ $CP_EXIT -ne 0 ]; then
+        echo "CHYBA pri kopii! Exit: $CP_EXIT"
+        export CLEAN_SCRATCH=false
+        exit $CP_EXIT
+    fi
+    echo "Vysledky uspesne zkopirovany do: $OUTPUT_DIR"
+else
+    echo "CHYBA: slozka output nenalezena!"
+    export CLEAN_SCRATCH=false
+    exit 1
+fi
+echo "=== HOTOVO ==="
