@@ -1,0 +1,80 @@
+#!/bin/bash
+#PBS -N RE_seed123
+#PBS -l select=1:ncpus=20:mem=1024gb:scratch_ssd=500gb:singularity=True
+#PBS -l walltime=168:00:00
+#PBS -q large_mem@pbs-m1.metacentrum.cz
+#PBS -M blanka.jendriskova0000@seznam.cz
+#PBS -m bea
+#PBS -o /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/seed_runs/seed123/stdout.txt
+#PBS -e /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/seed_runs/seed123/stderr.txt
+
+trap 'clean_scratch' TERM EXIT
+SEED=123
+WORK="/storage/brno2/home/jendrb00/20_10_consultation"
+OUTDIR="${WORK}/RE_final_inputs/seed_runs/seed${SEED}"
+REPO_IMAGE="library://repeatexplorer/default/repex_tarean:0.3.12-7a7dc9e"
+mkdir -p "$OUTDIR"
+
+module load bbmap
+module load seqtk
+cd "$SCRATCHDIR"
+
+echo "=== SEED $SEED === Start: $(date)"
+
+# 1. Simulate reads
+randomreads.sh ref=${WORK}/AA_Z_chr.fasta out1=AAZ_R1.fq.gz out2=AAZ_R2.fq.gz len=100 reads=20000000 seed=$SEED paired=t adderrors=f
+randomreads.sh ref=${WORK}/AA_Z_Wasmbl.fasta out1=AAZW_R1.fq.gz out2=AAZW_R2.fq.gz len=100 reads=20000000 seed=$SEED paired=t adderrors=f
+
+# 3. PacBio subsample
+seqtk sample -s$SEED /storage/brno2/home/jendrb00/PacBiok100/ERR12370385.fastq.gz 200000 > PB_raw.fq
+seqtk seq -a PB_raw.fq > PB_raw.fa
+randomreads.sh ref=PB_raw.fa out1=PBrw_R1.fq.gz out2=PBrw_R2.fq.gz len=100 reads=20000000 seed=$SEED paired=t adderrors=f
+
+# 2. Subsample
+seqtk sample -s$SEED AAZ_R1.fq.gz 438646 > AAZ_R1.s.fq
+seqtk sample -s$SEED AAZ_R2.fq.gz 438646 > AAZ_R2.s.fq
+seqtk sample -s$SEED AAZW_R1.fq.gz 449857 > AAZW_R1.s.fq
+seqtk sample -s$SEED AAZW_R2.fq.gz 449857 > AAZW_R2.s.fq
+seqtk sample -s$SEED PBrw_R1.fq.gz 449857 > PBrw_R1.s.fq
+seqtk sample -s$SEED PBrw_R2.fq.gz 449857 > PBrw_R2.s.fq
+
+# 3. Interleave + FASTA
+seqtk mergepe AAZ_R1.s.fq AAZ_R2.s.fq > AAZ_inter.fq
+seqtk seq -a AAZ_inter.fq > AAZ_inter.fa
+seqtk mergepe AAZW_R1.s.fq AAZW_R2.s.fq > AAZW_inter.fq
+seqtk seq -a AAZW_inter.fq > AAZW_inter.fa
+seqtk mergepe PBrw_R1.s.fq PBrw_R2.s.fq > PBrw_inter.fq
+seqtk seq -a PBrw_inter.fq > PBrw_inter.fa
+
+# 4. Tag
+awk '/^>/{split($0,a," "); print a[1]; next} {print}' AAZ_inter.fa | sed 's/>/>AAZ0_/' > AAZ0_tagged.fa
+awk '/^>/{split($0,a," "); print a[1]; next} {print}' AAZW_inter.fa | sed 's/>/>AAZW_/' > AAZW_tagged.fa
+awk '/^>/{split($0,a," "); print a[1]; next} {print}' PBrw_inter.fa | sed 's/>/>PBrw_/' > PBrw_tagged.fa
+
+# 5. Concatenate ALL 3
+cat AAZ0_tagged.fa AAZW_tagged.fa PBrw_tagged.fa > input.fa
+
+# 6. RepeatExplorer2
+export SINGULARITY_CACHEDIR="$SCRATCHDIR"
+export SINGULARITY_LOCALCACHEDIR="$SCRATCHDIR"
+export SINGULARITY_TMPDIR="$SCRATCHDIR"
+export TMPDIR="$SCRATCHDIR"
+singularity pull --arch amd64 "$REPO_IMAGE"
+
+singularity exec --bind "$SCRATCHDIR:/data" "$SCRATCHDIR/repex_tarean_0.3.12-7a7dc9e.sif" \
+    seqclust --paired \
+    --automatic_filtering \
+    --mincl 0.01 \
+    --cpu 18 \
+    --prefix_length 5 \
+    --output_dir=/data/output/ \
+    --max_memory 900000000 \
+    --cleanup \
+    --assembly_min 5 \
+    --taxon METAZOA3.0 \
+    "/data/input.fa"
+
+# 7. Copy results
+if [ -d "$SCRATCHDIR/output" ]; then
+    cp -r "$SCRATCHDIR/output"/* "$OUTDIR/"
+fi
