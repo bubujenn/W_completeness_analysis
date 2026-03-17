@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N RE_seed456
+#PBS -l select=1:ncpus=20:mem=1024gb:scratch_ssd=500gb:singularity=True
+#PBS -l walltime=168:00:00
+#PBS -q large_mem@pbs-m1.metacentrum.cz
+#PBS -M blanka.jendriskova0000@seznam.cz
+#PBS -m bea
+#PBS -o /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/seed_runs/seed456/stdout.txt
+#PBS -e /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/seed_runs/seed456/stderr.txt
+
+trap 'clean_scratch' TERM EXIT
+SEED=456
+# ... zbytek identický se seed123
