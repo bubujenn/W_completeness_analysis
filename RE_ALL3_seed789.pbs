@@ -1,0 +1,5 @@
+# Identický s RE_ALL3_seed123.pbs, jen změnit:
+# Řádek 2:  #PBS -N RE_seed789
+# Řádek 8:  #PBS -o .../seed789/stdout.txt
+# Řádek 9:  #PBS -e .../seed789/stderr.txt
+# Řádek 12: SEED=789
