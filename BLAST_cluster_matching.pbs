@@ -1,0 +1,60 @@
+#!/bin/bash
+# =============================================================================
+# Cross-BLAST between RepeatExplorer seed runs to verify W-linked clusters.
+# Extracts top W-linked contigs from each RE run (RE_ALL3, seed123, seed456,
+# seed789), builds a combined BLAST database, and queries each run against all.
+# This identifies which clusters correspond across independent runs.
+# =============================================================================
+#PBS -N BLAST_clusters
+#PBS -l select=1:ncpus=8:mem=16gb:scratch_ssd=50gb
+#PBS -l walltime=2:00:00
+#PBS -M blanka.jendriskova0000@seznam.cz
+#PBS -m bea
+#PBS -o /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/blast_matching/stdout.txt
+#PBS -e /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/blast_matching/stderr.txt
+
+trap 'clean_scratch' TERM EXIT
+
+WORK="/storage/brno2/home/jendrb00/20_10_consultation"
+OUTDIR="${WORK}/RE_final_inputs/blast_matching"
+mkdir -p "$OUTDIR"
+
+module load blast-plus
+cd "$SCRATCHDIR"
+
+RE_ALL3="${WORK}/RE_final_inputs/RE_RUN_ALL3_v3_Output/contigs.fasta"
+SEED123="${WORK}/RE_final_inputs/seed_runs/seed123/contigs.fasta"
+SEED456="${WORK}/RE_final_inputs/seed_runs/seed456/contigs.fasta"
+SEED789="${WORK}/RE_final_inputs/seed_runs/seed789/contigs.fasta"
+
+for CL in 200 153 128 122 102 235 527 52 935 1363; do
+    awk -v cl="CL${CL}Contig1 " 'BEGIN{p=0} /^>/{if(index($0,cl)>0){p=1}else{p=0}} p{print}' "$RE_ALL3"
+done > re_all3_candidates.fasta
+
+for CL in 99 169 144 107 248 203 618 604; do
+    awk -v cl="CL${CL}Contig1 " 'BEGIN{p=0} /^>/{if(index($0,cl)>0){p=1}else{p=0}} p{print}' "$SEED123"
+done > seed123_candidates.fasta
+
+for CL in 100 145 124 99 211 730; do
+    awk -v cl="CL${CL}Contig1 " 'BEGIN{p=0} /^>/{if(index($0,cl)>0){p=1}else{p=0}} p{print}' "$SEED456"
+done > seed456_candidates.fasta
+
+for CL in 518 220 106 205 180 152 97; do
+    awk -v cl="CL${CL}Contig1 " 'BEGIN{p=0} /^>/{if(index($0,cl)>0){p=1}else{p=0}} p{print}' "$SEED789"
+done > seed789_candidates.fasta
+
+cat *_candidates.fasta > all_candidates.fasta
+makeblastdb -in all_candidates.fasta -dbtype nucl -out candidates_db
+
+for NAME in re_all3 seed123 seed456 seed789; do
+    blastn -query ${NAME}_candidates.fasta \
+           -db candidates_db \
+           -out blast_${NAME}.txt \
+           -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore" \
+           -evalue 1e-5 \
+           -max_target_seqs 10 \
+           -num_threads 8
+done
+
+cp blast_*.txt all_candidates.fasta *_candidates.fasta "$OUTDIR/"
+echo "=== DONE === $(date)"
