@@ -1,0 +1,43 @@
+#!/bin/bash
+# =============================================================================
+# Runs RepeatMasker on W-linked contigs against Dfam database (metazoa)
+# to identify known repetitive elements. Also runs remote BLAST against
+# NCBI nt to check for matches to mitochondrial DNA, rDNA, or other species.
+# =============================================================================
+#PBS -N RepMask_Wcontigs
+#PBS -l select=1:ncpus=4:mem=8gb:scratch_ssd=20gb
+#PBS -l walltime=1:00:00
+#PBS -M blanka.jendriskova0000@seznam.cz
+#PBS -m bea
+#PBS -o /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/repeatmasker_out/stdout.txt
+#PBS -e /storage/brno2/home/jendrb00/20_10_consultation/RE_final_inputs/repeatmasker_out/stderr.txt
+
+trap 'clean_scratch' TERM EXIT
+
+WORK="/storage/brno2/home/jendrb00/20_10_consultation"
+OUTDIR="${WORK}/RE_final_inputs/repeatmasker_out"
+BLAST_DIR="${WORK}/RE_final_inputs/blast_matching"
+mkdir -p "$OUTDIR"
+
+cd "$SCRATCHDIR"
+
+cp "$BLAST_DIR/all_candidates.fasta" ./candidates.fasta
+
+module load repeatmasker 2>/dev/null
+RepeatMasker -species metazoa -pa 4 -dir ./rm_output candidates.fasta
+cp -r ./rm_output/* "$OUTDIR/"
+
+module load blast-plus 2>/dev/null
+blastn -query candidates.fasta \
+       -db nt -remote \
+       -out blast_vs_nt.txt \
+       -outfmt "6 qseqid sseqid stitle pident length mismatch gapopen qstart qend sstart send evalue bitscore" \
+       -evalue 1e-5 -max_target_seqs 5
+
+blastn -query candidates.fasta \
+       -db nt -remote \
+       -out blast_vs_nt_full.txt \
+       -evalue 1e-5 -max_target_seqs 3
+
+cp blast_vs_nt*.txt candidates.fasta "$OUTDIR/"
+echo "=== DONE === $(date)"
